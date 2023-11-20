@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56971812B0B103E00C5B193 /* ExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971802B0B103E00C5B193 /* ExpensesTableViewController.swift */; };
+		A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971822B0B106C00C5B193 /* MainViewController.swift */; };
+		A56971852B0B109E00C5B193 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971842B0B109E00C5B193 /* ExpenseViewController.swift */; };
 		A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7B2B0ABF8000CA1328 /* AppDelegate.swift */; };
 		A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7D2B0ABF8000CA1328 /* SceneDelegate.swift */; };
-		A5A2BA802B0ABF8000CA1328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7F2B0ABF8000CA1328 /* ViewController.swift */; };
+		A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7F2B0ABF8000CA1328 /* VehiclesViewController.swift */; };
 		A5A2BA832B0ABF8000CA1328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A2BA812B0ABF8000CA1328 /* Main.storyboard */; };
 		A5A2BA852B0ABF8200CA1328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A2BA842B0ABF8200CA1328 /* Assets.xcassets */; };
 		A5A2BA882B0ABF8200CA1328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A2BA862B0ABF8200CA1328 /* LaunchScreen.storyboard */; };
+		A5A2BA982B0AC73000CA1328 /* Autountant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA962B0AC73000CA1328 /* Autountant.xcdatamodeld */; };
+		A5A2BAA32B0ACA1400CA1328 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAA12B0ACA1400CA1328 /* Vehicle+CoreDataClass.swift */; };
+		A5A2BAA52B0ACA8100CA1328 /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAA22B0ACA1400CA1328 /* Vehicle+CoreDataProperties.swift */; };
+		A5A2BAAB2B0AE8CA00CA1328 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAA92B0AE8CA00CA1328 /* Expense+CoreDataClass.swift */; };
+		A5A2BAAC2B0AE8CA00CA1328 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAAA2B0AE8CA00CA1328 /* Expense+CoreDataProperties.swift */; };
+		A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A56971802B0B103E00C5B193 /* ExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewController.swift; sourceTree = "<group>"; };
+		A56971822B0B106C00C5B193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A56971842B0B109E00C5B193 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		A5A2BA782B0ABF8000CA1328 /* Autountant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autountant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A2BA7B2B0ABF8000CA1328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A2BA7D2B0ABF8000CA1328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5A2BA7F2B0ABF8000CA1328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5A2BA7F2B0ABF8000CA1328 /* VehiclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewController.swift; sourceTree = "<group>"; };
 		A5A2BA822B0ABF8000CA1328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5A2BA842B0ABF8200CA1328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A2BA872B0ABF8200CA1328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5A2BA892B0ABF8200CA1328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A2BA972B0AC73000CA1328 /* Autountant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Autountant.xcdatamodel; sourceTree = "<group>"; };
+		A5A2BAA12B0ACA1400CA1328 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Vehicle+CoreDataClass.swift"; path = "Autountant/Model/Entities/Vehicle+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A5A2BAA22B0ACA1400CA1328 /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Vehicle+CoreDataProperties.swift"; path = "Autountant/Model/Entities/Vehicle+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A5A2BAA92B0AE8CA00CA1328 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Expense+CoreDataClass.swift"; path = "Autountant/Model/Entities/Expense+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A5A2BAAA2B0AE8CA00CA1328 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Expense+CoreDataProperties.swift"; path = "Autountant/Model/Entities/Expense+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,56 @@
 		A5A2BA7A2B0ABF8000CA1328 /* Autountant */ = {
 			isa = PBXGroup;
 			children = (
+				A5A2BAAF2B0AEAE100CA1328 /* Controller */,
+				A5A2BAAE2B0AEAD200CA1328 /* View */,
+				A5A2BAAD2B0AEAC900CA1328 /* Model */,
 				A5A2BA7B2B0ABF8000CA1328 /* AppDelegate.swift */,
 				A5A2BA7D2B0ABF8000CA1328 /* SceneDelegate.swift */,
-				A5A2BA7F2B0ABF8000CA1328 /* ViewController.swift */,
-				A5A2BA812B0ABF8000CA1328 /* Main.storyboard */,
 				A5A2BA842B0ABF8200CA1328 /* Assets.xcassets */,
 				A5A2BA862B0ABF8200CA1328 /* LaunchScreen.storyboard */,
 				A5A2BA892B0ABF8200CA1328 /* Info.plist */,
+				A5A2BA962B0AC73000CA1328 /* Autountant.xcdatamodeld */,
 			);
 			path = Autountant;
+			sourceTree = "<group>";
+		};
+		A5A2BAAD2B0AEAC900CA1328 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2BAB02B0AEB0800CA1328 /* Entities */,
+				A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5A2BAAE2B0AEAD200CA1328 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2BA812B0ABF8000CA1328 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5A2BAAF2B0AEAE100CA1328 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2BA7F2B0ABF8000CA1328 /* VehiclesViewController.swift */,
+				A56971802B0B103E00C5B193 /* ExpensesTableViewController.swift */,
+				A56971822B0B106C00C5B193 /* MainViewController.swift */,
+				A56971842B0B109E00C5B193 /* ExpenseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A5A2BAB02B0AEB0800CA1328 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A5A2BAA92B0AE8CA00CA1328 /* Expense+CoreDataClass.swift */,
+				A5A2BAAA2B0AE8CA00CA1328 /* Expense+CoreDataProperties.swift */,
+				A5A2BAA12B0ACA1400CA1328 /* Vehicle+CoreDataClass.swift */,
+				A5A2BAA22B0ACA1400CA1328 /* Vehicle+CoreDataProperties.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +197,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5A2BA802B0ABF8000CA1328 /* ViewController.swift in Sources */,
+				A5A2BAAB2B0AE8CA00CA1328 /* Expense+CoreDataClass.swift in Sources */,
+				A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */,
+				A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */,
+				A5A2BAA32B0ACA1400CA1328 /* Vehicle+CoreDataClass.swift in Sources */,
+				A5A2BAA52B0ACA8100CA1328 /* Vehicle+CoreDataProperties.swift in Sources */,
+				A56971852B0B109E00C5B193 /* ExpenseViewController.swift in Sources */,
+				A5A2BAAC2B0AE8CA00CA1328 /* Expense+CoreDataProperties.swift in Sources */,
 				A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */,
+				A5A2BA982B0AC73000CA1328 /* Autountant.xcdatamodeld in Sources */,
+				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,
+				A56971812B0B103E00C5B193 /* ExpensesTableViewController.swift in Sources */,
 				A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,8 +366,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,8 +394,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +431,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5A2BA962B0AC73000CA1328 /* Autountant.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5A2BA972B0AC73000CA1328 /* Autountant.xcdatamodel */,
+			);
+			currentVersion = A5A2BA972B0AC73000CA1328 /* Autountant.xcdatamodel */;
+			path = Autountant.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A5A2BA702B0ABF8000CA1328 /* Project object */;
 }
