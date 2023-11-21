@@ -24,21 +24,9 @@
 		<data>
 		ZVgM1+KwZcZnwhgaI0F7Bt1ba2c=
 		</data>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<data>
-		N3mNCkCyxSxsw48c4y62jAPICHU=
-		</data>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<data>
-		MDrKFvFWroTb0+KEbQShBcoBvo4=
-		</data>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<data>
-		FVvCTGzsSm0U+FHmIR1oinEa/iQ=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		6riMN0Wl63GDOWjT7TJK66xRY/8=
+		p+xMD2Gm+Anr/EGvXI1saL5Wutk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -80,27 +68,6 @@
 			<key>hash2</key>
 			<data>
 			VPNjf2cf66XxnoLsT0p/tEi7PPwPsYDwiapXH8jwU+I=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Fx8YuhTFQ/Zw7gYUkjUOoKvnCg3wPfkODJmQAhQUY2E=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PpvapAjR62rl6Ym4E6hkTgpKmBICxTaQXeUqcpHmmqQ=
-			</data>
-		</dict>
-		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aBV6oqeP3K7vnw+sTp6clqs2wTCNuMNO97KUPSMl6aE=
 			</data>
 		</dict>
 	</dict>
