@@ -17,16 +17,28 @@ class DataManager {
     
     weak var dataPresenter: DataPresenter?
     var container: NSPersistentContainer!
+    var units: Units
     
-    init() {
+    init(units: Units) {
+        self.units = units
         container = NSPersistentContainer(name: "Autountant")
         container.loadPersistentStores { storeDescription, error in
             if let error = error {
                 print("Unresolved error \(error)")
             }
         }
+        
     }
     
+    
+    
+    func getStat(for vehicle: Vehicle, with period: Period) -> Stat {
+        
+        var stat = Stat()
+        
+        
+        return stat
+    }
     
     
 }

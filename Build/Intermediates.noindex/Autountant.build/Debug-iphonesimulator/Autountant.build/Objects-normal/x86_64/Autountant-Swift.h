@@ -276,6 +276,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
+@import CoreFoundation;
 @import Foundation;
 @import UIKit;
 #endif
@@ -311,6 +312,14 @@ SWIFT_CLASS("_TtC10Autountant11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10Autountant8CheckBox")
+@interface CheckBox : UIControl
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -333,7 +342,6 @@ SWIFT_CLASS_NAMED("Expense")
 @end
 
 @class NSBundle;
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10Autountant21ExpenseViewController")
 @interface ExpenseViewController : UIViewController
@@ -355,10 +363,19 @@ SWIFT_CLASS("_TtC10Autountant27ExpensesTableViewController")
 @end
 
 
+SWIFT_CLASS("_TtC10Autountant9GreenView")
+@interface GreenView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+
 SWIFT_CLASS("_TtC10Autountant18MainViewController")
 @interface MainViewController : UIViewController
 - (void)viewDidLoad;
-- (void)loadView;
+- (void)buttonPushed:(UIButton * _Nonnull)button;
+- (void)checkBoxPressed:(CheckBox * _Nonnull)checkBox;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -394,10 +411,10 @@ SWIFT_CLASS_NAMED("Vehicle")
 @property (nonatomic, copy) NSString * _Nonnull vehicle_id;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull mileage;
+@property (nonatomic) BOOL current;
 @end
 
 @class UITextField;
-@class UIButton;
 
 SWIFT_CLASS("_TtC10Autountant22VehiclesViewController")
 @interface VehiclesViewController : UIViewController
@@ -426,6 +443,13 @@ SWIFT_CLASS("_TtC10Autountant22VehiclesViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (UISwipeActionsConfiguration * _Nullable)tableView:(UITableView * _Nonnull)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant10YellowView")
+@interface YellowView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

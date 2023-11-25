@@ -9,6 +9,7 @@
         <attribute name="vehicle_id" attributeType="String"/>
     </entity>
     <entity name="Vehicle" representedClassName="Vehicle" syncable="YES">
+        <attribute name="current" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="mileage" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="vehicle_id" attributeType="String"/>

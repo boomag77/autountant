@@ -19,6 +19,7 @@ extension Vehicle {
     @NSManaged public var vehicle_id: String
     @NSManaged public var name: String
     @NSManaged public var mileage: String
+    @NSManaged public var current: Bool
 
 }
 
