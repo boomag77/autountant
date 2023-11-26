@@ -12,9 +12,42 @@ enum Units: String {
     case imperial = "Imperial"
 }
 
+enum Range {
+    case week
+    case month
+    case year
+    case custom
+}
+
 struct Period {
-    var startDate: Date
-    var endDate: Date
+    
+    var startDate: Date?
+    var endDate: Date?
+    
+    init(range: Range, startDate: Date? = nil, endDate: Date? = nil) {
+        switch range {
+            case .week:
+                self.startDate = Date() - 7
+                if let endDate = endDate {
+                    self.endDate = endDate
+                }
+            case .month:
+                self.startDate = Date() - 30
+                if let endDate = endDate {
+                    self.endDate = endDate
+                }
+            case .year:
+                self.startDate = Date() - 365
+                if let endDate = endDate {
+                    self.endDate = endDate
+                }
+            default:
+                if let startDate = startDate, let endDate = endDate {
+                    self.startDate = startDate
+                    self.endDate = endDate
+                }
+        }
+    }
 }
 
 struct Stat {

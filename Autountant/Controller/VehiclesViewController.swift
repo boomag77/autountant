@@ -45,7 +45,7 @@ class VehiclesViewController: UIViewController {
         if self.nameTextField.text == "" && self.mileageTextField.text == "" {return}
         DispatchQueue.main.async { [unowned self] in
             let newVehicle = Vehicle(context: self.container.viewContext)
-            newVehicle.vehicle_id = "1"
+            //newVehicle.vehicle_id = "1"
             newVehicle.name = nameTextField.text!
             newVehicle.mileage = mileageTextField.text!
             nameTextField.text = nil

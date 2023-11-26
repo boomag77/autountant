@@ -145,8 +145,8 @@
 			children = (
 				A5A2BAA92B0AE8CA00CA1328 /* Expense+CoreDataClass.swift */,
 				A5A2BAAA2B0AE8CA00CA1328 /* Expense+CoreDataProperties.swift */,
-				A5A2BAA12B0ACA1400CA1328 /* Vehicle+CoreDataClass.swift */,
 				A5A2BAA22B0ACA1400CA1328 /* Vehicle+CoreDataProperties.swift */,
+				A5A2BAA12B0ACA1400CA1328 /* Vehicle+CoreDataClass.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";

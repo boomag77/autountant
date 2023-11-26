@@ -55,6 +55,36 @@
     "swift-dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehiclesViewController.swiftdeps",
     "swiftmodule" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehiclesViewController~partial.swiftmodule"
   },
+  "/Users/sergey/code/Autountant/Autountant/Model View/MainViewModel.swift" : {
+    "const-values" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel.swiftconstvalues",
+    "dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel.d",
+    "diagnostics" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel.dia",
+    "index-unit-output-path" : "/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel.o",
+    "llvm-bc" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel.bc",
+    "object" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel.o",
+    "swift-dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel.swiftdeps",
+    "swiftmodule" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/MainViewModel~partial.swiftmodule"
+  },
+  "/Users/sergey/code/Autountant/Autountant/Model View/VehicleView.swift" : {
+    "const-values" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.swiftconstvalues",
+    "dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.d",
+    "diagnostics" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.dia",
+    "index-unit-output-path" : "/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.o",
+    "llvm-bc" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.bc",
+    "object" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.o",
+    "swift-dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.swiftdeps",
+    "swiftmodule" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView~partial.swiftmodule"
+  },
+  "/Users/sergey/code/Autountant/Autountant/Model/Data models/DataModels.swift" : {
+    "const-values" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels.swiftconstvalues",
+    "dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels.d",
+    "diagnostics" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels.dia",
+    "index-unit-output-path" : "/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels.o",
+    "llvm-bc" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels.bc",
+    "object" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels.o",
+    "swift-dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels.swiftdeps",
+    "swiftmodule" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataModels~partial.swiftmodule"
+  },
   "/Users/sergey/code/Autountant/Autountant/Model/DataManager.swift" : {
     "const-values" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataManager.swiftconstvalues",
     "dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataManager.d",
@@ -114,6 +144,16 @@
     "object" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate.o",
     "swift-dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate.swiftdeps",
     "swiftmodule" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate~partial.swiftmodule"
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/CheckBox.swift" : {
+    "const-values" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox.swiftconstvalues",
+    "dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox.d",
+    "diagnostics" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox.dia",
+    "index-unit-output-path" : "/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox.o",
+    "llvm-bc" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox.bc",
+    "object" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox.o",
+    "swift-dependencies" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox.swiftdeps",
+    "swiftmodule" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/CheckBox~partial.swiftmodule"
   },
   "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/DerivedSources/GeneratedAssetSymbols.swift" : {
     "const-values" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",

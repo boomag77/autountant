@@ -331,11 +331,11 @@ SWIFT_CLASS_NAMED("Expense")
 @end
 
 
-@class NSString;
 @class NSDate;
+@class NSString;
 
 @interface Expense (SWIFT_EXTENSION(Autountant))
-@property (nonatomic, copy) NSString * _Nonnull vehicle_id;
+@property (nonatomic) int32_t vehicle_id;
 @property (nonatomic, copy) NSDate * _Nonnull date;
 @property (nonatomic) double amount;
 @property (nonatomic, copy) NSString * _Nonnull mileage;
@@ -410,10 +410,18 @@ SWIFT_CLASS_NAMED("Vehicle")
 
 
 @interface Vehicle (SWIFT_EXTENSION(Autountant))
-@property (nonatomic, copy) NSString * _Nonnull vehicle_id;
+@property (nonatomic) BOOL current;
+@property (nonatomic) BOOL electric;
 @property (nonatomic, copy) NSString * _Nonnull name;
 @property (nonatomic, copy) NSString * _Nonnull mileage;
-@property (nonatomic) BOOL current;
+@property (nonatomic) int32_t vehicle_id;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant11VehicleView")
+@interface VehicleView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UITextField;
