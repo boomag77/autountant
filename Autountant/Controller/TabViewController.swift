@@ -24,10 +24,13 @@ class TabViewController: UITabBarController {
         let garageVC = VehiclesViewController()
         garageVC.tabBarItem = UITabBarItem(title: "Garage", image: UIImage(systemName: "car.2.fill"), selectedImage: nil)
         
-        let testVC = TVViewController()
-        testVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), selectedImage: nil)
+        let homeVC = TVViewController()
+        homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), selectedImage: nil)
         
-        viewControllers = [garageVC, testVC]
+        let expensesVC = ExpensesTableViewController()
+        expensesVC.tabBarItem = UITabBarItem(title: "Expenses", image: UIImage(systemName: "list.clipboard.fill"), selectedImage: nil)
+        
+        viewControllers = [homeVC, garageVC, expensesVC]
         
         
     }
