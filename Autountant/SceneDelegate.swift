@@ -21,7 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         //window.rootViewController = MainViewController()
         //window.rootViewController = TVViewController()
-        window.rootViewController = VehiclesViewController()
+        window.rootViewController = TabViewController()
+        //window.rootViewController = VehiclesViewController()
         window.makeKeyAndVisible()
         self.window = window
     }

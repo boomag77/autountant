@@ -330,6 +330,7 @@ SWIFT_CLASS_NAMED("Expense")
 @end
 
 
+
 @class NSString;
 @class NSDate;
 
@@ -370,13 +371,10 @@ SWIFT_CLASS("_TtC10Autountant9GreenView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
 
 SWIFT_CLASS("_TtC10Autountant18MainViewController")
 @interface MainViewController : UIViewController
 - (void)viewDidLoad;
-- (void)buttonPushed:(UIButton * _Nonnull)button;
-- (void)checkBoxPressed:(CheckBox * _Nonnull)checkBox;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -418,6 +416,14 @@ SWIFT_CLASS("_TtC10Autountant16TVViewController")
 @interface TVViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant17TabViewController")
+@interface TabViewController : UITabBarController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
