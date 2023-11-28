@@ -16,5 +16,5 @@ class VehicleView: UIView {
         // Drawing code
     }
     */
-
+    
 }

@@ -50,7 +50,7 @@ final class VehiclesViewController: UIViewController {
         dataManager.dataPresenter = self
         dataManager.vehicleResultsController.delegate = self
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "vehicle")
+        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
         
         configureView()
         
@@ -129,11 +129,12 @@ extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath)
-        let vehicle = dataManager.vehicleResultsController.object(at: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = vehicle.name
-        cell.contentConfiguration = content
+        
+        let currVehicle = dataManager.vehicleResultsController.object(at: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
+        cell.cellView.fillLabels(name: currVehicle.name, mileage: currVehicle.mileage)
+    
         return cell
     }
     
@@ -152,6 +153,7 @@ extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 extension VehiclesViewController: NSFetchedResultsControllerDelegate {
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }

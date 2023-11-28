@@ -447,6 +447,21 @@ SWIFT_CLASS_NAMED("Vehicle")
 @end
 
 
+SWIFT_CLASS("_TtC10Autountant15VehicleCellView")
+@interface VehicleCellView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant20VehicleTableViewCell")
+@interface VehicleTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+@end
+
+
 SWIFT_CLASS("_TtC10Autountant11VehicleView")
 @interface VehicleView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
