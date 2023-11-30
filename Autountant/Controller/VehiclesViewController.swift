@@ -8,113 +8,135 @@
 import UIKit
 import CoreData
 
-class VehiclesViewController: UIViewController {
+final class VehiclesViewController: UIViewController {
     
-    var container: NSPersistentContainer!
-    var resultsController: NSFetchedResultsController<Vehicle>!
+    var dataManager: DataManager!
     
-    @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var nameTextField: UITextField!
+    private lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
+    }()
     
-    @IBOutlet weak var mileageTextField: UITextField!
-    
-    @IBOutlet weak var addButton: UIButton!
-    
+    private lazy var addVehicleButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Register new vehicle", for: .normal)
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.blue.cgColor
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+        return button
+    }()
+
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
         tableView.dataSource = self
         tableView.delegate = self
-        container = NSPersistentContainer(name: "Autountant")
-        container.loadPersistentStores { storeDescription, error in
-            if let error = error {
-                print("Unresolved error \(error)")
-            }
-        }
-        let request = Vehicle.createFetchRequest()
-        let sort = NSSortDescriptor(key: "name", ascending: true)
-        request.sortDescriptors = [sort]
-        resultsController = NSFetchedResultsController(fetchRequest: request,
-                                                       managedObjectContext: container.viewContext,
-                                                       sectionNameKeyPath: nil,
-                                                       cacheName: nil)
-        resultsController.delegate = self
-        try? resultsController.performFetch()
-    }
-    
-    @IBAction func addButtonPressed(_ sender: UIButton) {
-        if self.nameTextField.text == "" && self.mileageTextField.text == "" {return}
-        DispatchQueue.main.async { [unowned self] in
-            let newVehicle = Vehicle(context: self.container.viewContext)
-            newVehicle.vehicle_id = "1"
-            newVehicle.name = nameTextField.text!
-            newVehicle.mileage = mileageTextField.text!
-            nameTextField.text = nil
-            mileageTextField.text = nil
-            self.saveContext()
-            self.tableView.reloadData()
-            
-        }
+        
+        
+        dataManager = DataManager(units: .imperial)
+        dataManager.dataPresenter = self
+        dataManager.vehicleResultsController.delegate = self
+        
+        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
+        
+        configureView()
         
     }
     
-    func delete(_ vehicle: Vehicle) {
-        let request = Vehicle.createFetchRequest()
-        let predicate = NSPredicate(format: "name == %@", vehicle.name)
-        request.predicate = predicate
-        do {
-            let vehicle = try container.viewContext.fetch(request)
-            if !vehicle.isEmpty {
-                container.viewContext.delete(vehicle.first!)
-                self.saveContext()
-                tableView.reloadData()
-            }
-        } catch let error as NSError {
-            print("Could not fetch or delete object \(error)")
+    @objc private func addButtonPressed(_ button: UIButton) {
+        let addVehicleView = AddVehicleView()
+        view.addSubview(addVehicleView)
+        
+        addVehicleView.translatesAutoresizingMaskIntoConstraints = false
+        
+        //addVehicleView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50.0).isActive = true
+        addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
+        addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
+        addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
+        let overlay = UIView(frame: view.bounds)
+        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.95)
+        view.insertSubview(overlay, belowSubview: addVehicleView)
+        addVehicleView.backgroundOverlay = overlay
+        
+        addVehicleView.dataManager = dataManager
+    }
+    
+    @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
+        if checkBox.isOn {
+            checkBox.isOn = false
+        } else {
+            checkBox.isOn = true
         }
     }
     
-    func saveContext() {
-        if container.viewContext.hasChanges {
-            do {
-                try container.viewContext.save()
-                
-            } catch {
-                print("An error occured while saving: \(error)")
-            }
-        }
+    private func configureView() {
+        
+        view.backgroundColor = .white
+        
+        view.addSubview(addVehicleButton)
+        view.addSubview(tableView)
+        
+        //MARK: Save button layout
+        addVehicleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
+        addVehicleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
+        addVehicleButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20.0).isActive = true
+        addVehicleButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
+        
+        //MARK: TableView layout
+        tableView.topAnchor.constraint(equalTo: addVehicleButton.bottomAnchor, constant: 20.0).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        
     }
 }
 
-extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
+extension VehiclesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return resultsController.sections?[section].numberOfObjects ?? 0
+        return dataManager.getVehiclesCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath)
-        let vehicle = resultsController.object(at: indexPath)
-        var content = cell.defaultContentConfiguration()
-        content.text = vehicle.name
-        cell.contentConfiguration = content
+        
+        let currVehicle = dataManager.vehicleResultsController.object(at: indexPath)
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
+        cell.cellView.fillLabels(name: currVehicle.name, mileage: currVehicle.id.debugDescription)
+    
         return cell
     }
     
+}
+
+extension VehiclesViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let vehicleForErasing = resultsController.object(at: indexPath)
+        let vehicleForErasing = dataManager.vehicleResultsController.object(at: indexPath)
         let actionDelete = UIContextualAction(style: .destructive,
                                               title: nil) { _,_,_ in
-            self.delete(vehicleForErasing)
+            self.dataManager.deleteVehicle(vehicleForErasing)
         }
         actionDelete.image = UIImage(systemName: "trash")
         let actions = UISwipeActionsConfiguration(actions: [actionDelete])
         return actions
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedVehicle = dataManager.vehicleResultsController.object(at: indexPath)
+        //dataManager.setActive(selectedVehicle)
+        
+    }
+    
 }
 
 extension VehiclesViewController: NSFetchedResultsControllerDelegate {
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
@@ -139,4 +161,15 @@ extension VehiclesViewController: NSFetchedResultsControllerDelegate {
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
     }
+}
+
+extension VehiclesViewController: DataPresenter {
+    
+    
+    
+    func updateView() {
+        tableView.reloadData()
+    }
+    
+    
 }

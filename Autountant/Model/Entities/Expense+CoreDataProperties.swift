@@ -2,7 +2,7 @@
 //  Expense+CoreDataProperties.swift
 //  Autountant
 //
-//  Created by Sergey on 11/19/23.
+//  Created by Sergey on 11/26/23.
 //
 //
 
@@ -12,16 +12,16 @@ import CoreData
 
 extension Expense {
 
-    @nonobjc public class func fetchRequest() -> NSFetchRequest<Expense> {
+    @nonobjc public class func createFetchRequest() -> NSFetchRequest<Expense> {
         return NSFetchRequest<Expense>(entityName: "Expense")
     }
 
-    @NSManaged public var vehicle_id: String
-    @NSManaged public var date: Date
     @NSManaged public var amount: Double
-    @NSManaged public var mileage: String
     @NSManaged public var category: String
+    @NSManaged public var date: Date?
+    @NSManaged public var mileage: String
     @NSManaged public var note: String
+    @NSManaged public var vehicle_id: Int32
 
 }
 

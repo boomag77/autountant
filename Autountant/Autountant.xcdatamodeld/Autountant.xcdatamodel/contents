@@ -6,11 +6,13 @@
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="mileage" attributeType="String"/>
         <attribute name="note" attributeType="String"/>
-        <attribute name="vehicle_id" attributeType="String"/>
+        <attribute name="vehicle_id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="Vehicle" representedClassName="Vehicle" syncable="YES">
+        <attribute name="current" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="electric" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="mileage" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
-        <attribute name="vehicle_id" attributeType="String"/>
+        <attribute name="vehicle_id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
 </model>
