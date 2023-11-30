@@ -31,6 +31,7 @@
 		A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */; };
 		A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */; };
 		A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CC92B183E48009A1227 /* InputTextField.swift */; };
+		A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
 		A5F78CC92B183E48009A1227 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
+		A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				A56971A02B158D4200C5B193 /* VehicleCellView.swift */,
 				A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */,
 				A5F78CC92B183E48009A1227 /* InputTextField.swift */,
+				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
 			);
 			path = "Model View";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				A569719B2B142F7800C5B193 /* Vehicle+CoreDataProperties.swift in Sources */,
 				A56971812B0B103E00C5B193 /* ExpensesTableViewController.swift in Sources */,
 				A569718C2B11A21900C5B193 /* VehicleView.swift in Sources */,
+				A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */,
 				A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */,
 				A569719F2B15334E00C5B193 /* TabViewController.swift in Sources */,
 			);

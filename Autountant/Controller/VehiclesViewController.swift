@@ -14,34 +14,18 @@ final class VehiclesViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
-    private lazy var vehicleNameTextField: InputTextField = {
-        let textField = InputTextField()
-        textField.placeholder = "Input your vehicle name"
-        return textField
-    }()
-    
-    private lazy var vehicleMileageTextField: InputTextField = {
-        let textField = InputTextField()
-        textField.placeholder = "Input your vehicle mileage"
-        return textField
-    }()
-    
-    private lazy var saveVehicleButton: UIButton = {
+    private lazy var addVehicleButton: UIButton = {
         let button = UIButton(type: .system)
-        button.setTitle("Save", for: .normal)
-        //button.layer.borderWidth = 1
-        //button.layer.borderColor = UIColor.blue.cgColor
-        button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
+        button.setTitle("Register new vehicle", for: .normal)
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.blue.cgColor
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
         return button
-    }()
-    
-    private lazy var currentVehicleCheckBox: UISwitch = {
-        let checkBox = UISwitch()
-        checkBox.preferredStyle = .checkbox
-        return checkBox
     }()
 
     override func viewDidLoad() {
@@ -62,66 +46,47 @@ final class VehiclesViewController: UIViewController {
         
     }
     
-    @objc private func saveButtonPressed(_ button: UIButton) {
-        if self.vehicleNameTextField.text == "" &&
-            self.vehicleMileageTextField.text == "" { return }
-        dataManager.registerNewVehicle(vehicleNameTextField.text!,
-                                       vehicleMileageTextField.text!,
-                                       false,
-                                       true)
-        self.vehicleNameTextField.text = ""
-        self.vehicleMileageTextField.text = ""
+    @objc private func addButtonPressed(_ button: UIButton) {
+        let addVehicleView = AddVehicleView()
+        view.addSubview(addVehicleView)
+        
+        addVehicleView.translatesAutoresizingMaskIntoConstraints = false
+        
+        //addVehicleView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50.0).isActive = true
+        addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
+        addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
+        addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
+        let overlay = UIView(frame: view.bounds)
+        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.95)
+        view.insertSubview(overlay, belowSubview: addVehicleView)
+        addVehicleView.backgroundOverlay = overlay
+        
+        addVehicleView.dataManager = dataManager
+    }
+    
+    @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
+        if checkBox.isOn {
+            checkBox.isOn = false
+        } else {
+            checkBox.isOn = true
+        }
     }
     
     private func configureView() {
         
         view.backgroundColor = .white
         
-        view.addSubview(vehicleNameTextField)
-        view.addSubview(vehicleMileageTextField)
-        view.addSubview(saveVehicleButton)
+        view.addSubview(addVehicleButton)
         view.addSubview(tableView)
-        //view.addSubview()
-        
-        vehicleNameTextField.translatesAutoresizingMaskIntoConstraints = false
-        vehicleMileageTextField.translatesAutoresizingMaskIntoConstraints = false
-        saveVehicleButton.translatesAutoresizingMaskIntoConstraints = false
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        
-        //MARK: Vehicle name layout
-        vehicleNameTextField
-            .leadingAnchor
-            .constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
-        vehicleNameTextField
-            .trailingAnchor
-            .constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
-        vehicleNameTextField
-            .topAnchor
-            .constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20.0).isActive = true
-        vehicleNameTextField
-            .heightAnchor.constraint(equalToConstant: 30.0).isActive = true
-        
-        //MARK: Vehicle mileage layout
-        vehicleMileageTextField
-            .leadingAnchor
-            .constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
-        vehicleMileageTextField
-            .trailingAnchor
-            .constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
-        vehicleMileageTextField
-            .topAnchor
-            .constraint(equalTo: vehicleNameTextField.bottomAnchor, constant: 20.0).isActive = true
-        vehicleMileageTextField
-            .heightAnchor.constraint(equalToConstant: 30.0).isActive = true
         
         //MARK: Save button layout
-        saveVehicleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
-        saveVehicleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
-        saveVehicleButton.topAnchor.constraint(equalTo: vehicleMileageTextField.bottomAnchor, constant: 20.0).isActive = true
-        saveVehicleButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
+        addVehicleButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
+        addVehicleButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
+        addVehicleButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20.0).isActive = true
+        addVehicleButton.heightAnchor.constraint(equalToConstant: 30.0).isActive = true
         
         //MARK: TableView layout
-        tableView.topAnchor.constraint(equalTo: saveVehicleButton.bottomAnchor, constant: 20.0).isActive = true
+        tableView.topAnchor.constraint(equalTo: addVehicleButton.bottomAnchor, constant: 20.0).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
@@ -140,7 +105,7 @@ extension VehiclesViewController: UITableViewDataSource {
         let currVehicle = dataManager.vehicleResultsController.object(at: indexPath)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
-        cell.cellView.fillLabels(name: currVehicle.name, mileage: currVehicle.mileage)
+        cell.cellView.fillLabels(name: currVehicle.name, mileage: currVehicle.id.debugDescription)
     
         return cell
     }

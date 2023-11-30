@@ -299,6 +299,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class NSCoder;
+
+SWIFT_CLASS("_TtC10Autountant14AddVehicleView")
+@interface AddVehicleView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 @class UIApplication;
 @class UISceneSession;
 @class UISceneConnectionOptions;
@@ -313,7 +323,6 @@ SWIFT_CLASS("_TtC10Autountant11AppDelegate")
 @end
 
 
-@class NSCoder;
 
 SWIFT_CLASS("_TtC10Autountant8CheckBox")
 @interface CheckBox : UIControl
