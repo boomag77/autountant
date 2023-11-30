@@ -30,6 +30,7 @@
 		A5A2BA982B0AC73000CA1328 /* Autountant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA962B0AC73000CA1328 /* Autountant.xcdatamodeld */; };
 		A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */; };
 		A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */; };
+		A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CC92B183E48009A1227 /* InputTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		A5A2BA972B0AC73000CA1328 /* Autountant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Autountant.xcdatamodel; sourceTree = "<group>"; };
 		A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		A5F78CC92B183E48009A1227 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				A569718B2B11A21900C5B193 /* VehicleView.swift */,
 				A56971A02B158D4200C5B193 /* VehicleCellView.swift */,
 				A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */,
+				A5F78CC92B183E48009A1227 /* InputTextField.swift */,
 			);
 			path = "Model View";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
 				A569719C2B142F7800C5B193 /* Expense+CoreDataClass.swift in Sources */,
 				A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */,
+				A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */,
 				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,
 				A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */,
 				A569719B2B142F7800C5B193 /* Vehicle+CoreDataProperties.swift in Sources */,

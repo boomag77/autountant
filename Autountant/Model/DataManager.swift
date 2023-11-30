@@ -132,15 +132,13 @@ extension DataManager {
     
     //MARK: Vehicles methods
     
-    func getVehiclesCount() -> Int {
-        return vehicleResultsController.fetchedObjects?.count ?? 0
-    }
-    
     func registerNewVehicle(_ name: String,
                        _ mileage: String,
                        _ electric: Bool,
                        _ current: Bool) {
+        
         let newVehicle = Vehicle(context: self.container.viewContext)
+        
         newVehicle.name = name
         newVehicle.vehicle_id = getMaxIdNumber() + 1
         newVehicle.mileage = mileage
@@ -149,6 +147,11 @@ extension DataManager {
         
         self.saveContext()
         dataPresenter?.updateView()
+        
+    }
+    
+    func getVehiclesCount() -> Int {
+        return vehicleResultsController.fetchedObjects?.count ?? 0
     }
     
     private func getMaxIdNumber() -> Int32 {
@@ -160,6 +163,7 @@ extension DataManager {
     }
     
     func vehicleExists(_ vehicleName: String) -> Bool {
+        
         let request = Vehicle.createFetchRequest()
         let predicate = NSPredicate(format: "name == %@", vehicleName)
         request.predicate = predicate
@@ -173,6 +177,7 @@ extension DataManager {
     }
     
     func deleteVehicle(_ vehicle: Vehicle) {
+        
         let request = Vehicle.createFetchRequest()
         let predicate = NSPredicate(format: "name = %@", vehicle.name)
         request.predicate = predicate

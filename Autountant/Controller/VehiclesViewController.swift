@@ -17,14 +17,14 @@ final class VehiclesViewController: UIViewController {
         return tableView
     }()
     
-    private lazy var vehicleNameTextField: UITextField = {
-        let textField = UITextField()
+    private lazy var vehicleNameTextField: InputTextField = {
+        let textField = InputTextField()
         textField.placeholder = "Input your vehicle name"
         return textField
     }()
     
-    private lazy var vehicleMileageTextField: UITextField = {
-        let textField = UITextField()
+    private lazy var vehicleMileageTextField: InputTextField = {
+        let textField = InputTextField()
         textField.placeholder = "Input your vehicle mileage"
         return textField
     }()
@@ -36,6 +36,12 @@ final class VehiclesViewController: UIViewController {
         //button.layer.borderColor = UIColor.blue.cgColor
         button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
         return button
+    }()
+    
+    private lazy var currentVehicleCheckBox: UISwitch = {
+        let checkBox = UISwitch()
+        checkBox.preferredStyle = .checkbox
+        return checkBox
     }()
 
     override func viewDidLoad() {
@@ -75,6 +81,7 @@ final class VehiclesViewController: UIViewController {
         view.addSubview(vehicleMileageTextField)
         view.addSubview(saveVehicleButton)
         view.addSubview(tableView)
+        //view.addSubview()
         
         vehicleNameTextField.translatesAutoresizingMaskIntoConstraints = false
         vehicleMileageTextField.translatesAutoresizingMaskIntoConstraints = false
@@ -122,7 +129,7 @@ final class VehiclesViewController: UIViewController {
     }
 }
 
-extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
+extension VehiclesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataManager.getVehiclesCount()
@@ -138,6 +145,10 @@ extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+}
+
+extension VehiclesViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let vehicleForErasing = dataManager.vehicleResultsController.object(at: indexPath)
@@ -148,6 +159,13 @@ extension VehiclesViewController: UITableViewDataSource, UITableViewDelegate {
         actionDelete.image = UIImage(systemName: "trash")
         let actions = UISwipeActionsConfiguration(actions: [actionDelete])
         return actions
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedVehicle = dataManager.vehicleResultsController.object(at: indexPath)
+        //dataManager.setActive(selectedVehicle)
+        
     }
     
 }
