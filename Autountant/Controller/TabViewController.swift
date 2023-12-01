@@ -7,13 +7,15 @@
 
 import UIKit
 
+protocol TabBarDelegate: UIViewController {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController)
+}
+
 class TabViewController: UITabBarController {
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.delegate = self
         self.configure()
     }
     
@@ -24,25 +26,25 @@ class TabViewController: UITabBarController {
         let garageVC = VehiclesViewController()
         garageVC.tabBarItem = UITabBarItem(title: "Garage", image: UIImage(systemName: "car.2.fill"), selectedImage: nil)
         
-        let homeVC = TVViewController()
+        
+        let homeVC = VehiclesViewController()
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), selectedImage: nil)
         
         let expensesVC = ExpensesTableViewController()
         expensesVC.tabBarItem = UITabBarItem(title: "Expenses", image: UIImage(systemName: "list.clipboard.fill"), selectedImage: nil)
         
         viewControllers = [homeVC, garageVC, expensesVC]
-        
+        self.tabBarController(self, didSelect: homeVC)
         
     }
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension TabViewController: UITabBarControllerDelegate {
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if let selectedVC = viewController as? TabBarDelegate {
+            selectedVC.tabBarController(tabBarController, didSelect: viewController)
+        }
     }
-    */
-
 }

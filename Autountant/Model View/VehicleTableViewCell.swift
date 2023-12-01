@@ -12,7 +12,6 @@ class VehicleTableViewCell: UITableViewCell {
     lazy var cellView: VehicleCellView = {
         let view = VehicleCellView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        
         return view
     }()
     

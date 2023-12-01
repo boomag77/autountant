@@ -8,17 +8,19 @@
 import UIKit
 import CoreData
 
-final class VehiclesViewController: UIViewController {
+class VehiclesViewController: UIViewController {
     
     var dataManager: DataManager!
     
     private lazy var tableView: UITableView = {
+        
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
     
     private lazy var addVehicleButton: UIButton = {
+        
         let button = UIButton(type: .system)
         button.setTitle("Register new vehicle", for: .normal)
         button.layer.borderWidth = 1
@@ -32,27 +34,27 @@ final class VehiclesViewController: UIViewController {
         
         super.viewDidLoad()
         
-        tableView.dataSource = self
-        tableView.delegate = self
         
-        
-        dataManager = DataManager(units: .imperial)
-        dataManager.dataPresenter = self
-        dataManager.vehicleResultsController.delegate = self
-        
-        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
-        
-        configureView()
         
     }
     
     @objc private func addButtonPressed(_ button: UIButton) {
+        showAddVehicleView()
+    }
+    
+    @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
+        if checkBox.isOn {
+            checkBox.isOn = false
+        } else {
+            checkBox.isOn = true
+        }
+    }
+    
+    private func showAddVehicleView() {
         let addVehicleView = AddVehicleView()
         view.addSubview(addVehicleView)
         
         addVehicleView.translatesAutoresizingMaskIntoConstraints = false
-        
-        //addVehicleView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50.0).isActive = true
         addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
         addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
         addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
@@ -64,15 +66,7 @@ final class VehiclesViewController: UIViewController {
         addVehicleView.dataManager = dataManager
     }
     
-    @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
-        if checkBox.isOn {
-            checkBox.isOn = false
-        } else {
-            checkBox.isOn = true
-        }
-    }
-    
-    private func configureView() {
+    private func setup() {
         
         view.backgroundColor = .white
         
@@ -105,7 +99,10 @@ extension VehiclesViewController: UITableViewDataSource {
         let currVehicle = dataManager.vehicleResultsController.object(at: indexPath)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
-        cell.cellView.fillLabels(name: currVehicle.name, mileage: currVehicle.id.debugDescription)
+        
+        cell.cellView.setup(name: currVehicle.name,
+                            mileage: currVehicle.mileage,
+                            current: currVehicle.current)
     
         return cell
     }
@@ -165,10 +162,31 @@ extension VehiclesViewController: NSFetchedResultsControllerDelegate {
 
 extension VehiclesViewController: DataPresenter {
     
-    
-    
     func updateView() {
         tableView.reloadData()
+    }
+    
+    
+}
+
+extension VehiclesViewController: TabBarDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        dataManager = DataManager(units: .imperial)
+        
+        dataManager.dataPresenter = self
+        dataManager.vehicleResultsController.delegate = self
+        
+        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
+        setup()
+        
+        if dataManager.getVehiclesCount() == 0 {
+            showAddVehicleView()
+        }
+        
     }
     
     

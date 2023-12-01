@@ -21,6 +21,7 @@ class DataManager {
     var expensesResultController: NSFetchedResultsController<Expense>
     
     var units: Units
+    var currentVehicle: Vehicle?
     
     init(units: Units) {
         self.units = units
@@ -49,8 +50,23 @@ class DataManager {
                                                               sectionNameKeyPath: nil,
                                                               cacheName: nil)
         try? expensesResultController.performFetch()
-        
+        //currentVehicle = getCurrentVehicle()
     }
+    
+//    private func getCurrentVehicle() -> Vehicle? {
+//        let request = Vehicle.createFetchRequest()
+//        let predicate = NSPredicate(format: "current = %@", true)
+//        request.predicate = predicate
+//        do {
+//            let current = try container.viewContext.fetch(request)
+//            if !current.isEmpty {
+//                return current.first!
+//            }
+//        } catch let error as NSError {
+//            print("Could not fetch or delete object \(error)")
+//        }
+//        return nil
+//    }
     
     private func fetchContainer() {
         try? vehicleResultsController.performFetch()
@@ -143,7 +159,7 @@ extension DataManager {
         newVehicle.vehicle_id = getMaxIdNumber() + 1
         newVehicle.mileage = mileage
         newVehicle.electric = electric
-        newVehicle.current = current
+        newVehicle.current = getVehiclesCount() > 0 ? current:true
         
         self.saveContext()
         dataPresenter?.updateView()
@@ -158,9 +174,17 @@ extension DataManager {
         return Int32(vehicleResultsController.fetchedObjects?.count ?? 0)
     }
     
-    private func updateVehicleMileage(_ vehicle: Vehicle, _ newMileage: UInt) {
+    func updateVehicleMileage(_ vehicle: Vehicle, _ newMileage: UInt) {
         
     }
+    
+    func setVehicleAsCurrent(_ vehicle: Vehicle) {
+        
+    }
+    
+//    private func getCurrentVehicle() -> Vehicle {
+//
+//    }
     
     func vehicleExists(_ vehicleName: String) -> Bool {
         

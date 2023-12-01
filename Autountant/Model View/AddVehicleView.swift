@@ -138,7 +138,8 @@ extension AddVehicleView {
         dataManager?.registerNewVehicle(vehicleNameTextField.text!,
                                        vehicleMileageTextField.text!,
                                        false,
-                                        self.setCurrent)
+                                        setCurrent)
+        print(self.setCurrent)
         self.vehicleNameTextField.text = ""
         self.vehicleMileageTextField.text = ""
         

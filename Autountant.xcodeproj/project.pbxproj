@@ -14,8 +14,6 @@
 		A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971892B0E4D7000C5B193 /* CheckBox.swift */; };
 		A569718C2B11A21900C5B193 /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569718B2B11A21900C5B193 /* VehicleView.swift */; };
 		A56971912B11A6B700C5B193 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971902B11A6B700C5B193 /* DataModels.swift */; };
-		A56971932B13F84C00C5B193 /* NewVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971922B13F84C00C5B193 /* NewVehicleViewController.swift */; };
-		A56971952B140D1B00C5B193 /* TVViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971942B140D1B00C5B193 /* TVViewController.swift */; };
 		A569719A2B142F7800C5B193 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971962B142F7800C5B193 /* Vehicle+CoreDataClass.swift */; };
 		A569719B2B142F7800C5B193 /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971972B142F7800C5B193 /* Vehicle+CoreDataProperties.swift */; };
 		A569719C2B142F7800C5B193 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971982B142F7800C5B193 /* Expense+CoreDataClass.swift */; };
@@ -42,8 +40,6 @@
 		A56971892B0E4D7000C5B193 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		A569718B2B11A21900C5B193 /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
 		A56971902B11A6B700C5B193 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
-		A56971922B13F84C00C5B193 /* NewVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVehicleViewController.swift; sourceTree = "<group>"; };
-		A56971942B140D1B00C5B193 /* TVViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVViewController.swift; sourceTree = "<group>"; };
 		A56971962B142F7800C5B193 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A56971972B142F7800C5B193 /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A56971982B142F7800C5B193 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -154,8 +150,6 @@
 				A56971802B0B103E00C5B193 /* ExpensesTableViewController.swift */,
 				A56971822B0B106C00C5B193 /* MainViewController.swift */,
 				A56971842B0B109E00C5B193 /* ExpenseViewController.swift */,
-				A56971922B13F84C00C5B193 /* NewVehicleViewController.swift */,
-				A56971942B140D1B00C5B193 /* TVViewController.swift */,
 				A569719E2B15334E00C5B193 /* TabViewController.swift */,
 			);
 			path = Controller;
@@ -245,14 +239,12 @@
 				A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */,
 				A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */,
 				A56971882B0D208100C5B193 /* MainViewModel.swift in Sources */,
-				A56971932B13F84C00C5B193 /* NewVehicleViewController.swift in Sources */,
 				A56971852B0B109E00C5B193 /* ExpenseViewController.swift in Sources */,
 				A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */,
 				A569719A2B142F7800C5B193 /* Vehicle+CoreDataClass.swift in Sources */,
 				A56971912B11A6B700C5B193 /* DataModels.swift in Sources */,
 				A569719D2B142F7800C5B193 /* Expense+CoreDataProperties.swift in Sources */,
 				A5A2BA982B0AC73000CA1328 /* Autountant.xcdatamodeld in Sources */,
-				A56971952B140D1B00C5B193 /* TVViewController.swift in Sources */,
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
 				A569719C2B142F7800C5B193 /* Expense+CoreDataClass.swift in Sources */,
 				A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */,
