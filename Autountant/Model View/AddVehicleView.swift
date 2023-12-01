@@ -31,11 +31,25 @@ class AddVehicleView: UIView {
         return textField
     }()
     
+    private lazy var setCurrentLabel: UILabel = {
+        let label = UILabel()
+        label.text = "set new vehicle as current"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     private lazy var saveButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Save", for: .normal)
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.blue.cgColor
+        
+        var config = UIButton.Configuration.filled()
+        config.baseForegroundColor = .white
+        config.baseBackgroundColor = .systemBlue
+        config.cornerStyle = .capsule
+        button.configuration = config
+        
+        //button.sizeToFit()
+        
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
         return button
@@ -44,6 +58,7 @@ class AddVehicleView: UIView {
     private lazy var cancelButton: UIButton = {
         let button = UIButton(type: .roundedRect)
         button.setTitle("Close", for: .normal)
+        button.sizeToFit()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(cancelButtonPressed), for: .touchUpInside)
         return button
@@ -81,6 +96,7 @@ extension AddVehicleView {
         addSubview(vehicleNameTextField)
         addSubview(vehicleMileageTextField)
         addSubview(currentVehicleCheckBox)
+        addSubview(setCurrentLabel)
         addSubview(saveButton)
         addSubview(cancelButton)
         
@@ -94,11 +110,14 @@ extension AddVehicleView {
         
         currentVehicleCheckBox.topAnchor.constraint(equalTo: vehicleMileageTextField.bottomAnchor, constant: 10).isActive = true
         currentVehicleCheckBox.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
-        currentVehicleCheckBox.widthAnchor.constraint(equalTo: currentVehicleCheckBox.heightAnchor).isActive = true
+        //currentVehicleCheckBox.widthAnchor.constraint(equalTo: currentVehicleCheckBox.heightAnchor).isActive = true
         
-        saveButton.topAnchor.constraint(equalTo: currentVehicleCheckBox.bottomAnchor, constant: 10.0).isActive = true
-        saveButton.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
-        saveButton.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
+        setCurrentLabel.leadingAnchor.constraint(equalTo: currentVehicleCheckBox.trailingAnchor, constant: 20.0).isActive = true
+        setCurrentLabel.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
+        setCurrentLabel.centerYAnchor.constraint(equalTo: currentVehicleCheckBox.centerYAnchor).isActive = true
+        
+        saveButton.topAnchor.constraint(equalTo: currentVehicleCheckBox.bottomAnchor, constant: 30.0).isActive = true
+        saveButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
         cancelButton.topAnchor.constraint(equalTo: saveButton.bottomAnchor, constant: 10.0).isActive = true
         cancelButton.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
@@ -138,5 +157,6 @@ extension AddVehicleView {
         } else {
             self.setCurrent = true
         }
+        
     }
 }

@@ -11,11 +11,13 @@
 /Users/sergey/code/Autountant/Autountant/Model\ View/VehicleCellView.swift
 /Users/sergey/code/Autountant/Autountant/Model/Entities/Expense+CoreDataClass.swift
 /Users/sergey/code/Autountant/Autountant/View/CheckBox.swift
+/Users/sergey/code/Autountant/Autountant/Model\ View/InputTextField.swift
 /Users/sergey/code/Autountant/Autountant/Model/DataManager.swift
 /Users/sergey/code/Autountant/Autountant/Model\ View/VehicleTableViewCell.swift
 /Users/sergey/code/Autountant/Autountant/Model/Entities/Vehicle+CoreDataProperties.swift
 /Users/sergey/code/Autountant/Autountant/Controller/ExpensesTableViewController.swift
 /Users/sergey/code/Autountant/Autountant/Model\ View/VehicleView.swift
+/Users/sergey/code/Autountant/Autountant/Model\ View/AddVehicleView.swift
 /Users/sergey/code/Autountant/Autountant/SceneDelegate.swift
 /Users/sergey/code/Autountant/Autountant/Controller/TabViewController.swift
 /Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/DerivedSources/GeneratedAssetSymbols.swift
