@@ -19,7 +19,7 @@ extension Expense {
         var equals: Bool = false
         if lhs.amount       ==   rhs.amount &&
             lhs.category    ==   rhs.category &&
-            lhs.vehicle_id  ==   rhs.vehicle_id &&
+            lhs.vehicle_name  ==   rhs.vehicle_name &&
             lhs.date        ==   rhs.date &&
             lhs.mileage     ==   rhs.mileage &&
             lhs.note        ==   rhs.note {

@@ -10,8 +10,6 @@
 		A56971812B0B103E00C5B193 /* ExpensesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971802B0B103E00C5B193 /* ExpensesTableViewController.swift */; };
 		A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971822B0B106C00C5B193 /* MainViewController.swift */; };
 		A56971852B0B109E00C5B193 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971842B0B109E00C5B193 /* ExpenseViewController.swift */; };
-		A56971882B0D208100C5B193 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971872B0D208100C5B193 /* MainViewModel.swift */; };
-		A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971892B0E4D7000C5B193 /* CheckBox.swift */; };
 		A569718C2B11A21900C5B193 /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569718B2B11A21900C5B193 /* VehicleView.swift */; };
 		A56971912B11A6B700C5B193 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971902B11A6B700C5B193 /* DataModels.swift */; };
 		A569719A2B142F7800C5B193 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971962B142F7800C5B193 /* Vehicle+CoreDataClass.swift */; };
@@ -36,8 +34,6 @@
 		A56971802B0B103E00C5B193 /* ExpensesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesTableViewController.swift; sourceTree = "<group>"; };
 		A56971822B0B106C00C5B193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A56971842B0B109E00C5B193 /* ExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
-		A56971872B0D208100C5B193 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		A56971892B0E4D7000C5B193 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		A569718B2B11A21900C5B193 /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
 		A56971902B11A6B700C5B193 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		A56971962B142F7800C5B193 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -74,12 +70,7 @@
 		A56971862B0D205E00C5B193 /* Model View */ = {
 			isa = PBXGroup;
 			children = (
-				A56971872B0D208100C5B193 /* MainViewModel.swift */,
 				A569718B2B11A21900C5B193 /* VehicleView.swift */,
-				A56971A02B158D4200C5B193 /* VehicleCellView.swift */,
-				A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */,
-				A5F78CC92B183E48009A1227 /* InputTextField.swift */,
-				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
 			);
 			path = "Model View";
 			sourceTree = "<group>";
@@ -128,9 +119,9 @@
 		A5A2BAAD2B0AEAC900CA1328 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */,
 				A569718F2B11A69A00C5B193 /* Data models */,
 				A5A2BAB02B0AEB0800CA1328 /* Entities */,
-				A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,7 +129,10 @@
 		A5A2BAAE2B0AEAD200CA1328 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A56971892B0E4D7000C5B193 /* CheckBox.swift */,
+				A5F78CC92B183E48009A1227 /* InputTextField.swift */,
+				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
+				A56971A02B158D4200C5B193 /* VehicleCellView.swift */,
+				A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,7 +232,6 @@
 			files = (
 				A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */,
 				A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */,
-				A56971882B0D208100C5B193 /* MainViewModel.swift in Sources */,
 				A56971852B0B109E00C5B193 /* ExpenseViewController.swift in Sources */,
 				A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */,
 				A569719A2B142F7800C5B193 /* Vehicle+CoreDataClass.swift in Sources */,
@@ -247,7 +240,6 @@
 				A5A2BA982B0AC73000CA1328 /* Autountant.xcdatamodeld in Sources */,
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
 				A569719C2B142F7800C5B193 /* Expense+CoreDataClass.swift in Sources */,
-				A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */,
 				A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */,
 				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,
 				A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */,

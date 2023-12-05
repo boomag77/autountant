@@ -2,36 +2,65 @@
 //  DataManager.swift
 //  Autountant
 //
-//  Created by Sergey on 11/19/23.
+//  Created by Sergey Burdakov on 11/19/23.
 //
 
 import Foundation
 import CoreData
 
-protocol DataPresenter: AnyObject {
-    func updateView()
-}
-
 class DataManager {
     
-    weak var dataPresenter: DataPresenter?
+    enum DataManagerError: Error {
+        case wrongVehicleName(ErrorMessage)
+        case wrongVehicleMileage(ErrorMessage)
+    }
+    
+    enum ErrorMessage: String {
+        case vehicleName = "Wrong format or empty name"
+        case vehicleMileage = "Wrong mileage format"
+    }
+    
+    enum SuccessMessage: String {
+        case vehicleSaved = "Vehicle saved successfully"
+        case expenseSaved = "Expense saved successfully"
+    }
+    
     private var container: NSPersistentContainer!
     
-    var vehicleResultsController: NSFetchedResultsController<Vehicle>
-    var expensesResultController: NSFetchedResultsController<Expense>
+    var vehicleResultsController: NSFetchedResultsController<Vehicle>!
+    var expensesResultController: NSFetchedResultsController<Expense>!
     
-    var units: Units
-    var currentVehicle: Vehicle?
+    private var units: Units
+    
+    private var currentVehicle: Vehicle? {
+        willSet {
+            print("Previous current Vehicle - \(currentVehicle?.name ?? "not defined")")
+        }
+        didSet {
+            print("New current vehicle - \(currentVehicle?.name ?? "not defined")")
+        }
+    }
     
     init(units: Units) {
+        
         self.units = units
         
+        initializeContainer()
+        setUpResultsControllers()
+        
+    }
+    
+    private func initializeContainer() {
         self.container = NSPersistentContainer(name: "Autountant")
         container.loadPersistentStores { _, error in
             if let error = error {
-                print("Unresolved error \(error)")
+                //TODO: add handler of DataManager errors
+                //print("Unresolved error \(error)")
             }
         }
+    }
+    
+    private func setUpResultsControllers() {
         
         let vehicleRequest = Vehicle.createFetchRequest()
         let sortVehicles = NSSortDescriptor(key: "name", ascending: true)
@@ -42,6 +71,14 @@ class DataManager {
                                                        cacheName: nil)
         try? vehicleResultsController.performFetch()
         
+        if let vehicles = vehicleResultsController.fetchedObjects {
+            for vehicle in vehicles {
+                if vehicle.current {
+                    currentVehicle = vehicle
+                }
+            }
+        }
+        
         let expensesRequest = Expense.createFetchRequest()
         let sortExpenses = NSSortDescriptor(key: "date", ascending: false)
         expensesRequest.sortDescriptors = [sortExpenses]
@@ -49,27 +86,6 @@ class DataManager {
                                                               managedObjectContext: container.viewContext,
                                                               sectionNameKeyPath: nil,
                                                               cacheName: nil)
-        try? expensesResultController.performFetch()
-        //currentVehicle = getCurrentVehicle()
-    }
-    
-//    private func getCurrentVehicle() -> Vehicle? {
-//        let request = Vehicle.createFetchRequest()
-//        let predicate = NSPredicate(format: "current = %@", true)
-//        request.predicate = predicate
-//        do {
-//            let current = try container.viewContext.fetch(request)
-//            if !current.isEmpty {
-//                return current.first!
-//            }
-//        } catch let error as NSError {
-//            print("Could not fetch or delete object \(error)")
-//        }
-//        return nil
-//    }
-    
-    private func fetchContainer() {
-        try? vehicleResultsController.performFetch()
         try? expensesResultController.performFetch()
     }
     
@@ -85,135 +101,142 @@ class DataManager {
 }
 
 extension DataManager {
-    //MARK: Expenses methods
     
-    func getExpensesCount() -> Int {
-        return expensesResultController.fetchedObjects?.count ?? 0
-    }
-    
-    func registerExpense(_ vehicle: Vehicle, _ category: Category, _ amount: Double, _ mileage: UInt, _ note: String) {
-        let expense = Expense(context: self.container.viewContext)
-        expense.date = Date()
-        expense.mileage = String(mileage)
-        expense.amount = amount
-        expense.vehicle_id = vehicle.vehicle_id
-        expense.note = note
-        expense.category = category.rawValue
+    func registerNewVehicle(_ name: String,
+                            _ mileage: String,
+                            _ type: VehicleType,
+                            _ current: Bool,
+                            completion: @escaping (Result<String, DataManagerError>) -> Void) {
+        
+        var errors: [DataManagerError] = []
+        
+        if name.count > 10 { errors.append(.wrongVehicleName(.vehicleName)) }
+        if let _: Int64 = Int64(mileage) {
+            
+        } else {
+            
+        }
+        
+        let newVehicle = Vehicle(context: self.container.viewContext)
+        newVehicle.name = name
+        newVehicle.mileage = Int64(mileage)
+        newVehicle.type = type.rawValue
+        newVehicle.current = getCount(forEntity: "Vehicle") > 0 ? current:true
+
+        
         self.saveContext()
-        //self.fetchContainer()
-        dataPresenter?.updateView()
-    }
-    
-    func deleteExpense(expenseForErase: Expense) {
-        let request = Expense.createFetchRequest()
-        let predicate = NSPredicate(format: "amount = %@", expenseForErase.amount)
-        request.predicate = predicate
-        do {
-            let expenses = try container.viewContext.fetch(request)
-            if !expenses.isEmpty {
-                for expense in expenses {
-                    if expense == expenseForErase {
-                        container.viewContext.delete(expense)
-                        break
-                    }
-                }
-                self.saveContext()
-                dataPresenter?.updateView()
-            }
-        } catch let error as NSError {
-            print("Could not fetch or delete object \(error)")
+        
+        if let reason = errorReason {
+            completion(.failure(DataManagerError.failureReason(reason)))
+        } else {
+            completion(.success("Vehicle successfully saved!"))
+        }
+        
+        if newVehicle.current ==  true {
+            self.currentVehicle = newVehicle
         }
     }
     
-    func editExpense(expenseForEdit: Expense, editedExpense: Expense) {
+    func registerNewExpense(_ date: Date,
+                            _ vehicle_name: String,
+                            _ mileage: Int,
+                            _ category: Category,
+                            _ amount: Double,
+                            _ note: String?) {
         
-        let request = Expense.createFetchRequest()
-        self.deleteExpense(expenseForErase: expenseForEdit)
+        guard let currentVehicle = self.currentVehicle else { return }
         
-        let expense = Expense(context: self.container.viewContext)
-        expense.amount = editedExpense.amount
-        expense.category = editedExpense.category
-        expense.date = editedExpense.date
-        expense.mileage = editedExpense.mileage
-        expense.note = editedExpense.note
-        expense.vehicle_id = editedExpense.vehicle_id
+        let newExpense = Expense(context: container.viewContext)
+        newExpense.date = Date()
+        newExpense.vehicle_name = currentVehicle.name
+        newExpense.mileage = Int64(mileage)
+        newExpense.category = category.rawValue
+        newExpense.amount = amount
+        if let noteText = note {
+            newExpense.note = noteText
+        }
         
-        self.saveContext()
-        dataPresenter?.updateView()
-    }
-}
-
-
-extension DataManager {
-    
-    //MARK: Vehicles methods
-    
-    func registerNewVehicle(_ name: String,
-                       _ mileage: String,
-                       _ electric: Bool,
-                       _ current: Bool) {
-        
-        let newVehicle = Vehicle(context: self.container.viewContext)
-        
-        newVehicle.name = name
-        newVehicle.vehicle_id = getMaxIdNumber() + 1
-        newVehicle.mileage = mileage
-        newVehicle.electric = electric
-        newVehicle.current = getVehiclesCount() > 0 ? current:true
-        
-        self.saveContext()
-        dataPresenter?.updateView()
-        
+        saveContext()
     }
     
-    func getVehiclesCount() -> Int {
-        return vehicleResultsController.fetchedObjects?.count ?? 0
-    }
-    
-    private func getMaxIdNumber() -> Int32 {
-        return Int32(vehicleResultsController.fetchedObjects?.count ?? 0)
-    }
-    
-    func updateVehicleMileage(_ vehicle: Vehicle, _ newMileage: UInt) {
+    private func editObject(inEntity entityName: Entity = .Vehicle,
+                            _ newName: String?,
+                            _ newMileage: Int?,
+                            _ newCurrent: Bool?) {
         
-    }
-    
-    func setVehicleAsCurrent(_ vehicle: Vehicle) {
+        //TODO: edit Vehicle object, replace newName in all relevant Expenses!
         
+        saveContext()
     }
     
-//    private func getCurrentVehicle() -> Vehicle {
-//
-//    }
+    private func editObject(inEntity entityName: Entity = .Expense,
+                            _ newVehcileName: String?,
+                            _ newAmount: Double?,
+                            _ newDate: Date?,
+                            _ newCategory: Category?,
+                            _ newMileage: Int?,
+                            _ newNote: String?) {
+        
+        //TODO: edit Expense object, correct Vehcile current mileage and Stat!
+        
+        saveContext()
+    }
+    
+    func getCount(forEntity entityName: String) -> Int {
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        do {
+            let count = try container.viewContext.count(for: request)
+            return count
+        } catch {
+            // TODO: add handler of DataManager errors
+            return 0
+        }
+    }
     
     func vehicleExists(_ vehicleName: String) -> Bool {
         
         let request = Vehicle.createFetchRequest()
-        let predicate = NSPredicate(format: "name == %@", vehicleName)
+        let predicate = NSPredicate(format: "name = %@", vehicleName)
         request.predicate = predicate
         do {
-            let vehicles = try container.viewContext.fetch(request)
-            if vehicles.isEmpty { return false }
-        } catch let error as NSError {
-            print("Could not fetch or delete object \(error)")
+            let count = try container.viewContext.count(for: request)
+            return count > 0
+        } catch {
+            // TODO: add handler of DataManager errors
+            return false
         }
-        return true
     }
     
-    func deleteVehicle(_ vehicle: Vehicle) {
+    func deleteVehicle(_ vehicleToDelete: Vehicle) {
+        
+        container.viewContext.delete(vehicleToDelete)
+        
+        saveContext()
+        
+    }
+    
+    func setVehicleCurrent(_ newCurrentVehicle: Vehicle) {
+        
+        if let prevCurrVeh = self.currentVehicle {
+            let request = Vehicle.createFetchRequest()
+            let predicate = NSPredicate(format: "name = %@", prevCurrVeh.name)
+            request.predicate = predicate
+            let vehicle = try? container.viewContext.fetch(request).first
+            if let vehicle = vehicle {
+                vehicle.current = false
+                saveContext()
+            }
+        }
         
         let request = Vehicle.createFetchRequest()
-        let predicate = NSPredicate(format: "name = %@", vehicle.name)
+        let predicate = NSPredicate(format: "name = %@", newCurrentVehicle)
         request.predicate = predicate
-        do {
-            let vehicle = try container.viewContext.fetch(request)
-            if !vehicle.isEmpty {
-                container.viewContext.delete(vehicle.first!)
-                self.saveContext()
-                dataPresenter?.updateView()
-            }
-        } catch let error as NSError {
-            print("Could not fetch or delete object \(error)")
+        let vehicle = try? container.viewContext.fetch(request).first
+        if let vehicle = vehicle {
+            vehicle.current = true
+            saveContext()
+            self.currentVehicle = vehicle
         }
     }
 }
+

@@ -1,0 +1,24 @@
+"/Users/sergey/code/Autountant/Autountant/View/AddVehicleView.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/AddVehicleView.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/AddVehicleView.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/AddVehicleView.swiftconstvalues"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/AddVehicleView.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/AddVehicleView.o"
+"/Users/sergey/code/Autountant/Autountant/SceneDelegate.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate.dia"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate.o"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/SceneDelegate.d"
+"/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/DerivedSources/GeneratedAssetSymbols.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/GeneratedAssetSymbols.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/GeneratedAssetSymbols.d"
+"/Users/sergey/code/Autountant/Autountant/Controller/TabViewController.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/TabViewController.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/TabViewController.d"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/TabViewController.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/TabViewController.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/TabViewController.swiftdeps"

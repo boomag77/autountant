@@ -68,3 +68,22 @@ enum Category: String {
     case service = "Service"
     case other = "Other"
 }
+
+enum Entity: String {
+    case Vehicle = "Vehicle"
+    case Expense = "Expense"
+}
+
+enum FuelType: String {
+    case petrol = "Petrol"
+    case diesel = "Diesel"
+    case electricity = "Electricity"
+}
+
+enum VehicleType: String {
+    case gasoline = "Gasoline"
+    case diesel = "Diesel"
+    case electric = "Electric"
+    case hybrid = "Hybrid"
+    case phev = "Plug-In Hybrid"
+}

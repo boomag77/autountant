@@ -1,0 +1,30 @@
+"/Users/sergey/code/Autountant/Autountant/Controller/ExpensesTableViewController.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/ExpensesTableViewController.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/ExpensesTableViewController.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/ExpensesTableViewController.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/ExpensesTableViewController.o"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/ExpensesTableViewController.dia"
+"/Users/sergey/code/Autountant/Autountant/Model/Entities/Vehicle+CoreDataProperties.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Vehicle+CoreDataProperties.o"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Vehicle+CoreDataProperties.d"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Vehicle+CoreDataProperties.swiftconstvalues"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Vehicle+CoreDataProperties.dia"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Vehicle+CoreDataProperties.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/Model/DataManager.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataManager.d"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataManager.o"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataManager.swiftconstvalues"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataManager.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/DataManager.dia"
+"/Users/sergey/code/Autountant/Autountant/View/VehicleTableViewCell.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleTableViewCell.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleTableViewCell.d"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleTableViewCell.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleTableViewCell.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleTableViewCell.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/Model View/VehicleView.swift":
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.d"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.o"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.dia"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/VehicleView.swiftdeps"

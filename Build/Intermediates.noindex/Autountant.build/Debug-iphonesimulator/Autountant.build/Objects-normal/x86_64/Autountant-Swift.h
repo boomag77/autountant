@@ -323,13 +323,6 @@ SWIFT_CLASS("_TtC10Autountant11AppDelegate")
 @end
 
 
-
-SWIFT_CLASS("_TtC10Autountant8CheckBox")
-@interface CheckBox : UIControl
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -347,9 +340,9 @@ SWIFT_CLASS_NAMED("Expense")
 @property (nonatomic) double amount;
 @property (nonatomic, copy) NSString * _Nonnull category;
 @property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic, copy) NSString * _Nonnull mileage;
+@property (nonatomic) int64_t mileage;
 @property (nonatomic, copy) NSString * _Nonnull note;
-@property (nonatomic) int32_t vehicle_id;
+@property (nonatomic, copy) NSString * _Nonnull vehicle_name;
 @end
 
 @class NSBundle;
@@ -370,13 +363,6 @@ SWIFT_CLASS("_TtC10Autountant27ExpensesTableViewController")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC10Autountant9GreenView")
-@interface GreenView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -438,11 +424,10 @@ SWIFT_CLASS_NAMED("Vehicle")
 
 
 @interface Vehicle (SWIFT_EXTENSION(Autountant))
-@property (nonatomic, copy) NSString * _Nonnull mileage;
+@property (nonatomic) int64_t mileage;
 @property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic) int32_t vehicle_id;
 @property (nonatomic) BOOL current;
-@property (nonatomic) BOOL electric;
+@property (nonatomic, copy) NSString * _Nonnull type;
 @end
 
 
@@ -476,7 +461,6 @@ SWIFT_CLASS("_TtC10Autountant22VehiclesViewController")
 @end
 
 
-
 @class NSIndexPath;
 
 @interface VehiclesViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
@@ -496,13 +480,6 @@ SWIFT_CLASS("_TtC10Autountant22VehiclesViewController")
 - (void)controllerWillChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
 - (void)controller:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller didChangeObject:(id _Nonnull)anObject atIndexPath:(NSIndexPath * _Nullable)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath * _Nullable)newIndexPath;
 - (void)controllerDidChangeContent:(NSFetchedResultsController<id <NSFetchRequestResult>> * _Nonnull)controller;
-@end
-
-
-SWIFT_CLASS("_TtC10Autountant10YellowView")
-@interface YellowView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

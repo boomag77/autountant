@@ -27,7 +27,7 @@ class TabViewController: UITabBarController {
         garageVC.tabBarItem = UITabBarItem(title: "Garage", image: UIImage(systemName: "car.2.fill"), selectedImage: nil)
         
         
-        let homeVC = VehiclesViewController()
+        let homeVC = MainViewController()
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), selectedImage: nil)
         
         let expensesVC = ExpensesTableViewController()

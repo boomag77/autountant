@@ -91,7 +91,7 @@ class VehiclesViewController: UIViewController {
 extension VehiclesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataManager.getVehiclesCount()
+        return dataManager.getCount(forEntity: "Vehicle")
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -100,9 +100,8 @@ extension VehiclesViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
         
-        cell.cellView.setup(name: currVehicle.name,
-                            mileage: currVehicle.mileage,
-                            current: currVehicle.current)
+        cell.vehicle = currVehicle
+        cell.setUp()
     
         return cell
     }
@@ -113,10 +112,11 @@ extension VehiclesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        let vehicleForErasing = dataManager.vehicleResultsController.object(at: indexPath)
+        let vehicleToDelete = dataManager.vehicleResultsController.object(at: indexPath)
+        
         let actionDelete = UIContextualAction(style: .destructive,
                                               title: nil) { _,_,_ in
-            self.dataManager.deleteVehicle(vehicleForErasing)
+            self.dataManager.deleteVehicle(vehicleToDelete)
         }
         actionDelete.image = UIImage(systemName: "trash")
         let actions = UISwipeActionsConfiguration(actions: [actionDelete])
@@ -126,8 +126,10 @@ extension VehiclesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedVehicle = dataManager.vehicleResultsController.object(at: indexPath)
-        //dataManager.setActive(selectedVehicle)
         
+        if selectedVehicle.current == false {
+            dataManager.setVehicleCurrent(selectedVehicle)
+        }
     }
     
 }
@@ -160,16 +162,8 @@ extension VehiclesViewController: NSFetchedResultsControllerDelegate {
     }
 }
 
-extension VehiclesViewController: DataPresenter {
-    
-    func updateView() {
-        tableView.reloadData()
-    }
-    
-    
-}
-
 extension VehiclesViewController: TabBarDelegate {
+    
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         
         tableView.dataSource = self
@@ -177,13 +171,13 @@ extension VehiclesViewController: TabBarDelegate {
         
         dataManager = DataManager(units: .imperial)
         
-        dataManager.dataPresenter = self
+        //dataManager.dataPresenter = self
         dataManager.vehicleResultsController.delegate = self
         
         tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
         setup()
         
-        if dataManager.getVehiclesCount() == 0 {
+        if dataManager.getCount(forEntity: "Vehicle") == 0 {
             showAddVehicleView()
         }
         
