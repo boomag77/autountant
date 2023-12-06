@@ -105,8 +105,7 @@ extension DataManager {
     func registerNewVehicle(_ name: String,
                             _ mileage: String,
                             _ type: VehicleType,
-                            _ current: Bool,
-                            completion: @escaping (Result<String, DataManagerError>) -> Void) {
+                            _ current: Bool) {
         
         var errors: [DataManagerError] = []
         
@@ -119,18 +118,18 @@ extension DataManager {
         
         let newVehicle = Vehicle(context: self.container.viewContext)
         newVehicle.name = name
-        newVehicle.mileage = Int64(mileage)
+        newVehicle.mileage = mileage
         newVehicle.type = type.rawValue
         newVehicle.current = getCount(forEntity: "Vehicle") > 0 ? current:true
 
         
         self.saveContext()
         
-        if let reason = errorReason {
-            completion(.failure(DataManagerError.failureReason(reason)))
-        } else {
-            completion(.success("Vehicle successfully saved!"))
-        }
+//        if let reason = errorReason {
+//            completion(.failure(DataManagerError.failureReason(reason)))
+//        } else {
+//            completion(.success("Vehicle successfully saved!"))
+//        }
         
         if newVehicle.current ==  true {
             self.currentVehicle = newVehicle
@@ -139,7 +138,7 @@ extension DataManager {
     
     func registerNewExpense(_ date: Date,
                             _ vehicle_name: String,
-                            _ mileage: Int,
+                            _ mileage: String,
                             _ category: Category,
                             _ amount: Double,
                             _ note: String?) {
@@ -149,7 +148,7 @@ extension DataManager {
         let newExpense = Expense(context: container.viewContext)
         newExpense.date = Date()
         newExpense.vehicle_name = currentVehicle.name
-        newExpense.mileage = Int64(mileage)
+        newExpense.mileage = mileage
         newExpense.category = category.rawValue
         newExpense.amount = amount
         if let noteText = note {

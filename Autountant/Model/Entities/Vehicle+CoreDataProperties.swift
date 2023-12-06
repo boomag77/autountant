@@ -16,7 +16,7 @@ extension Vehicle {
         return NSFetchRequest<Vehicle>(entityName: "Vehicle")
     }
 
-    @NSManaged public var mileage: Int64
+    @NSManaged public var mileage: String
     @NSManaged public var name: String
     @NSManaged public var current: Bool
     @NSManaged public var type: String

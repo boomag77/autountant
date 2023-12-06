@@ -4,13 +4,13 @@
         <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="category" attributeType="String"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="mileage" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mileage" attributeType="String"/>
         <attribute name="note" attributeType="String"/>
         <attribute name="vehicle_name" attributeType="String"/>
     </entity>
     <entity name="Vehicle" representedClassName="Vehicle" syncable="YES">
         <attribute name="current" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
-        <attribute name="mileage" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="mileage" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
