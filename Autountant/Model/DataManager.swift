@@ -17,6 +17,15 @@ class DataManager {
     
     var units: Units
     
+//    var currentVehicle: Vehicle? {
+//        willSet() {
+//            
+//        }
+//        didSet() {
+//            
+//        }
+//    }
+    
     init(units: Units) {
         self.units = units
         
@@ -123,6 +132,20 @@ extension DataManager {
     
     //MARK: Vehicles methods
     
+    func getCurrentVehicle() -> Vehicle? {
+        let request = Vehicle.createFetchRequest()
+        let predicate = NSPredicate(format: "current = %@", NSNumber(booleanLiteral: true))
+        request.predicate = predicate
+        do {
+            if let currentVehicle = try container.viewContext.fetch(request).first {
+                return currentVehicle
+            }
+        } catch {
+            print("Could not fetch current vehicle")
+        }
+        return nil
+    }
+    
     func registerNewVehicle(_ name: String,
                        _ mileage: String,
                        _ electric: Bool,
@@ -150,6 +173,36 @@ extension DataManager {
     
     private func updateVehicleMileage(_ vehicle: Vehicle, _ newMileage: UInt) {
         
+    }
+    
+    func setCurrent(vehicleName: String) {
+        let request = Vehicle.createFetchRequest()
+        let predicate = NSPredicate(format: "name = %@", vehicleName)
+        request.predicate = predicate
+        
+        do {
+            resetCurrentVehicle()
+            let newCurrentVehicle = try container.viewContext.fetch(request).first
+            newCurrentVehicle?.current = true
+        } catch {
+            print("Could not fetch object")
+        }
+        saveContext()
+    }
+    
+    private func resetCurrentVehicle() {
+        let request = Vehicle.createFetchRequest()
+        let predicate = NSPredicate(format: "current = %@", NSNumber(booleanLiteral: true))
+        request.predicate = predicate
+        do {
+            let currentVehicle = try container.viewContext.fetch(request)
+            if !currentVehicle.isEmpty {
+                currentVehicle.forEach { $0.current = false }
+            }
+        } catch {
+            print("Could not fetch current vehicle for resetting")
+        }
+        saveContext()
     }
     
     func vehicleExists(_ vehicleName: String) -> Bool {

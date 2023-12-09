@@ -34,6 +34,8 @@ class TabViewController: UITabBarController {
         
         viewControllers = [homeVC, garageVC, expensesVC]
         
+        tabBarController(self, didSelect: homeVC)
+        
     }
 
 }

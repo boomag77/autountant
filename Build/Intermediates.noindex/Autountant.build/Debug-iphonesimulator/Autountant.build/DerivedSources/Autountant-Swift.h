@@ -348,7 +348,7 @@ SWIFT_CLASS_NAMED("Expense")
 @interface Expense (SWIFT_EXTENSION(Autountant))
 @property (nonatomic) double amount;
 @property (nonatomic, copy) NSString * _Nonnull category;
-@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic, copy) NSDate * _Nonnull date;
 @property (nonatomic, copy) NSString * _Nonnull mileage;
 @property (nonatomic, copy) NSString * _Nonnull note;
 @property (nonatomic) int32_t vehicle_id;
@@ -386,6 +386,7 @@ SWIFT_CLASS("_TtC10Autountant18MainViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 @class UIWindow;
 @class UIScene;
