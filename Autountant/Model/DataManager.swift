@@ -8,19 +8,23 @@
 import Foundation
 import CoreData
 
-protocol DataPresenter: AnyObject {
-    func updateView()
-}
-
 class DataManager {
     
-    weak var dataPresenter: DataPresenter?
     private var container: NSPersistentContainer!
     
     var vehicleResultsController: NSFetchedResultsController<Vehicle>
     var expensesResultController: NSFetchedResultsController<Expense>
     
     var units: Units
+    
+//    var currentVehicle: Vehicle? {
+//        willSet() {
+//            
+//        }
+//        didSet() {
+//            
+//        }
+//    }
     
     init(units: Units) {
         self.units = units
@@ -84,8 +88,6 @@ extension DataManager {
         expense.note = note
         expense.category = category.rawValue
         self.saveContext()
-        //self.fetchContainer()
-        dataPresenter?.updateView()
     }
     
     func deleteExpense(expenseForErase: Expense) {
@@ -102,7 +104,6 @@ extension DataManager {
                     }
                 }
                 self.saveContext()
-                dataPresenter?.updateView()
             }
         } catch let error as NSError {
             print("Could not fetch or delete object \(error)")
@@ -123,7 +124,6 @@ extension DataManager {
         expense.vehicle_id = editedExpense.vehicle_id
         
         self.saveContext()
-        dataPresenter?.updateView()
     }
 }
 
@@ -131,6 +131,20 @@ extension DataManager {
 extension DataManager {
     
     //MARK: Vehicles methods
+    
+    func getCurrentVehicle() -> Vehicle? {
+        let request = Vehicle.createFetchRequest()
+        let predicate = NSPredicate(format: "current = %@", NSNumber(booleanLiteral: true))
+        request.predicate = predicate
+        do {
+            if let currentVehicle = try container.viewContext.fetch(request).first {
+                return currentVehicle
+            }
+        } catch {
+            print("Could not fetch current vehicle")
+        }
+        return nil
+    }
     
     func registerNewVehicle(_ name: String,
                        _ mileage: String,
@@ -146,7 +160,6 @@ extension DataManager {
         newVehicle.current = current
         
         self.saveContext()
-        dataPresenter?.updateView()
         
     }
     
@@ -160,6 +173,36 @@ extension DataManager {
     
     private func updateVehicleMileage(_ vehicle: Vehicle, _ newMileage: UInt) {
         
+    }
+    
+    func setCurrent(vehicleName: String) {
+        let request = Vehicle.createFetchRequest()
+        let predicate = NSPredicate(format: "name = %@", vehicleName)
+        request.predicate = predicate
+        
+        do {
+            resetCurrentVehicle()
+            let newCurrentVehicle = try container.viewContext.fetch(request).first
+            newCurrentVehicle?.current = true
+        } catch {
+            print("Could not fetch object")
+        }
+        saveContext()
+    }
+    
+    private func resetCurrentVehicle() {
+        let request = Vehicle.createFetchRequest()
+        let predicate = NSPredicate(format: "current = %@", NSNumber(booleanLiteral: true))
+        request.predicate = predicate
+        do {
+            let currentVehicle = try container.viewContext.fetch(request)
+            if !currentVehicle.isEmpty {
+                currentVehicle.forEach { $0.current = false }
+            }
+        } catch {
+            print("Could not fetch current vehicle for resetting")
+        }
+        saveContext()
     }
     
     func vehicleExists(_ vehicleName: String) -> Bool {
@@ -186,7 +229,6 @@ extension DataManager {
             if !vehicle.isEmpty {
                 container.viewContext.delete(vehicle.first!)
                 self.saveContext()
-                dataPresenter?.updateView()
             }
         } catch let error as NSError {
             print("Could not fetch or delete object \(error)")

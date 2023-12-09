@@ -346,7 +346,7 @@ SWIFT_CLASS_NAMED("Expense")
 @interface Expense (SWIFT_EXTENSION(Autountant))
 @property (nonatomic) double amount;
 @property (nonatomic, copy) NSString * _Nonnull category;
-@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic, copy) NSDate * _Nonnull date;
 @property (nonatomic, copy) NSString * _Nonnull mileage;
 @property (nonatomic, copy) NSString * _Nonnull note;
 @property (nonatomic) int32_t vehicle_id;
@@ -357,18 +357,6 @@ SWIFT_CLASS_NAMED("Expense")
 SWIFT_CLASS("_TtC10Autountant21ExpenseViewController")
 @interface ExpenseViewController : UIViewController
 - (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UITableView;
-
-SWIFT_CLASS("_TtC10Autountant27ExpensesTableViewController")
-@interface ExpensesTableViewController : UITableViewController
-- (void)viewDidLoad;
-- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -398,13 +386,6 @@ SWIFT_CLASS("_TtC10Autountant18MainViewController")
 @end
 
 
-SWIFT_CLASS("_TtC10Autountant24NewVehicleViewController")
-@interface NewVehicleViewController : UIViewController
-- (void)viewDidLoad;
-- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIWindow;
 @class UIScene;
 
@@ -421,19 +402,11 @@ SWIFT_CLASS("_TtC10Autountant13SceneDelegate")
 @end
 
 
-SWIFT_CLASS("_TtC10Autountant16TVViewController")
-@interface TVViewController : UIViewController
+SWIFT_CLASS("_TtC10Autountant22SettingsViewController")
+@interface SettingsViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSIndexPath;
-@class UITableViewCell;
-
-@interface TVViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
-- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
-- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -442,6 +415,11 @@ SWIFT_CLASS("_TtC10Autountant17TabViewController")
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface TabViewController (SWIFT_EXTENSION(Autountant)) <UITabBarControllerDelegate>
+- (void)tabBarController:(UITabBarController * _Nonnull)tabBarController didSelectViewController:(UIViewController * _Nonnull)viewController;
 @end
 
 
@@ -495,6 +473,8 @@ SWIFT_CLASS("_TtC10Autountant22VehiclesViewController")
 @end
 
 
+@class UITableView;
+@class NSIndexPath;
 
 @interface VehiclesViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

@@ -32,17 +32,7 @@ final class VehiclesViewController: UIViewController {
         
         super.viewDidLoad()
         
-        tableView.dataSource = self
-        tableView.delegate = self
         
-        
-        dataManager = DataManager(units: .imperial)
-        dataManager.dataPresenter = self
-        dataManager.vehicleResultsController.delegate = self
-        
-        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
-        
-        configureView()
         
     }
     
@@ -102,10 +92,14 @@ extension VehiclesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let currVehicle = dataManager.vehicleResultsController.object(at: indexPath)
+        let vehicle = dataManager.vehicleResultsController.object(at: indexPath)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
-        cell.cellView.fillLabels(name: currVehicle.name, mileage: currVehicle.id.debugDescription)
+        cell.selectionStyle = .none
+        cell.cellView.setName(name: vehicle.name)
+        cell.cellView.setMileage(mileage: vehicle.mileage)
+        cell.cellView.current = vehicle.current
+        cell.cellView.configure()
     
         return cell
     }
@@ -129,8 +123,10 @@ extension VehiclesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedVehicle = dataManager.vehicleResultsController.object(at: indexPath)
-        //dataManager.setActive(selectedVehicle)
-        
+        if !selectedVehicle.current {
+            dataManager.setCurrent(vehicleName: selectedVehicle.name)
+            
+        }
     }
     
 }
@@ -163,13 +159,24 @@ extension VehiclesViewController: NSFetchedResultsControllerDelegate {
     }
 }
 
-extension VehiclesViewController: DataPresenter {
+
+extension VehiclesViewController: TabBarDelegate {
     
-    
-    
-    func updateView() {
-        tableView.reloadData()
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        
+        dataManager = DataManager(units: .imperial)
+        
+        dataManager.vehicleResultsController.delegate = self
+        
+        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
+        
+        configureView()
+        
+        
     }
-    
     
 }
