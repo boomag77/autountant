@@ -88,6 +88,8 @@ extension AddVehicleView {
     
     private func setup() {
         
+        
+        
         layer.borderWidth = 1
         layer.borderColor = UIColor.lightGray.cgColor
         layer.cornerRadius = 20

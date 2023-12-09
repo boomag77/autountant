@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Units: String {
+enum Units: String, CaseIterable {
     case metric = "Metric"
     case imperial = "Imperial"
 }

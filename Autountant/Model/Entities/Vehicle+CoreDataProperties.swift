@@ -2,7 +2,7 @@
 //  Vehicle+CoreDataProperties.swift
 //  Autountant
 //
-//  Created by Sergey on 11/26/23.
+//  Created by Sergey on 12/8/23.
 //
 //
 
@@ -16,11 +16,11 @@ extension Vehicle {
         return NSFetchRequest<Vehicle>(entityName: "Vehicle")
     }
 
-    @NSManaged public var mileage: String
-    @NSManaged public var name: String
-    @NSManaged public var vehicle_id: Int32
-    @NSManaged public var current: Bool
     @NSManaged public var electric: Bool
+    @NSManaged public var mileage: Int64
+    @NSManaged public var name: String
+    @NSManaged public var units: String
+    @NSManaged public var currency: String
 
 }
 

@@ -341,17 +341,15 @@ SWIFT_CLASS_NAMED("Expense")
 @end
 
 
-
 @class NSString;
 @class NSDate;
 
 @interface Expense (SWIFT_EXTENSION(Autountant))
 @property (nonatomic) double amount;
 @property (nonatomic, copy) NSString * _Nonnull category;
-@property (nonatomic, copy) NSDate * _Nullable date;
-@property (nonatomic, copy) NSString * _Nonnull mileage;
-@property (nonatomic, copy) NSString * _Nonnull note;
-@property (nonatomic) int32_t vehicle_id;
+@property (nonatomic, copy) NSDate * _Nonnull date;
+@property (nonatomic) int64_t mileage;
+@property (nonatomic, copy) NSString * _Nonnull vehicle_name;
 @end
 
 @class NSBundle;
@@ -436,11 +434,11 @@ SWIFT_CLASS_NAMED("Vehicle")
 
 
 @interface Vehicle (SWIFT_EXTENSION(Autountant))
-@property (nonatomic, copy) NSString * _Nonnull mileage;
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic) int32_t vehicle_id;
-@property (nonatomic) BOOL current;
 @property (nonatomic) BOOL electric;
+@property (nonatomic) int64_t mileage;
+@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic, copy) NSString * _Nonnull units;
+@property (nonatomic, copy) NSString * _Nonnull currency;
 @end
 
 

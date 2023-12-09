@@ -1,22 +1,21 @@
+/Users/sergey/code/Autountant/Autountant/Model/Entities/Vehicle+CoreDataClass.swift
 /Users/sergey/code/Autountant/Autountant/Controller/MainViewController.swift
+/Users/sergey/code/Autountant/Autountant/Model/Entities/Expense+CoreDataClass.swift
 /Users/sergey/code/Autountant/Autountant/Controller/VehiclesViewController.swift
 /Users/sergey/code/Autountant/Autountant/Model\ View/MainViewModel.swift
-/Users/sergey/code/Autountant/Autountant/Controller/NewVehicleViewController.swift
+/Users/sergey/code/Autountant/Autountant/Model/Entities/Expense+CoreDataProperties.swift
 /Users/sergey/code/Autountant/Autountant/Controller/ExpenseViewController.swift
 /Users/sergey/code/Autountant/Autountant/AppDelegate.swift
-/Users/sergey/code/Autountant/Autountant/Model/Entities/Vehicle+CoreDataClass.swift
 /Users/sergey/code/Autountant/Autountant/Model/Data\ models/DataModels.swift
-/Users/sergey/code/Autountant/Autountant/Model/Entities/Expense+CoreDataProperties.swift
-/Users/sergey/code/Autountant/Autountant/Controller/TVViewController.swift
 /Users/sergey/code/Autountant/Autountant/Model\ View/VehicleCellView.swift
-/Users/sergey/code/Autountant/Autountant/Model/Entities/Expense+CoreDataClass.swift
+/Users/sergey/code/Autountant/Autountant/Model/Entities/Vehicle+CoreDataProperties.swift
 /Users/sergey/code/Autountant/Autountant/View/CheckBox.swift
 /Users/sergey/code/Autountant/Autountant/Model\ View/InputTextField.swift
 /Users/sergey/code/Autountant/Autountant/Model/DataManager.swift
 /Users/sergey/code/Autountant/Autountant/Model\ View/VehicleTableViewCell.swift
-/Users/sergey/code/Autountant/Autountant/Model/Entities/Vehicle+CoreDataProperties.swift
-/Users/sergey/code/Autountant/Autountant/Controller/ExpensesTableViewController.swift
 /Users/sergey/code/Autountant/Autountant/Model\ View/VehicleView.swift
+/Users/sergey/code/Autountant/Autountant/Model\ View/AddVehicleView.swift
 /Users/sergey/code/Autountant/Autountant/SceneDelegate.swift
 /Users/sergey/code/Autountant/Autountant/Controller/TabViewController.swift
+/Users/sergey/code/Autountant/Autountant/Controller/SettingsViewController.swift
 /Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/DerivedSources/GeneratedAssetSymbols.swift

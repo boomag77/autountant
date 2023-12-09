@@ -2,7 +2,7 @@
 //  Expense+CoreDataProperties.swift
 //  Autountant
 //
-//  Created by Sergey on 11/26/23.
+//  Created by Sergey on 12/8/23.
 //
 //
 
@@ -18,10 +18,9 @@ extension Expense {
 
     @NSManaged public var amount: Double
     @NSManaged public var category: String
-    @NSManaged public var date: Date?
-    @NSManaged public var mileage: String
-    @NSManaged public var note: String
-    @NSManaged public var vehicle_id: Int32
+    @NSManaged public var date: Date
+    @NSManaged public var mileage: Int64
+    @NSManaged public var vehicle_name: String
 
 }
 

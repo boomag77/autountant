@@ -12,6 +12,8 @@ final class VehiclesViewController: UIViewController {
     
     var dataManager: DataManager!
     
+    var currentVehicle: Vehicle?
+    
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -32,8 +34,6 @@ final class VehiclesViewController: UIViewController {
         
         super.viewDidLoad()
         
-        
-        
     }
     
     @objc private func addButtonPressed(_ button: UIButton) {
@@ -42,7 +42,6 @@ final class VehiclesViewController: UIViewController {
         
         addVehicleView.translatesAutoresizingMaskIntoConstraints = false
         
-        //addVehicleView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50.0).isActive = true
         addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
         addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
         addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
@@ -162,7 +161,7 @@ extension VehiclesViewController: TabBarDelegate {
         tableView.delegate = self
         
         
-        dataManager = DataManager(units: .imperial)
+        dataManager = DataManager()
         
         dataManager.vehicleResultsController.delegate = self
         
