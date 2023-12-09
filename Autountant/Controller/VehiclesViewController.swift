@@ -32,17 +32,7 @@ final class VehiclesViewController: UIViewController {
         
         super.viewDidLoad()
         
-        tableView.dataSource = self
-        tableView.delegate = self
         
-        
-        dataManager = DataManager(units: .imperial)
-        dataManager.dataPresenter = self
-        dataManager.vehicleResultsController.delegate = self
-        
-        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
-        
-        configureView()
         
     }
     
@@ -128,7 +118,7 @@ extension VehiclesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let selectedVehicle = dataManager.vehicleResultsController.object(at: indexPath)
+        let _ = dataManager.vehicleResultsController.object(at: indexPath)
         //dataManager.setActive(selectedVehicle)
         
     }
@@ -163,13 +153,24 @@ extension VehiclesViewController: NSFetchedResultsControllerDelegate {
     }
 }
 
-extension VehiclesViewController: DataPresenter {
+
+extension VehiclesViewController: TabBarDelegate {
     
-    
-    
-    func updateView() {
-        tableView.reloadData()
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+        tableView.dataSource = self
+        tableView.delegate = self
+        
+        
+        dataManager = DataManager(units: .imperial)
+        
+        dataManager.vehicleResultsController.delegate = self
+        
+        tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
+        
+        configureView()
+        
+        
     }
-    
     
 }

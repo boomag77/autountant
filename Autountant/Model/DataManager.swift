@@ -8,13 +8,8 @@
 import Foundation
 import CoreData
 
-protocol DataPresenter: AnyObject {
-    func updateView()
-}
-
 class DataManager {
     
-    weak var dataPresenter: DataPresenter?
     private var container: NSPersistentContainer!
     
     var vehicleResultsController: NSFetchedResultsController<Vehicle>
@@ -84,8 +79,6 @@ extension DataManager {
         expense.note = note
         expense.category = category.rawValue
         self.saveContext()
-        //self.fetchContainer()
-        dataPresenter?.updateView()
     }
     
     func deleteExpense(expenseForErase: Expense) {
@@ -102,7 +95,6 @@ extension DataManager {
                     }
                 }
                 self.saveContext()
-                dataPresenter?.updateView()
             }
         } catch let error as NSError {
             print("Could not fetch or delete object \(error)")
@@ -123,7 +115,6 @@ extension DataManager {
         expense.vehicle_id = editedExpense.vehicle_id
         
         self.saveContext()
-        dataPresenter?.updateView()
     }
 }
 
@@ -146,7 +137,6 @@ extension DataManager {
         newVehicle.current = current
         
         self.saveContext()
-        dataPresenter?.updateView()
         
     }
     
@@ -186,7 +176,6 @@ extension DataManager {
             if !vehicle.isEmpty {
                 container.viewContext.delete(vehicle.first!)
                 self.saveContext()
-                dataPresenter?.updateView()
             }
         } catch let error as NSError {
             print("Could not fetch or delete object \(error)")
