@@ -15,16 +15,7 @@ class DataManager {
     var vehicleResultsController: NSFetchedResultsController<Vehicle>
     var expensesResultController: NSFetchedResultsController<Expense>
     
-    var units: Units
-    
-//    var currentVehicle: Vehicle? {
-//        willSet() {
-//            
-//        }
-//        didSet() {
-//            
-//        }
-//    }
+    var units: Units = .imperial
     
     init(units: Units) {
         self.units = units
@@ -56,11 +47,6 @@ class DataManager {
         
     }
     
-    private func fetchContainer() {
-        try? vehicleResultsController.performFetch()
-        try? expensesResultController.performFetch()
-    }
-    
     private func saveContext() {
         if container.viewContext.hasChanges {
             do {
@@ -72,60 +58,6 @@ class DataManager {
     }
 }
 
-extension DataManager {
-    //MARK: Expenses methods
-    
-    func getExpensesCount() -> Int {
-        return expensesResultController.fetchedObjects?.count ?? 0
-    }
-    
-    func registerExpense(_ vehicle: Vehicle, _ category: Category, _ amount: Double, _ mileage: UInt, _ note: String) {
-        let expense = Expense(context: self.container.viewContext)
-        expense.date = Date()
-        expense.mileage = String(mileage)
-        expense.amount = amount
-        expense.vehicle_id = vehicle.vehicle_id
-        expense.note = note
-        expense.category = category.rawValue
-        self.saveContext()
-    }
-    
-    func deleteExpense(expenseForErase: Expense) {
-        let request = Expense.createFetchRequest()
-        let predicate = NSPredicate(format: "amount = %@", expenseForErase.amount)
-        request.predicate = predicate
-        do {
-            let expenses = try container.viewContext.fetch(request)
-            if !expenses.isEmpty {
-                for expense in expenses {
-                    if expense == expenseForErase {
-                        container.viewContext.delete(expense)
-                        break
-                    }
-                }
-                self.saveContext()
-            }
-        } catch let error as NSError {
-            print("Could not fetch or delete object \(error)")
-        }
-    }
-    
-    func editExpense(expenseForEdit: Expense, editedExpense: Expense) {
-        
-        let request = Expense.createFetchRequest()
-        self.deleteExpense(expenseForErase: expenseForEdit)
-        
-        let expense = Expense(context: self.container.viewContext)
-        expense.amount = editedExpense.amount
-        expense.category = editedExpense.category
-        expense.date = editedExpense.date
-        expense.mileage = editedExpense.mileage
-        expense.note = editedExpense.note
-        expense.vehicle_id = editedExpense.vehicle_id
-        
-        self.saveContext()
-    }
-}
 
 
 extension DataManager {
@@ -134,21 +66,21 @@ extension DataManager {
     
     func getActiveVehicle() -> Vehicle? {
         let request = Vehicle.createFetchRequest()
-        let predicate = NSPredicate(format: "current = %@", NSNumber(booleanLiteral: true))
+        let predicate = NSPredicate(format: "active = %@", NSNumber(booleanLiteral: true))
         request.predicate = predicate
         do {
             if let currentVehicle = try container.viewContext.fetch(request).first {
                 return currentVehicle
             }
         } catch {
-            print("Could not fetch current vehicle")
+            print("Could not fetch active vehicle")
         }
         return nil
     }
     
     func registerNewVehicle(_ name: String,
                        _ mileage: String,
-                       _ electric: Bool,
+                       _ type: Bool,
                        _ current: Bool) {
         
         let newVehicle = Vehicle(context: self.container.viewContext)

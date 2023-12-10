@@ -1,5 +1,5 @@
 //
-//  Vehicle+CoreDataClass.swift
+//  VehicleType+CoreDataClass.swift
 //  Autountant
 //
 //  Created by Sergey on 12/10/23.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-@objc(Vehicle)
-public class Vehicle: NSManagedObject {
+@objc(VehicleType)
+public class VehicleType: NSManagedObject {
 
 }

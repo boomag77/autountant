@@ -27,7 +27,7 @@ final class MainViewController: UIViewController {
     private func setup() {
         
         
-        currentVehicle.text = dataManager.getCurrentVehicle()?.name
+        currentVehicle.text = dataManager.getActiveVehicle()?.name
         view.addSubview(currentVehicle)
         
         currentVehicle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true

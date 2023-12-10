@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="22G313" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Category" representedClassName="Category" syncable="YES">
-        <attribute name="name" attributeType="String"/>
-        <relationship name="expenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="category" inverseEntity="Expense"/>
-    </entity>
     <entity name="Expense" representedClassName="Expense" syncable="YES">
         <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="mileage" attributeType="String"/>
-        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="expenses" inverseEntity="Category"/>
-        <relationship name="vehicle" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="expenses" inverseEntity="Vehicle"/>
     </entity>
     <entity name="Vehicle" representedClassName="Vehicle" syncable="YES">
         <attribute name="currency" optional="YES" attributeType="String"/>
@@ -18,6 +12,5 @@
         <attribute name="name" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="units" optional="YES" attributeType="String"/>
-        <relationship name="expenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="vehicle" inverseEntity="Expense"/>
     </entity>
 </model>
