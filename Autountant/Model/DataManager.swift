@@ -132,7 +132,7 @@ extension DataManager {
     
     //MARK: Vehicles methods
     
-    func getCurrentVehicle() -> Vehicle? {
+    func getActiveVehicle() -> Vehicle? {
         let request = Vehicle.createFetchRequest()
         let predicate = NSPredicate(format: "current = %@", NSNumber(booleanLiteral: true))
         request.predicate = predicate

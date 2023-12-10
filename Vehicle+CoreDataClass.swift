@@ -2,7 +2,7 @@
 //  Vehicle+CoreDataClass.swift
 //  Autountant
 //
-//  Created by Sergey on 11/26/23.
+//  Created by Sergey on 12/9/23.
 //
 //
 

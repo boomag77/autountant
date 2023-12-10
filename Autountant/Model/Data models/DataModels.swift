@@ -59,12 +59,12 @@ struct Stat {
     
 }
 
-enum Category: String {
-    case gas = "Gas"
-    case electricity = "Electricity"
-    case insuranse = "Insuranse"
-    case inspection = "State inspection"
-    case parts = "Parts"
-    case service = "Service"
-    case other = "Other"
-}
+//enum Category: String {
+//    case gas = "Gas"
+//    case electricity = "Electricity"
+//    case insuranse = "Insuranse"
+//    case inspection = "State inspection"
+//    case parts = "Parts"
+//    case service = "Service"
+//    case other = "Other"
+//}
