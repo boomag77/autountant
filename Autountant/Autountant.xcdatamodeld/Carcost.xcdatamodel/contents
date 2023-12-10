@@ -2,30 +2,18 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22225" systemVersion="22G313" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="Expense" representedClassName="Expense" syncable="YES">
         <attribute name="amount" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="mileage" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="category" maxCount="1" deletionRule="Nullify" destinationEntity="ExpenseCategory" inverseName="expenses" inverseEntity="ExpenseCategory"/>
-        <relationship name="vehicles" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="expenses" inverseEntity="Vehicle"/>
-    </entity>
-    <entity name="ExpenseCategory" representedClassName="ExpenseCategory" syncable="YES">
-        <attribute name="name" attributeType="String"/>
-        <relationship name="expenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="category" inverseEntity="Expense"/>
+        <relationship name="vehicle" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="expenses" inverseEntity="Vehicle"/>
     </entity>
     <entity name="Vehicle" representedClassName="Vehicle" syncable="YES">
         <attribute name="active" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="currency" optional="YES" attributeType="String"/>
         <attribute name="mileage" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
         <attribute name="units" optional="YES" attributeType="String"/>
-        <relationship name="currency" maxCount="1" deletionRule="Nullify" destinationEntity="VehicleCurrency" inverseName="vehicles" inverseEntity="VehicleCurrency"/>
-        <relationship name="expenses" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expense" inverseName="vehicles" inverseEntity="Expense"/>
-        <relationship name="type" maxCount="1" deletionRule="Nullify" destinationEntity="VehicleType" inverseName="vehicles" inverseEntity="VehicleType"/>
-    </entity>
-    <entity name="VehicleCurrency" representedClassName="VehicleCurrency" syncable="YES">
-        <attribute name="name" attributeType="String"/>
-        <relationship name="vehicles" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="currency" inverseEntity="Vehicle"/>
-    </entity>
-    <entity name="VehicleType" representedClassName="VehicleType" syncable="YES">
-        <attribute name="name" attributeType="String"/>
-        <relationship name="vehicles" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Vehicle" inverseName="type" inverseEntity="Vehicle"/>
+        <relationship name="expenses" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Expense" inverseName="vehicle" inverseEntity="Expense"/>
     </entity>
 </model>

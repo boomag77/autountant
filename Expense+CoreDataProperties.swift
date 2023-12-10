@@ -19,8 +19,8 @@ extension Expense {
     @NSManaged public var amount: Double
     @NSManaged public var date: Date
     @NSManaged public var mileage: Int64
-    @NSManaged public var category: ExpenseCategory
-    @NSManaged public var vehicles: Vehicle
+    @NSManaged public var category: String
+    @NSManaged public var vehicle: Vehicle
 
 }
 

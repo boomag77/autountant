@@ -78,18 +78,16 @@ extension DataManager {
         return nil
     }
     
-    func registerNewVehicle(_ name: String,
-                       _ mileage: String,
-                       _ type: Bool,
-                       _ current: Bool) {
+    func registerNewVehicle(name: String,
+                            mileage: String,
+                            type: VehicleType,
+                            units: Units,
+                            currency: Currency,
+                            active: Bool) {
         
         let newVehicle = Vehicle(context: self.container.viewContext)
         
-        newVehicle.name = name
-        newVehicle.vehicle_id = getMaxIdNumber() + 1
-        newVehicle.mileage = mileage
-        newVehicle.electric = electric
-        newVehicle.current = current
+        
         
         self.saveContext()
         
