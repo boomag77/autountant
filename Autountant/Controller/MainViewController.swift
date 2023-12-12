@@ -40,7 +40,7 @@ final class MainViewController: UIViewController {
 
 extension MainViewController: TabBarDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        dataManager = DataManager(units: .imperial)
+        dataManager = DataManager()
         setup()
     }
     

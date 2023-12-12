@@ -9,9 +9,9 @@ import UIKit
 
 class AddVehicleView: UIView {
     
-    var setCurrent: Bool = false {
+    var active: Bool = false {
         didSet {
-            currentVehicleCheckBox.isOn = setCurrent
+            currentVehicleCheckBox.isOn = active
         }
     }
     weak var dataManager: DataManager?
@@ -131,19 +131,37 @@ extension AddVehicleView {
     
     @objc private func saveButtonPressed(_ button: UIButton) {
         
-        if self.vehicleNameTextField.text == "" &&
-            self.vehicleMileageTextField.text == "" { return }
+        var success: Bool = true
+        
+        guard let name = vehicleNameTextField.text,
+              let mileage = vehicleMileageTextField.text,
+              let intMileage = Int64(mileage)
+        else { return }
+        
+//        if self.vehicleNameTextField.text == "" &&
+//            self.vehicleMileageTextField.text == "" { return }
         
         
-        dataManager?.registerNewVehicle(vehicleNameTextField.text!,
-                                       vehicleMileageTextField.text!,
-                                       false,
-                                        self.setCurrent)
-        self.vehicleNameTextField.text = ""
-        self.vehicleMileageTextField.text = ""
+        dataManager?.registerNewVehicle(name: name,
+                                        mileage: intMileage,
+                                        type: .gasoline,
+                                        units: .imperial,
+                                        currency: .usd,
+                                        active: active) {
+            error in
+            if let error = error {
+                print(error.rawValue)
+                success  = false
+            }
+        }
+        if success {
+            self.vehicleNameTextField.text = ""
+            self.vehicleMileageTextField.text = ""
+            
+            self.removeFromSuperview()
+            self.backgroundOverlay?.removeFromSuperview()
+        }
         
-        removeFromSuperview()
-        backgroundOverlay?.removeFromSuperview()
     }
     
     @objc private func cancelButtonPressed(_ button: UIButton) {
@@ -152,10 +170,10 @@ extension AddVehicleView {
     }
     
     @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
-        if self.setCurrent {
-            self.setCurrent = false
+        if self.active {
+            self.active = false
         } else {
-            self.setCurrent = true
+            self.active = true
         }
         
     }

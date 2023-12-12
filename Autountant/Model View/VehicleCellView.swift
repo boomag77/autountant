@@ -15,7 +15,8 @@ class VehicleCellView: UIView {
         let label = UILabel()
         label.textAlignment = .left
         label.textColor = .black
-        label.translatesAutoresizingMaskIntoConstraints = false
+//        label.layer.borderColor = UIColor.black.cgColor
+//        label.layer.borderWidth = 1
         return label
     }()
     
@@ -28,14 +29,14 @@ class VehicleCellView: UIView {
         } else {
             label.font = UIFont.systemFont(ofSize: 14.0)
         }
-        
-        label.translatesAutoresizingMaskIntoConstraints = false
+//        label.layer.borderColor = UIColor.black.cgColor
+//        label.layer.borderWidth = 1
         return label
     }()
     
     private lazy var currentMark: UIImageView = {
         let imageView = UIImageView()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
+        
         imageView.image = UIImage(systemName: "checkmark")
         return imageView
     }()
@@ -71,17 +72,20 @@ class VehicleCellView: UIView {
         }
         
         // selected ImageView constraints
+        currentMark.translatesAutoresizingMaskIntoConstraints = false
         currentMark.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
         currentMark.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20.0).isActive = true
-        currentMark.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
-        currentMark.widthAnchor.constraint(equalTo: currentMark.heightAnchor).isActive = true
+        //currentMark.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
+        currentMark.widthAnchor.constraint(equalTo: currentMark.heightAnchor, multiplier: 1.0).isActive = true
         
         // nameLabel constraints
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
         nameLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
         nameLabel.trailingAnchor.constraint(greaterThanOrEqualTo: currentMark.leadingAnchor, constant: -10.0).isActive = true
         
         // mileageLabel constraints
+        mileageLabel.translatesAutoresizingMaskIntoConstraints = false
         mileageLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor).isActive = true
         mileageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
         mileageLabel.trailingAnchor.constraint(greaterThanOrEqualTo: currentMark.leadingAnchor, constant: -10.0).isActive = true

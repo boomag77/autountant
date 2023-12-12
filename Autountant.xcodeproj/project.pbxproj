@@ -19,16 +19,16 @@
 		A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7F2B0ABF8000CA1328 /* VehiclesViewController.swift */; };
 		A5A2BA852B0ABF8200CA1328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A2BA842B0ABF8200CA1328 /* Assets.xcassets */; };
 		A5A2BA882B0ABF8200CA1328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A2BA862B0ABF8200CA1328 /* LaunchScreen.storyboard */; };
-		A5A2BA982B0AC73000CA1328 /* Autountant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA962B0AC73000CA1328 /* Autountant.xcdatamodeld */; };
 		A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */; };
 		A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */; };
 		A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CC92B183E48009A1227 /* InputTextField.swift */; };
 		A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */; };
 		A5F78CF02B241149009A1227 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CEF2B241149009A1227 /* SettingsViewController.swift */; };
-		A5F78DD22B258428009A1227 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DCE2B258428009A1227 /* Expense+CoreDataClass.swift */; };
-		A5F78DD32B258428009A1227 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DCF2B258428009A1227 /* Expense+CoreDataProperties.swift */; };
-		A5F78DD42B258428009A1227 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DD02B258428009A1227 /* Vehicle+CoreDataClass.swift */; };
-		A5F78DD52B258428009A1227 /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DD12B258428009A1227 /* Vehicle+CoreDataProperties.swift */; };
+		A5F78DDC2B266F29009A1227 /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DDA2B266F29009A1227 /* Storage.xcdatamodeld */; };
+		A5F78DE92B2673AB009A1227 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */; };
+		A5F78DEA2B2673AB009A1227 /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */; };
+		A5F78DEB2B2673AB009A1227 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE72B2673AB009A1227 /* Expense+CoreDataClass.swift */; };
+		A5F78DEC2B2673AB009A1227 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE82B2673AB009A1227 /* Expense+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,17 +46,16 @@
 		A5A2BA842B0ABF8200CA1328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A2BA872B0ABF8200CA1328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5A2BA892B0ABF8200CA1328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5A2BA972B0AC73000CA1328 /* Autountant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Autountant.xcdatamodel; sourceTree = "<group>"; };
 		A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
 		A5F78CC92B183E48009A1227 /* InputTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextField.swift; sourceTree = "<group>"; };
 		A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleView.swift; sourceTree = "<group>"; };
 		A5F78CEF2B241149009A1227 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		A5F78D0D2B256AC0009A1227 /* Carcost.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Carcost.xcdatamodel; sourceTree = "<group>"; };
-		A5F78DCE2B258428009A1227 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		A5F78DCF2B258428009A1227 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		A5F78DD02B258428009A1227 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		A5F78DD12B258428009A1227 /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A5F78DDB2B266F29009A1227 /* Storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storage.xcdatamodel; sourceTree = "<group>"; };
+		A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A5F78DE72B2673AB009A1227 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A5F78DE82B2673AB009A1227 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +117,7 @@
 				A5A2BA842B0ABF8200CA1328 /* Assets.xcassets */,
 				A5A2BA862B0ABF8200CA1328 /* LaunchScreen.storyboard */,
 				A5A2BA892B0ABF8200CA1328 /* Info.plist */,
-				A5A2BA962B0AC73000CA1328 /* Autountant.xcdatamodeld */,
+				A5F78DDA2B266F29009A1227 /* Storage.xcdatamodeld */,
 			);
 			path = Autountant;
 			sourceTree = "<group>";
@@ -156,10 +155,10 @@
 		A5A2BAB02B0AEB0800CA1328 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				A5F78DCE2B258428009A1227 /* Expense+CoreDataClass.swift */,
-				A5F78DCF2B258428009A1227 /* Expense+CoreDataProperties.swift */,
-				A5F78DD02B258428009A1227 /* Vehicle+CoreDataClass.swift */,
-				A5F78DD12B258428009A1227 /* Vehicle+CoreDataProperties.swift */,
+				A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */,
+				A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */,
+				A5F78DE72B2673AB009A1227 /* Expense+CoreDataClass.swift */,
+				A5F78DE82B2673AB009A1227 /* Expense+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -236,21 +235,21 @@
 			files = (
 				A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */,
 				A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */,
+				A5F78DEA2B2673AB009A1227 /* Vehicle+CoreDataProperties.swift in Sources */,
 				A56971852B0B109E00C5B193 /* ExpenseViewController.swift in Sources */,
 				A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */,
 				A56971912B11A6B700C5B193 /* DataModels.swift in Sources */,
-				A5A2BA982B0AC73000CA1328 /* Autountant.xcdatamodeld in Sources */,
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
+				A5F78DE92B2673AB009A1227 /* Vehicle+CoreDataClass.swift in Sources */,
 				A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */,
-				A5F78DD32B258428009A1227 /* Expense+CoreDataProperties.swift in Sources */,
 				A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */,
 				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,
-				A5F78DD22B258428009A1227 /* Expense+CoreDataClass.swift in Sources */,
-				A5F78DD52B258428009A1227 /* Vehicle+CoreDataProperties.swift in Sources */,
+				A5F78DEB2B2673AB009A1227 /* Expense+CoreDataClass.swift in Sources */,
 				A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */,
+				A5F78DDC2B266F29009A1227 /* Storage.xcdatamodeld in Sources */,
 				A569718C2B11A21900C5B193 /* VehicleView.swift in Sources */,
-				A5F78DD42B258428009A1227 /* Vehicle+CoreDataClass.swift in Sources */,
 				A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */,
+				A5F78DEC2B2673AB009A1227 /* Expense+CoreDataProperties.swift in Sources */,
 				A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */,
 				A569719F2B15334E00C5B193 /* TabViewController.swift in Sources */,
 				A5F78CF02B241149009A1227 /* SettingsViewController.swift in Sources */,
@@ -468,14 +467,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A5A2BA962B0AC73000CA1328 /* Autountant.xcdatamodeld */ = {
+		A5F78DDA2B266F29009A1227 /* Storage.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A5F78D0D2B256AC0009A1227 /* Carcost.xcdatamodel */,
-				A5A2BA972B0AC73000CA1328 /* Autountant.xcdatamodel */,
+				A5F78DDB2B266F29009A1227 /* Storage.xcdatamodel */,
 			);
-			currentVersion = A5F78D0D2B256AC0009A1227 /* Carcost.xcdatamodel */;
-			path = Autountant.xcdatamodeld;
+			currentVersion = A5F78DDB2B266F29009A1227 /* Storage.xcdatamodel */;
+			path = Storage.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

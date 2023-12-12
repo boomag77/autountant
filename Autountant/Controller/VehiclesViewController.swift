@@ -33,7 +33,6 @@ final class VehiclesViewController: UIViewController {
         super.viewDidLoad()
         
         
-        
     }
     
     @objc private func addButtonPressed(_ button: UIButton) {
@@ -77,14 +76,17 @@ final class VehiclesViewController: UIViewController {
         
         //MARK: TableView layout
         tableView.topAnchor.constraint(equalTo: addVehicleButton.bottomAnchor, constant: 20.0).isActive = true
-        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        tableView.separatorStyle = .singleLine
         
     }
 }
 
 extension VehiclesViewController: UITableViewDataSource {
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataManager.getVehiclesCount()
@@ -97,12 +99,16 @@ extension VehiclesViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
         cell.selectionStyle = .none
         cell.cellView.setName(name: vehicle.name)
-        cell.cellView.setMileage(mileage: vehicle.mileage)
-        cell.cellView.current = vehicle.current
+        cell.cellView.setMileage(mileage: String(vehicle.mileage))
+        cell.cellView.current = vehicle.active
         cell.cellView.configure()
+        cell.layer.borderWidth = 1
+        cell.layer.borderColor = UIColor.black.cgColor
     
         return cell
     }
+    
+    
     
 }
 
@@ -111,6 +117,7 @@ extension VehiclesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         let vehicleForErasing = dataManager.vehicleResultsController.object(at: indexPath)
+        if vehicleForErasing.active { return nil }
         let actionDelete = UIContextualAction(style: .destructive,
                                               title: nil) { _,_,_ in
             self.dataManager.deleteVehicle(vehicleForErasing)
@@ -123,7 +130,7 @@ extension VehiclesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         let selectedVehicle = dataManager.vehicleResultsController.object(at: indexPath)
-        if !selectedVehicle.current {
+        if !selectedVehicle.active {
             dataManager.setCurrent(vehicleName: selectedVehicle.name)
             
         }
@@ -167,12 +174,18 @@ extension VehiclesViewController: TabBarDelegate {
         tableView.dataSource = self
         tableView.delegate = self
         
+        if let _ = dataManager {
+            
+        } else {
+            dataManager = DataManager()
+            
+            dataManager.vehicleResultsController.delegate = self
+        }
         
-        dataManager = DataManager(units: .imperial)
         
-        dataManager.vehicleResultsController.delegate = self
         
         tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
+        tableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "gap")
         
         configureView()
         
