@@ -14,6 +14,7 @@ final class VehiclesViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
+        tableView.backgroundColor = .systemGray6
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -63,7 +64,7 @@ final class VehiclesViewController: UIViewController {
     
     private func configureView() {
         
-        view.backgroundColor = .white
+        view.backgroundColor = .systemGray6
         
         view.addSubview(addVehicleButton)
         view.addSubview(tableView)
@@ -79,7 +80,7 @@ final class VehiclesViewController: UIViewController {
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        tableView.separatorStyle = .singleLine
+        tableView.separatorStyle = .none
         
     }
 }
@@ -101,9 +102,10 @@ extension VehiclesViewController: UITableViewDataSource {
         cell.cellView.setName(name: vehicle.name)
         cell.cellView.setMileage(mileage: String(vehicle.mileage))
         cell.cellView.current = vehicle.active
+        
         cell.cellView.configure()
-        cell.layer.borderWidth = 1
-        cell.layer.borderColor = UIColor.black.cgColor
+//        cell.layer.borderWidth = 1
+//        cell.layer.borderColor = UIColor.black.cgColor
     
         return cell
     }

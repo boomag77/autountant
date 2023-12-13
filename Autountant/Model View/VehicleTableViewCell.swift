@@ -11,6 +11,7 @@ class VehicleTableViewCell: UITableViewCell {
     
     lazy var cellView: VehicleCellView = {
         let view = VehicleCellView()
+        
         return view
     }()
     
@@ -30,13 +31,13 @@ class VehicleTableViewCell: UITableViewCell {
     }
     
     private func setUp() {
-        
+        backgroundColor = .systemGray6
         contentView.addSubview(cellView)
         cellView.translatesAutoresizingMaskIntoConstraints = false
-        cellView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        cellView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5.0).isActive = true
         cellView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         cellView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        cellView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        cellView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -5.0).isActive = true
         
     }
 

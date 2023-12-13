@@ -29,6 +29,7 @@ class VehicleCellView: UIView {
         } else {
             label.font = UIFont.systemFont(ofSize: 14.0)
         }
+        
 //        label.layer.borderColor = UIColor.black.cgColor
 //        label.layer.borderWidth = 1
         return label
@@ -36,7 +37,8 @@ class VehicleCellView: UIView {
     
     private lazy var currentMark: UIImageView = {
         let imageView = UIImageView()
-        
+        imageView.contentMode = .scaleAspectFit
+        imageView.setContentHuggingPriority(.required, for: .horizontal)
         imageView.image = UIImage(systemName: "checkmark")
         return imageView
     }()
@@ -67,21 +69,27 @@ class VehicleCellView: UIView {
         
         if current {
             nameLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .bold)
+            layer.borderWidth = 2
         } else {
             nameLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
+            layer.borderWidth = 1
         }
+        
+        backgroundColor = .white
+        layer.borderColor = UIColor.black.cgColor
+        layer.cornerRadius = 10
         
         // selected ImageView constraints
         currentMark.translatesAutoresizingMaskIntoConstraints = false
-        currentMark.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
+        currentMark.topAnchor.constraint(equalTo: topAnchor, constant: 20.0).isActive = true
         currentMark.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20.0).isActive = true
-        //currentMark.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
-        currentMark.widthAnchor.constraint(equalTo: currentMark.heightAnchor, multiplier: 1.0).isActive = true
+        currentMark.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20.0).isActive = true
+        //currentMark.widthAnchor.constraint(equalTo: currentMark.heightAnchor, multiplier: 1.0).isActive = true
         
         // nameLabel constraints
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
-        nameLabel.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
         nameLabel.trailingAnchor.constraint(greaterThanOrEqualTo: currentMark.leadingAnchor, constant: -10.0).isActive = true
         
         // mileageLabel constraints
@@ -89,7 +97,7 @@ class VehicleCellView: UIView {
         mileageLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor).isActive = true
         mileageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
         mileageLabel.trailingAnchor.constraint(greaterThanOrEqualTo: currentMark.leadingAnchor, constant: -10.0).isActive = true
-        mileageLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        mileageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
         
         
     }
