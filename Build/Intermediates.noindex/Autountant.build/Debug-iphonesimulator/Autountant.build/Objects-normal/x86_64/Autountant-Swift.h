@@ -448,8 +448,8 @@ SWIFT_CLASS("_TtC10Autountant20VehicleTableViewCell")
 @end
 
 
-SWIFT_CLASS("_TtC10Autountant11VehicleView")
-@interface VehicleView : UIView
+SWIFT_CLASS("_TtC10Autountant21VehicleViewAtMainView")
+@interface VehicleViewAtMainView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

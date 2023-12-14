@@ -7,12 +7,13 @@
 
 import Foundation
 
-enum Units: String {
-    case metric = "Metric"
-    case imperial = "Imperial"
+enum Units: String, CaseIterable {
+    static var allValues: [String] {
+        return allCases.map { $0.rawValue }
+    }
+    case metric = "metric"
+    case imperial = "imperial"
 }
-
-
 
 enum Category: String {
     case gas = "Gas"

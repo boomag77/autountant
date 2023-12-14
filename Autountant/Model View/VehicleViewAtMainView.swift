@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VehicleView: UIView {
+class VehicleViewAtMainView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.

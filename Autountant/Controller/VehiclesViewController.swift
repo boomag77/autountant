@@ -99,13 +99,8 @@ extension VehiclesViewController: UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "vehicle", for: indexPath) as! VehicleTableViewCell
         cell.selectionStyle = .none
-        cell.cellView.setName(name: vehicle.name)
-        cell.cellView.setMileage(mileage: String(vehicle.mileage))
-        cell.cellView.current = vehicle.active
         
-        cell.cellView.configure()
-//        cell.layer.borderWidth = 1
-//        cell.layer.borderColor = UIColor.black.cgColor
+        cell.cellView.vehicle = vehicle
     
         return cell
     }
@@ -151,9 +146,9 @@ extension VehiclesViewController: NSFetchedResultsControllerDelegate {
                     for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
         switch type {
             case .insert:
-                tableView.insertRows(at: [newIndexPath!], with: .fade)
+                tableView.insertRows(at: [newIndexPath!], with: .none)
             case .delete:
-                tableView.deleteRows(at: [indexPath!], with: .fade)
+                tableView.deleteRows(at: [indexPath!], with: .none)
             case .update:
                 tableView.reloadRows(at: [indexPath!], with: .none)
             case .move:

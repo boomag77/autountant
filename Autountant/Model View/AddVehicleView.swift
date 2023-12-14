@@ -19,6 +19,7 @@ class AddVehicleView: UIView {
     
     private lazy var vehicleNameTextField: InputTextField = {
         let textField = InputTextField()
+        textField.font = UIFont.preferredFont(forTextStyle: .subheadline)
         textField.placeholder = "Input vehicle name here"
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
@@ -72,6 +73,13 @@ class AddVehicleView: UIView {
         checkBox.addTarget(self, action: #selector(toggleCurrentVehicleCheckBox), for: .touchUpInside)
         return checkBox
     }()
+    
+    private lazy var unitsSelector: UISegmentedControl = {
+        let selector = UISegmentedControl(items: Units.allValues)
+        selector.selectedSegmentIndex = 0
+        selector.translatesAutoresizingMaskIntoConstraints = false
+        return selector
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -97,6 +105,7 @@ extension AddVehicleView {
         addSubview(vehicleMileageTextField)
         addSubview(currentVehicleCheckBox)
         addSubview(setCurrentLabel)
+        addSubview(unitsSelector)
         addSubview(saveButton)
         addSubview(cancelButton)
         
@@ -116,7 +125,11 @@ extension AddVehicleView {
         setCurrentLabel.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
         setCurrentLabel.centerYAnchor.constraint(equalTo: currentVehicleCheckBox.centerYAnchor).isActive = true
         
-        saveButton.topAnchor.constraint(equalTo: currentVehicleCheckBox.bottomAnchor, constant: 30.0).isActive = true
+        unitsSelector.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
+        unitsSelector.topAnchor.constraint(equalTo: setCurrentLabel.bottomAnchor, constant: 20.0).isActive = true
+        unitsSelector.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
+        
+        saveButton.topAnchor.constraint(equalTo: unitsSelector.bottomAnchor, constant: 30.0).isActive = true
         saveButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
         cancelButton.topAnchor.constraint(equalTo: saveButton.bottomAnchor, constant: 10.0).isActive = true
@@ -138,14 +151,12 @@ extension AddVehicleView {
               let intMileage = Int64(mileage)
         else { return }
         
-//        if self.vehicleNameTextField.text == "" &&
-//            self.vehicleMileageTextField.text == "" { return }
-        
+        let newVehicleUnits = Units(rawValue: unitsSelector.titleForSegment(at: unitsSelector.selectedSegmentIndex)!)!
         
         dataManager?.registerNewVehicle(name: name,
                                         mileage: intMileage,
                                         type: .gasoline,
-                                        units: .imperial,
+                                        units: newVehicleUnits,
                                         currency: .usd,
                                         active: active) {
             error in
@@ -157,7 +168,7 @@ extension AddVehicleView {
         if success {
             self.vehicleNameTextField.text = ""
             self.vehicleMileageTextField.text = ""
-            
+            self.unitsSelector.selectedSegmentIndex = 0
             self.removeFromSuperview()
             self.backgroundOverlay?.removeFromSuperview()
         }
