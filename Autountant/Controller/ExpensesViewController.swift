@@ -7,9 +7,10 @@
 
 import UIKit
 
-class ExpenseViewController: UIViewController {
+class ExpensesViewController: UIViewController {
     
-    weak
+    var manager: DataManager!
+    weak var activeVehicle: Vehicle?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +31,21 @@ class ExpenseViewController: UIViewController {
 
 }
 
-extension ExpenseViewController: TabBarDelegate {
+extension ExpensesViewController: TabBarDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        self.manager = DataManager()
+        self.activeVehicle = manager.getActiveVehicle()
+    }
+}
+
+extension ExpensesViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         <#code#>
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
