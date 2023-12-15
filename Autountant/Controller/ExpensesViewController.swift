@@ -8,6 +8,8 @@
 import UIKit
 
 class ExpenseViewController: UIViewController {
+    
+    weak
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,4 +28,10 @@ class ExpenseViewController: UIViewController {
     }
     */
 
+}
+
+extension ExpenseViewController: TabBarDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        <#code#>
+    }
 }
