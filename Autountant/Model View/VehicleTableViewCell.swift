@@ -37,11 +37,7 @@ class VehicleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-        
-    }
+    
     
     private func setUp() {
         //print(UIScreen.main.bounds.height, UIScreen.main.bounds.width)

@@ -23,10 +23,6 @@ class VehicleCellView: UIView {
         label.textColor = .black.withAlphaComponent(0.8)
         label.adjustsFontSizeToFitWidth = true
         label.minimumScaleFactor = 0.5
-//        label.numberOfLines = 0
-//        label.lineBreakMode = .byCharWrapping
-//        label.layer.borderColor = UIColor.black.cgColor
-//        label.layer.borderWidth = 1
         return label
     }()
     

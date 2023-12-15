@@ -19,7 +19,7 @@
     "activeRunDestination" : {
       "disableOnlyActiveArch" : false,
       "platform" : "iphonesimulator",
-      "sdk" : "iphonesimulator17.0",
+      "sdk" : "iphonesimulator17.2",
       "sdkVariant" : "iphonesimulator",
       "supportedArchitectures" : [
         "x86_64"
