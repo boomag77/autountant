@@ -11,23 +11,24 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-//    static let shared = AppDelegate()
-//    
-//    var container: NSPersistentContainer!
-//
-//    lazy var persistentContainer: NSPersistentContainer = {
-//        let container = NSPersistentContainer(name: "Autountant")
-//        container.loadPersistentStores { _, error in
-//            if let error = error {
-//                print("Unresolved error \(error)")
-//            }
-//        }
-//        return container
-//    }()
+    static let shared = UIApplication.shared.delegate as! AppDelegate
+    
+    var container: NSPersistentContainer!
+
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Storage")
+        container.loadPersistentStores { _, error in
+            if let error = error {
+                fatalError("Unable to load persistent store: \(error)")
+            }
+        }
+        return container
+    }()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        //self.container = persistentContainer
+        
+        self.container = persistentContainer
         
         return true
     }
@@ -49,6 +50,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate {
-    
-}

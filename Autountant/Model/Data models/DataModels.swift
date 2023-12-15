@@ -7,56 +7,12 @@
 
 import Foundation
 
-enum Units: String {
-    case metric = "Metric"
-    case imperial = "Imperial"
-}
-
-enum Range {
-    case week
-    case month
-    case year
-    case custom
-}
-
-struct Period {
-    
-    var startDate: Date?
-    var endDate: Date?
-    
-    init(range: Range, startDate: Date? = nil, endDate: Date? = nil) {
-        switch range {
-            case .week:
-                self.startDate = Date() - 7
-                if let endDate = endDate {
-                    self.endDate = endDate
-                }
-            case .month:
-                self.startDate = Date() - 30
-                if let endDate = endDate {
-                    self.endDate = endDate
-                }
-            case .year:
-                self.startDate = Date() - 365
-                if let endDate = endDate {
-                    self.endDate = endDate
-                }
-            default:
-                if let startDate = startDate, let endDate = endDate {
-                    self.startDate = startDate
-                    self.endDate = endDate
-                }
-        }
+enum Units: String, CaseIterable {
+    static var allValues: [String] {
+        return allCases.map { $0.rawValue }
     }
-}
-
-struct Stat {
-    var fuelEconomy: Double
-    var period: Period
-    var costOfUnit: Double
-    var totalDistanse: UInt
-    var totalExpenses: Double
-    
+    case metric = "metric"
+    case imperial = "imperial"
 }
 
 enum Category: String {
@@ -67,4 +23,18 @@ enum Category: String {
     case parts = "Parts"
     case service = "Service"
     case other = "Other"
+}
+
+enum VehicleType: String {
+    case gasoline = "Gasoline"
+    case diesel = "Diesel"
+    case electric = "Electric"
+    case phev = "Plug-in Electric"
+    case hybrid = "Hybrid"
+}
+
+enum Currency: String {
+    case usd = "Dollar"
+    case eur = "Euro"
+    case chr = "Swiss frank"
 }
