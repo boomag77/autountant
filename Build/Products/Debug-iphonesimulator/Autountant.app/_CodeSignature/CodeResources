@@ -4,14 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Autountant.momd/Autountant.mom</key>
-		<data>
-		JAeBx2/K7FkBB83BYLA/9Ouz/XE=
-		</data>
-		<key>Autountant.momd/VersionInfo.plist</key>
-		<data>
-		QeU/muF33oQkDqoejsJ7eflZOQI=
-		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		gwfgZH5GFXPhDaZqrP7thpA0c9g=
@@ -26,29 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		p+xMD2Gm+Anr/EGvXI1saL5Wutk=
+		/m45ykG8teJ8ilDVh019i74JfOk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>Storage.momd/Storage.mom</key>
+		<data>
+		WNluQgfX62Qyum/oYywaCZSltW0=
+		</data>
+		<key>Storage.momd/VersionInfo.plist</key>
+		<data>
+		CVQ7ctdHYDp9sPBKUAlD6JSSruI=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Autountant.momd/Autountant.mom</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LfFwsPrWy6NXzYdvRaBYGjY73LlUVQUtuoio86t1o7c=
-			</data>
-		</dict>
-		<key>Autountant.momd/VersionInfo.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6D2unThSzUX42vVuHcrIP/yvPw+CbcuG5cuublPn3ek=
-			</data>
-		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -68,6 +54,20 @@
 			<key>hash2</key>
 			<data>
 			VPNjf2cf66XxnoLsT0p/tEi7PPwPsYDwiapXH8jwU+I=
+			</data>
+		</dict>
+		<key>Storage.momd/Storage.mom</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WSRge8OytoV00cQClQNOTrIcfCdq+Arz7mbz3PuHoV0=
+			</data>
+		</dict>
+		<key>Storage.momd/VersionInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			9T7LhAGBJjSehcZ14bZQY9KsoT5KjFMkDFcGkiuuhsA=
 			</data>
 		</dict>
 	</dict>
