@@ -29,7 +29,7 @@ class TabViewController: UITabBarController {
         let homeVC = MainViewController()
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), selectedImage: nil)
         
-        let expensesVC = ExpenseViewController()
+        let expensesVC = ExpensesViewController()
         expensesVC.tabBarItem = UITabBarItem(title: "Expenses", image: UIImage(systemName: "list.clipboard.fill"), selectedImage: nil)
         
         viewControllers = [homeVC, garageVC, expensesVC]

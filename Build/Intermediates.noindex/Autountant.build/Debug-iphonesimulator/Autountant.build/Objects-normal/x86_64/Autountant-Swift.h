@@ -350,11 +350,21 @@ SWIFT_CLASS_NAMED("Expense")
 
 @class NSBundle;
 
-SWIFT_CLASS("_TtC10Autountant21ExpenseViewController")
-@interface ExpenseViewController : UIViewController
+SWIFT_CLASS("_TtC10Autountant22ExpensesViewController")
+@interface ExpensesViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class UITableView;
+@class NSIndexPath;
+@class UITableViewCell;
+
+@interface ExpensesViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -463,8 +473,6 @@ SWIFT_CLASS("_TtC10Autountant22VehiclesViewController")
 @end
 
 
-@class UITableView;
-@class NSIndexPath;
 
 @interface VehiclesViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;

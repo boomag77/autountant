@@ -190,4 +190,11 @@ extension DataManager {
     }
 }
 
+extension DataManager {
+    
+    func getExpensesCount() -> Int {
+        return expensesResultController.fetchedObjects?.count ?? 0
+    }
+    
+}
 

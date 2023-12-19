@@ -34,7 +34,7 @@ enum VehicleType: String {
 }
 
 enum Currency: String {
-    case usd = "Dollar"
+    case usd = "dollar"
     case eur = "Euro"
     case chr = "Swiss frank"
 }
