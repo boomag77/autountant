@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971822B0B106C00C5B193 /* MainViewController.swift */; };
 		A56971852B0B109E00C5B193 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971842B0B109E00C5B193 /* ExpensesViewController.swift */; };
-		A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971892B0E4D7000C5B193 /* CheckBox.swift */; };
 		A569718C2B11A21900C5B193 /* VehicleViewAtMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569718B2B11A21900C5B193 /* VehicleViewAtMainView.swift */; };
 		A56971912B11A6B700C5B193 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971902B11A6B700C5B193 /* DataModels.swift */; };
 		A569719F2B15334E00C5B193 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569719E2B15334E00C5B193 /* TabViewController.swift */; };
 		A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971A02B158D4200C5B193 /* VehicleCellView.swift */; };
+		A56D71A42B32926B00CEEBBD /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A32B32926B00CEEBBD /* ExpenseTableViewCell.swift */; };
+		A56D71A62B32933E00CEEBBD /* ExpenseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */; };
+		A56D71A92B32A1AD00CEEBBD /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A72B32A1AD00CEEBBD /* Expense+CoreDataClass.swift */; };
+		A56D71AA2B32A1AD00CEEBBD /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A82B32A1AD00CEEBBD /* Expense+CoreDataProperties.swift */; };
 		A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7B2B0ABF8000CA1328 /* AppDelegate.swift */; };
 		A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7D2B0ABF8000CA1328 /* SceneDelegate.swift */; };
 		A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7F2B0ABF8000CA1328 /* VehiclesViewController.swift */; };
@@ -27,19 +30,20 @@
 		A5F78DDC2B266F29009A1227 /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DDA2B266F29009A1227 /* Storage.xcdatamodeld */; };
 		A5F78DE92B2673AB009A1227 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */; };
 		A5F78DEA2B2673AB009A1227 /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */; };
-		A5F78DEB2B2673AB009A1227 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE72B2673AB009A1227 /* Expense+CoreDataClass.swift */; };
-		A5F78DEC2B2673AB009A1227 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE82B2673AB009A1227 /* Expense+CoreDataProperties.swift */; };
 		A5F78DEE2B2A3BED009A1227 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DED2B2A3BED009A1227 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A56971822B0B106C00C5B193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A56971842B0B109E00C5B193 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
-		A56971892B0E4D7000C5B193 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		A569718B2B11A21900C5B193 /* VehicleViewAtMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewAtMainView.swift; sourceTree = "<group>"; };
 		A56971902B11A6B700C5B193 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 		A569719E2B15334E00C5B193 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		A56971A02B158D4200C5B193 /* VehicleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCellView.swift; sourceTree = "<group>"; };
+		A56D71A32B32926B00CEEBBD /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
+		A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCellView.swift; sourceTree = "<group>"; };
+		A56D71A72B32A1AD00CEEBBD /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		A56D71A82B32A1AD00CEEBBD /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A5A2BA782B0ABF8000CA1328 /* Autountant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autountant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A2BA7B2B0ABF8000CA1328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A2BA7D2B0ABF8000CA1328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +59,6 @@
 		A5F78DDB2B266F29009A1227 /* Storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storage.xcdatamodel; sourceTree = "<group>"; };
 		A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		A5F78DE72B2673AB009A1227 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		A5F78DE82B2673AB009A1227 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Expense+CoreDataProperties.swift"; path = "Autountant/Model/Entities/Expense+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A5F78DED2B2A3BED009A1227 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				A569718B2B11A21900C5B193 /* VehicleViewAtMainView.swift */,
-				A56971A02B158D4200C5B193 /* VehicleCellView.swift */,
-				A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */,
 				A5F78CC92B183E48009A1227 /* InputTextField.swift */,
 				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
 			);
@@ -138,7 +138,10 @@
 		A5A2BAAE2B0AEAD200CA1328 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A56971892B0E4D7000C5B193 /* CheckBox.swift */,
+				A56971A02B158D4200C5B193 /* VehicleCellView.swift */,
+				A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */,
+				A5F78CC72B15937C009A1227 /* VehicleTableViewCell.swift */,
+				A56D71A32B32926B00CEEBBD /* ExpenseTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -158,10 +161,10 @@
 		A5A2BAB02B0AEB0800CA1328 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A56D71A72B32A1AD00CEEBBD /* Expense+CoreDataClass.swift */,
+				A56D71A82B32A1AD00CEEBBD /* Expense+CoreDataProperties.swift */,
 				A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */,
 				A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */,
-				A5F78DE72B2673AB009A1227 /* Expense+CoreDataClass.swift */,
-				A5F78DE82B2673AB009A1227 /* Expense+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -237,24 +240,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */,
+				A56D71A62B32933E00CEEBBD /* ExpenseCellView.swift in Sources */,
 				A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */,
 				A5F78DEA2B2673AB009A1227 /* Vehicle+CoreDataProperties.swift in Sources */,
 				A56971852B0B109E00C5B193 /* ExpensesViewController.swift in Sources */,
 				A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */,
 				A56971912B11A6B700C5B193 /* DataModels.swift in Sources */,
+				A56D71A92B32A1AD00CEEBBD /* Expense+CoreDataClass.swift in Sources */,
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
 				A5F78DE92B2673AB009A1227 /* Vehicle+CoreDataClass.swift in Sources */,
-				A569718A2B0E4D7000C5B193 /* CheckBox.swift in Sources */,
 				A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */,
 				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,
-				A5F78DEB2B2673AB009A1227 /* Expense+CoreDataClass.swift in Sources */,
 				A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */,
 				A5F78DDC2B266F29009A1227 /* Storage.xcdatamodeld in Sources */,
 				A569718C2B11A21900C5B193 /* VehicleViewAtMainView.swift in Sources */,
 				A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */,
-				A5F78DEC2B2673AB009A1227 /* Expense+CoreDataProperties.swift in Sources */,
 				A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */,
 				A5F78DEE2B2A3BED009A1227 /* Settings.swift in Sources */,
+				A56D71AA2B32A1AD00CEEBBD /* Expense+CoreDataProperties.swift in Sources */,
+				A56D71A42B32926B00CEEBBD /* ExpenseTableViewCell.swift in Sources */,
 				A569719F2B15334E00C5B193 /* TabViewController.swift in Sources */,
 				A5F78CF02B241149009A1227 /* SettingsViewController.swift in Sources */,
 			);
