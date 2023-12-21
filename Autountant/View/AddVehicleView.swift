@@ -15,7 +15,7 @@ class AddVehicleView: UIView {
         }
     }
     weak var dataManager: DataManager?
-    var backgroundOverlay: UIView?
+    weak var backgroundOverlay: UIView?
     
     private lazy var vehicleNameTextField: InputTextField = {
         let textField = InputTextField()
