@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 enum DataManagerError: String, Error  {
     case nameAlreadyExists = "Vehicle with this name already exists!"
@@ -216,6 +217,8 @@ extension DataManager {
     }
     
     func deleteExpense(dateOfExpense: Date) {
+        
+        //TODO: update vehicle mileage!!!
         
         let request = Expense.createFetchRequest()
         let predicate = NSPredicate(format: "date == %@", dateOfExpense as CVarArg)

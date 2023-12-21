@@ -10,7 +10,8 @@ import UIKit
 class ExpensesViewController: UIViewController {
     
     var manager: DataManager!
-    weak var activeVehicle: Vehicle?
+    var activeVehicle: Vehicle?
+    
     private var amountOfFileteredExpenses: String = "10,000"
     private var testExpensesSet: [String] = ["First expense", "Second expense", "Third expense"]
     
@@ -31,10 +32,37 @@ class ExpensesViewController: UIViewController {
         let tableView = UITableView()
         return tableView
     }()
+    
+    private lazy var addNewExpenseButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Add new expense", for: .normal)
+        button.backgroundColor = .blue
+        button.tintColor = .white
+        button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(addButtonPressed), for: .touchUpInside)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    @objc private func addButtonPressed(_ button: UIButton) {
+        
+        let newExpenseView = AddExpenseView()
+        newExpenseView.vehicle = activeVehicle
+        newExpenseView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(newExpenseView)
+        
+        newExpenseView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        newExpenseView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20.0).isActive = true
+        newExpenseView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20.0).isActive = true
+        
+        let overlay = UIView(frame: view.bounds)
+        overlay.backgroundColor = UIColor.systemGray6.withAlphaComponent(0.95)
+        view.insertSubview(overlay, belowSubview: newExpenseView)
+        newExpenseView.backgroundOverlay = overlay
     }
     
     private func setup() {
@@ -42,10 +70,12 @@ class ExpensesViewController: UIViewController {
         view.addSubview(activeVehicleNameLabel)
         view.addSubview(amountOfFilteredExpensesLabel)
         view.addSubview(tableView)
+        view.addSubview(addNewExpenseButton)
         
         activeVehicleNameLabel.translatesAutoresizingMaskIntoConstraints = false
         amountOfFilteredExpensesLabel.translatesAutoresizingMaskIntoConstraints = false
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        addNewExpenseButton.translatesAutoresizingMaskIntoConstraints = false
         
         if let activeVehicle = activeVehicle {
             activeVehicleNameLabel.text = activeVehicle.name
@@ -59,10 +89,14 @@ class ExpensesViewController: UIViewController {
         amountOfFilteredExpensesLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10.0).isActive = true
         amountOfFilteredExpensesLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10.0).isActive = true
         
+        addNewExpenseButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        addNewExpenseButton.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20.0).isActive = true
+        
         tableView.topAnchor.constraint(equalTo: amountOfFilteredExpensesLabel.bottomAnchor, constant: 20.0).isActive = true
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10.0).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10.0).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.layoutMarginsGuide.bottomAnchor, constant: -20.0).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: addNewExpenseButton.topAnchor, constant: -20.0).isActive = true
+        
         
     }
     

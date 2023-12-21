@@ -303,6 +303,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10Autountant14AddExpenseView")
+@interface AddExpenseView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 SWIFT_CLASS("_TtC10Autountant14AddVehicleView")
 @interface AddVehicleView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -324,13 +332,6 @@ SWIFT_CLASS("_TtC10Autountant11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC10Autountant8CheckBox")
-@interface CheckBox : UIControl
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -340,14 +341,30 @@ SWIFT_CLASS_NAMED("Expense")
 @end
 
 
-@class NSDate;
 @class NSString;
+@class NSDate;
 
 @interface Expense (SWIFT_EXTENSION(Autountant))
 @property (nonatomic) double amount;
-@property (nonatomic, copy) NSDate * _Nonnull date;
-@property (nonatomic) int64_t mileage;
 @property (nonatomic, copy) NSString * _Nonnull category;
+@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic) int64_t mileage;
+@property (nonatomic, copy) NSString * _Nonnull vehicleName;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant15ExpenseCellView")
+@interface ExpenseCellView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant20ExpenseTableViewCell")
+@interface ExpenseTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 @end
 
 @class NSBundle;
@@ -362,7 +379,6 @@ SWIFT_CLASS("_TtC10Autountant22ExpensesViewController")
 
 @class UITableView;
 @class NSIndexPath;
-@class UITableViewCell;
 
 @interface ExpensesViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
