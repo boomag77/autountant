@@ -9,8 +9,11 @@ import UIKit
 
 class AddExpenseView: PopupInputWindowView {
     
-    weak var backgroundOverlay: UIView?
-    var vehicle: Vehicle!
+    var vehicle: Vehicle! {
+        didSet {
+            setup()
+        }
+    }
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -41,16 +44,14 @@ class AddExpenseView: PopupInputWindowView {
     }
     
     @objc private func closeButtonPressed(_ sender: UIButton) {
-        removeFromSuperview()
-        backgroundOverlay?.removeFromSuperview()
-        
+        self.remove()
     }
     
 }
 
 extension AddExpenseView {
     
-    func setup() {
+    private func setup() {
         
         addSubview(titleLabel)
         addSubview(closeButton)

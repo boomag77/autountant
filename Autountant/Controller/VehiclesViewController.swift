@@ -37,19 +37,21 @@ final class VehiclesViewController: UIViewController {
     }
     
     @objc private func addButtonPressed(_ button: UIButton) {
-        let addVehicleView = AddVehicleView()
-        view.addSubview(addVehicleView)
+        let newVehicleView = AddVehicleView()
+        newVehicleView.dataManager = dataManager
+        newVehicleView.show(on: self)
+//        view.addSubview(addVehicleView)
+//        
+//        addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
+//        addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
+//        addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
+//        
+//        let overlay = UIView(frame: view.bounds)
+//        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.95)
+//        view.insertSubview(overlay, belowSubview: addVehicleView)
+        //addVehicleView.backgroundOverlay = overlay
         
-        addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
-        addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
-        addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
         
-        let overlay = UIView(frame: view.bounds)
-        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.95)
-        view.insertSubview(overlay, belowSubview: addVehicleView)
-        addVehicleView.backgroundOverlay = overlay
-        
-        addVehicleView.dataManager = dataManager
     }
     
     @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {

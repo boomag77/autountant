@@ -52,16 +52,7 @@ class ExpensesViewController: UIViewController {
         
         let newExpenseView = AddExpenseView()
         newExpenseView.vehicle = activeVehicle
-        newExpenseView.setup()
-        view.addSubview(newExpenseView)
-        
-        newExpenseView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        newExpenseView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        
-        let overlay = UIView(frame: view.bounds)
-        overlay.backgroundColor = UIColor.systemGray6.withAlphaComponent(0.95)
-        view.insertSubview(overlay, belowSubview: newExpenseView)
-        newExpenseView.backgroundOverlay = overlay
+        newExpenseView.show(on: self)
     }
     
     private func setup() {

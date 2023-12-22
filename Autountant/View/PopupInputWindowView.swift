@@ -9,12 +9,18 @@ import UIKit
 
 class PopupInputWindowView: UIView {
     
-    weak var controller: UIViewController!
+    private weak var controller: UIViewController!
     
-    lazy var frameConstraints: [NSLayoutConstraint] = [
+    private lazy var frameConstraints: [NSLayoutConstraint] = [
         centerYAnchor.constraint(equalTo: controller.view.centerYAnchor),
         centerXAnchor.constraint(equalTo: controller.view.centerXAnchor)
     ]
+    
+    private lazy var backgroundOverlay: UIView = {
+        let overlay = UIView(frame: controller.view.bounds)
+        overlay.backgroundColor = UIColor.systemGray6.withAlphaComponent(0.95)
+        return overlay
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,6 +42,18 @@ class PopupInputWindowView: UIView {
     
     private func applyBoundsConstraints() {
         setContentHuggingPriority(.required, for: .horizontal)
+    }
+    
+    func show(on controler: UIViewController) {
+        self.controller = controler
+        controller.view.addSubview(self)
+        NSLayoutConstraint.activate(frameConstraints)
+        controller.view.insertSubview(self.backgroundOverlay, belowSubview: self)
+    }
+    
+    func remove() {
+        self.removeFromSuperview()
+        self.backgroundOverlay.removeFromSuperview()
     }
     
 }

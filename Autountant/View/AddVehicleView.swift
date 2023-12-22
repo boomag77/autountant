@@ -15,7 +15,6 @@ class AddVehicleView: PopupInputWindowView {
         }
     }
     weak var dataManager: DataManager?
-    weak var backgroundOverlay: UIView?
     
     private lazy var vehicleNameTextField: InputTextField = {
         let textField = InputTextField()
@@ -169,15 +168,13 @@ extension AddVehicleView {
             self.vehicleNameTextField.text = ""
             self.vehicleMileageTextField.text = ""
             self.unitsSelector.selectedSegmentIndex = 0
-            self.removeFromSuperview()
-            self.backgroundOverlay?.removeFromSuperview()
+            self.remove()
         }
         
     }
     
     @objc private func cancelButtonPressed(_ button: UIButton) {
-        removeFromSuperview()
-        backgroundOverlay?.removeFromSuperview()
+        self.remove()
     }
     
     @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
