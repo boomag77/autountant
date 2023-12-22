@@ -40,8 +40,6 @@ final class VehiclesViewController: UIViewController {
         let addVehicleView = AddVehicleView()
         view.addSubview(addVehicleView)
         
-        addVehicleView.translatesAutoresizingMaskIntoConstraints = false
-        
         addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
         addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
         addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true

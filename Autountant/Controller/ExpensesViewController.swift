@@ -53,14 +53,10 @@ class ExpensesViewController: UIViewController {
         let newExpenseView = AddExpenseView()
         newExpenseView.vehicle = activeVehicle
         newExpenseView.setup()
-        newExpenseView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(newExpenseView)
         
         newExpenseView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        newExpenseView.setContentHuggingPriority(.required, for: .horizontal)
         newExpenseView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-//        newExpenseView.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 20.0).isActive = true
-//        newExpenseView.trailingAnchor.constraint(greaterThanOrEqualTo: view.trailingAnchor, constant: -20.0).isActive = true
         
         let overlay = UIView(frame: view.bounds)
         overlay.backgroundColor = UIColor.systemGray6.withAlphaComponent(0.95)
