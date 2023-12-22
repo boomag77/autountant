@@ -123,6 +123,7 @@
 		A5A2BA7A2B0ABF8000CA1328 /* Autountant */ = {
 			isa = PBXGroup;
 			children = (
+				A5A2BAB02B0AEB0800CA1328 /* CoreData */,
 				A56971862B0D205E00C5B193 /* Model View */,
 				A5A2BAAF2B0AEAE100CA1328 /* Controller */,
 				A5A2BAAE2B0AEAD200CA1328 /* View */,
@@ -141,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				A569718F2B11A69A00C5B193 /* Data models */,
-				A5A2BAB02B0AEB0800CA1328 /* Entities */,
 				A5A2BAB12B0AEB3400CA1328 /* DataManager.swift */,
 				A5F78DED2B2A3BED009A1227 /* Settings.swift */,
 			);
@@ -172,7 +172,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		A5A2BAB02B0AEB0800CA1328 /* Entities */ = {
+		A5A2BAB02B0AEB0800CA1328 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 				A59DAD6C2B35302A00B3C51B /* Expense+CoreDataClass.swift */,
@@ -180,8 +180,10 @@
 				A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */,
 				A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */,
 			);
-			path = Entities;
+			name = CoreData;
+			path = Model/CoreData;
 			sourceTree = "<group>";
+			wrapsLines = 1;
 		};
 /* End PBXGroup section */
 
