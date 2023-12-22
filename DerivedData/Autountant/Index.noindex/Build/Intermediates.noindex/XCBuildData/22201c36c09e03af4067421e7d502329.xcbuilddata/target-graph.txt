@@ -1,0 +1,3 @@
+Target dependency graph (2 targets)
+Target 'Autountant' in project 'Autountant' (no dependencies)
+Target 'Autountant' in project 'Autountant' (no dependencies)

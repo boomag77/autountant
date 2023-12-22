@@ -17,8 +17,10 @@
 		A56D71A62B32933E00CEEBBD /* ExpenseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */; };
 		A56D71AF2B338F8000CEEBBD /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */; };
 		A59DAD672B34E43200B3C51B /* PopupInputWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */; };
-		A59DAD6E2B35302A00B3C51B /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD6C2B35302A00B3C51B /* Expense+CoreDataClass.swift */; };
-		A59DAD6F2B35302A00B3C51B /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD6D2B35302A00B3C51B /* Expense+CoreDataProperties.swift */; };
+		A59DAD742B363C2800B3C51B /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD702B363C2800B3C51B /* Vehicle+CoreDataClass.swift */; };
+		A59DAD752B363C2800B3C51B /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD712B363C2800B3C51B /* Vehicle+CoreDataProperties.swift */; };
+		A59DAD762B363C2800B3C51B /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD722B363C2800B3C51B /* Expense+CoreDataClass.swift */; };
+		A59DAD772B363C2800B3C51B /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD732B363C2800B3C51B /* Expense+CoreDataProperties.swift */; };
 		A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7B2B0ABF8000CA1328 /* AppDelegate.swift */; };
 		A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7D2B0ABF8000CA1328 /* SceneDelegate.swift */; };
 		A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A2BA7F2B0ABF8000CA1328 /* VehiclesViewController.swift */; };
@@ -30,8 +32,6 @@
 		A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */; };
 		A5F78CF02B241149009A1227 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78CEF2B241149009A1227 /* SettingsViewController.swift */; };
 		A5F78DDC2B266F29009A1227 /* Storage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DDA2B266F29009A1227 /* Storage.xcdatamodeld */; };
-		A5F78DE92B2673AB009A1227 /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */; };
-		A5F78DEA2B2673AB009A1227 /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */; };
 		A5F78DEE2B2A3BED009A1227 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F78DED2B2A3BED009A1227 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +46,10 @@
 		A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCellView.swift; sourceTree = "<group>"; };
 		A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInputWindowView.swift; sourceTree = "<group>"; };
-		A59DAD6C2B35302A00B3C51B /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		A59DAD6D2B35302A00B3C51B /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		A59DAD702B363C2800B3C51B /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A59DAD712B363C2800B3C51B /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A59DAD722B363C2800B3C51B /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A59DAD732B363C2800B3C51B /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A5A2BA782B0ABF8000CA1328 /* Autountant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autountant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A2BA7B2B0ABF8000CA1328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A2BA7D2B0ABF8000CA1328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,8 +63,6 @@
 		A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleView.swift; sourceTree = "<group>"; };
 		A5F78CEF2B241149009A1227 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A5F78DDB2B266F29009A1227 /* Storage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Storage.xcdatamodel; sourceTree = "<group>"; };
-		A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		A5F78DED2B2A3BED009A1227 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +104,17 @@
 			path = "Table Cells View";
 			sourceTree = "<group>";
 		};
+		A59DAD782B363C4000B3C51B /* Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A59DAD702B363C2800B3C51B /* Vehicle+CoreDataClass.swift */,
+				A59DAD712B363C2800B3C51B /* Vehicle+CoreDataProperties.swift */,
+				A59DAD722B363C2800B3C51B /* Expense+CoreDataClass.swift */,
+				A59DAD732B363C2800B3C51B /* Expense+CoreDataProperties.swift */,
+			);
+			path = "Data Classes";
+			sourceTree = "<group>";
+		};
 		A5A2BA6F2B0ABF8000CA1328 = {
 			isa = PBXGroup;
 			children = (
@@ -123,7 +134,7 @@
 		A5A2BA7A2B0ABF8000CA1328 /* Autountant */ = {
 			isa = PBXGroup;
 			children = (
-				A5A2BAB02B0AEB0800CA1328 /* CoreData */,
+				A59DAD782B363C4000B3C51B /* Data Classes */,
 				A56971862B0D205E00C5B193 /* Model View */,
 				A5A2BAAF2B0AEAE100CA1328 /* Controller */,
 				A5A2BAAE2B0AEAD200CA1328 /* View */,
@@ -171,19 +182,6 @@
 			);
 			path = Controller;
 			sourceTree = "<group>";
-		};
-		A5A2BAB02B0AEB0800CA1328 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				A59DAD6C2B35302A00B3C51B /* Expense+CoreDataClass.swift */,
-				A59DAD6D2B35302A00B3C51B /* Expense+CoreDataProperties.swift */,
-				A5F78DE52B2673AB009A1227 /* Vehicle+CoreDataClass.swift */,
-				A5F78DE62B2673AB009A1227 /* Vehicle+CoreDataProperties.swift */,
-			);
-			name = CoreData;
-			path = Model/CoreData;
-			sourceTree = "<group>";
-			wrapsLines = 1;
 		};
 /* End PBXGroup section */
 
@@ -259,13 +257,12 @@
 				A56D71A62B32933E00CEEBBD /* ExpenseCellView.swift in Sources */,
 				A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */,
 				A56D71AF2B338F8000CEEBBD /* AddExpenseView.swift in Sources */,
-				A5F78DEA2B2673AB009A1227 /* Vehicle+CoreDataProperties.swift in Sources */,
 				A56971852B0B109E00C5B193 /* ExpensesViewController.swift in Sources */,
-				A59DAD6E2B35302A00B3C51B /* Expense+CoreDataClass.swift in Sources */,
 				A5A2BA7C2B0ABF8000CA1328 /* AppDelegate.swift in Sources */,
+				A59DAD762B363C2800B3C51B /* Expense+CoreDataClass.swift in Sources */,
+				A59DAD752B363C2800B3C51B /* Vehicle+CoreDataProperties.swift in Sources */,
 				A56971912B11A6B700C5B193 /* DataModels.swift in Sources */,
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
-				A5F78DE92B2673AB009A1227 /* Vehicle+CoreDataClass.swift in Sources */,
 				A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */,
 				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,
 				A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */,
@@ -273,9 +270,10 @@
 				A569718C2B11A21900C5B193 /* VehicleViewAtMainView.swift in Sources */,
 				A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */,
 				A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */,
+				A59DAD742B363C2800B3C51B /* Vehicle+CoreDataClass.swift in Sources */,
 				A5F78DEE2B2A3BED009A1227 /* Settings.swift in Sources */,
 				A56D71A42B32926B00CEEBBD /* ExpenseTableViewCell.swift in Sources */,
-				A59DAD6F2B35302A00B3C51B /* Expense+CoreDataProperties.swift in Sources */,
+				A59DAD772B363C2800B3C51B /* Expense+CoreDataProperties.swift in Sources */,
 				A569719F2B15334E00C5B193 /* TabViewController.swift in Sources */,
 				A5F78CF02B241149009A1227 /* SettingsViewController.swift in Sources */,
 				A59DAD672B34E43200B3C51B /* PopupInputWindowView.swift in Sources */,
