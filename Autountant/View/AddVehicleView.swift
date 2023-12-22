@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AddVehicleView: UIView {
+class AddVehicleView: PopupInputWindowView {
     
     var active: Bool = false {
         didSet {
@@ -96,9 +96,9 @@ extension AddVehicleView {
     
     private func setup() {
         
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.lightGray.cgColor
-        layer.cornerRadius = 20
+//        layer.borderWidth = 1
+//        layer.borderColor = UIColor.lightGray.cgColor
+//        layer.cornerRadius = 20
         
         
         addSubview(vehicleNameTextField)

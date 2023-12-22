@@ -2,7 +2,7 @@
 //  Expense+CoreDataClass.swift
 //  Autountant
 //
-//  Created by Sergey on 12/19/23.
+//  Created by Sergey on 12/21/23.
 //
 //
 

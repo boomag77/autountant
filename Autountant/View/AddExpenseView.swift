@@ -7,18 +7,19 @@
 
 import UIKit
 
-class AddExpenseView: UIView {
+class AddExpenseView: PopupInputWindowView {
     
     weak var backgroundOverlay: UIView?
-    var vehicle: Vehicle?
+    var vehicle: Vehicle!
     
-    
-    
-    private lazy var vehicleLabel: UILabel = {
+    private lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "N/A"
-        label.layer.borderColor = UIColor.black.cgColor
-        label.layer.borderWidth = 1.0
+        label.text = "New expense for \(self.vehicle.name)"
+        label.font = UIFont.preferredFont(forTextStyle: .footnote)
+        label.adjustsFontForContentSizeCategory = true
+        label.textColor = .black.withAlphaComponent(0.8)
+        label.contentMode = .center
+        label.setContentHuggingPriority(.required, for: .horizontal)
         return label
     }()
     
@@ -33,7 +34,6 @@ class AddExpenseView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
     }
     
     required init?(coder: NSCoder) {
@@ -50,24 +50,20 @@ class AddExpenseView: UIView {
 
 extension AddExpenseView {
     
-    private func setup() {
+    func setup() {
         
-        backgroundColor = .red
-        layer.borderWidth = 5.0
-        layer.borderColor = UIColor.black.cgColor
-        
-        addSubview(vehicleLabel)
+        addSubview(titleLabel)
         addSubview(closeButton)
-        vehicleLabel.translatesAutoresizingMaskIntoConstraints = false
+        titleLabel.translatesAutoresizingMaskIntoConstraints = false
         closeButton.translatesAutoresizingMaskIntoConstraints = false
 
-        vehicleLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        vehicleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
+        titleLabel.trailingAnchor.constraint(greaterThanOrEqualTo: trailingAnchor, constant: -20.0).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
         
-        closeButton.topAnchor.constraint(equalTo: vehicleLabel.bottomAnchor, constant: 30.0).isActive = true
+        closeButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.0).isActive = true
         closeButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         closeButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
-        
         
     }
 }

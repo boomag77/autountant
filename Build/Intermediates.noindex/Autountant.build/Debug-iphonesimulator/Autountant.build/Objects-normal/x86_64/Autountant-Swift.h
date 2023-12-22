@@ -301,8 +301,15 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10Autountant20PopupInputWindowView")
+@interface PopupInputWindowView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC10Autountant14AddExpenseView")
-@interface AddExpenseView : UIView
+@interface AddExpenseView : PopupInputWindowView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -310,7 +317,7 @@ SWIFT_CLASS("_TtC10Autountant14AddExpenseView")
 
 
 SWIFT_CLASS("_TtC10Autountant14AddVehicleView")
-@interface AddVehicleView : UIView
+@interface AddVehicleView : PopupInputWindowView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -345,9 +352,11 @@ SWIFT_CLASS_NAMED("Expense")
 @interface Expense (SWIFT_EXTENSION(Autountant))
 @property (nonatomic) double amount;
 @property (nonatomic, copy) NSString * _Nonnull category;
-@property (nonatomic, copy) NSDate * _Nullable date;
+@property (nonatomic, copy) NSDate * _Nonnull date;
 @property (nonatomic) int64_t mileage;
 @property (nonatomic, copy) NSString * _Nonnull vehicleName;
+@property (nonatomic) double volume;
+@property (nonatomic) double kWatt;
 @end
 
 
@@ -399,6 +408,7 @@ SWIFT_CLASS("_TtC10Autountant18MainViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @class UIWindow;
