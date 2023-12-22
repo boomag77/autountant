@@ -27,6 +27,11 @@ class Settings {
         return self.screenHeight * 0.005
     }
     
+    let popupWindowBackgroundColor: UIColor = .systemGray6
+    let popupWindowBorderWidth: CGFloat = 1.0
+    let popupWindowBorderColor: CGColor = UIColor.lightGray.cgColor
+    let popupWindowCornerRadius: CGFloat = 20.0
+    
     private init() {
         self.screenHeight = UIScreen.main.bounds.height
         self.screenWidth = UIScreen.main.bounds.width

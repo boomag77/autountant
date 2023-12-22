@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 enum DataManagerError: String, Error  {
     case nameAlreadyExists = "Vehicle with this name already exists!"
@@ -117,9 +118,10 @@ extension DataManager {
         return vehicleResultsController.fetchedObjects?.count ?? 0
     }
     
-    private func updateVehicleMileage(vehicle: Vehicle, newMileage: Int64) {
+    private func updateVehicleMileage(vehicleName: String, newMileage: Int64) {
+        
         let request = Vehicle.createFetchRequest()
-        let predicate = NSPredicate(format: "name = %@", vehicle.name)
+        let predicate = NSPredicate(format: "name = %@", vehicleName)
         request.predicate = predicate
         if let vehicle = try? container.viewContext.fetch(request).first {
             vehicle.mileage = newMileage
@@ -189,3 +191,47 @@ extension DataManager {
         }
     }
 }
+
+extension DataManager {
+    
+    func getExpensesCount() -> Int {
+        return expensesResultController.fetchedObjects?.count ?? 0
+    }
+    
+    func registerNewExpense(vehicleName: String,
+                            date: Date,
+                            mileage: Int64,
+                            category: Category,
+                            amount: Double,
+                            completion: (() -> Void)? = nil) {
+        
+        let newExpense = Expense(context: self.container.viewContext)
+        newExpense.vehicleName = vehicleName
+        newExpense.date = date
+        newExpense.mileage = mileage
+        newExpense.category = category.rawValue
+        newExpense.amount = amount
+        
+        updateVehicleMileage(vehicleName: vehicleName, newMileage: mileage)
+        saveContext()
+    }
+    
+    func deleteExpense(dateOfExpense: Date) {
+        
+        //TODO: update vehicle mileage!!!
+        
+        let request = Expense.createFetchRequest()
+        let predicate = NSPredicate(format: "date == %@", dateOfExpense as CVarArg)
+        request.predicate = predicate
+        do {
+            let expense = try container.viewContext.fetch(request)
+            if !expense.isEmpty {
+                container.viewContext.delete(expense.first!)
+                self.saveContext()
+            }
+        } catch let error as NSError {
+            print("Could not fetch or delete object \(error)")
+        }
+    }
+}
+

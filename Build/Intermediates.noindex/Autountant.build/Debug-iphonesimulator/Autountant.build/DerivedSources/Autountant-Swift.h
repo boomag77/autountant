@@ -303,8 +303,23 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 @class NSCoder;
 
+SWIFT_CLASS("_TtC10Autountant20PopupInputWindowView")
+@interface PopupInputWindowView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant14AddExpenseView")
+@interface AddExpenseView : PopupInputWindowView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 SWIFT_CLASS("_TtC10Autountant14AddVehicleView")
-@interface AddVehicleView : UIView
+@interface AddVehicleView : PopupInputWindowView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -324,13 +339,6 @@ SWIFT_CLASS("_TtC10Autountant11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-SWIFT_CLASS("_TtC10Autountant8CheckBox")
-@interface CheckBox : UIControl
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
@@ -340,23 +348,50 @@ SWIFT_CLASS_NAMED("Expense")
 @end
 
 
-@class NSDate;
 @class NSString;
+@class NSDate;
 
 @interface Expense (SWIFT_EXTENSION(Autountant))
 @property (nonatomic) double amount;
+@property (nonatomic, copy) NSString * _Nonnull category;
 @property (nonatomic, copy) NSDate * _Nonnull date;
 @property (nonatomic) int64_t mileage;
-@property (nonatomic, copy) NSString * _Nonnull category;
+@property (nonatomic, copy) NSString * _Nonnull vehicleName;
+@property (nonatomic) double volume;
+@property (nonatomic) double kWatt;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant15ExpenseCellView")
+@interface ExpenseCellView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant20ExpenseTableViewCell")
+@interface ExpenseTableViewCell : UITableViewCell
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 @end
 
 @class NSBundle;
 
-SWIFT_CLASS("_TtC10Autountant21ExpenseViewController")
-@interface ExpenseViewController : UIViewController
+SWIFT_CLASS("_TtC10Autountant22ExpensesViewController")
+@interface ExpensesViewController : UIViewController
 - (void)viewDidLoad;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@class UITableView;
+@class NSIndexPath;
+
+@interface ExpensesViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -375,6 +410,7 @@ SWIFT_CLASS("_TtC10Autountant18MainViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 @class UIWindow;
@@ -465,8 +501,6 @@ SWIFT_CLASS("_TtC10Autountant22VehiclesViewController")
 @end
 
 
-@class UITableView;
-@class NSIndexPath;
 
 @interface VehiclesViewController (SWIFT_EXTENSION(Autountant)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
