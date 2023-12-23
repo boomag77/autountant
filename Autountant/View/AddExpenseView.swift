@@ -16,8 +16,23 @@ class AddExpenseView: PopupInputWindowView {
     }
     
     private lazy var vehicleLabelView: UIView = {
-        let view = UIView()
+        let view = UIControl()
         
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20.0).isActive = true
+        view.trailingAnchor.constraint(greaterThanOrEqualTo: self.trailingAnchor, constant: -20.0).isActive = true
+        view.topAnchor.constraint(equalTo: self.topAnchor, constant: 10.0).isActive = true
+        let label = UILabel(frame: view.bounds)
+        view.addSubview(label)
+        label.text = "self.vehicle.name"
+        label.textAlignment = .center
+        label.textColor = UIColor.black.withAlphaComponent(0.8)
+        label.font = UIFont.preferredFont(forTextStyle: .footnote)
+        
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.black.cgColor
+        view.addTarget(self, action: #selector(vehicleLabelTapped), for: .touchUpInside)
         return view
     }()
     
@@ -40,6 +55,10 @@ class AddExpenseView: PopupInputWindowView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    @objc private func vehicleLabelTapped() {
+        print("vehicle label tapped")
+    }
+    
     @objc private func closeButtonPressed(_ sender: UIButton) {
         self.remove()
     }
@@ -56,12 +75,13 @@ extension AddExpenseView {
         cancelButton.translatesAutoresizingMaskIntoConstraints = false
 
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
-        titleLabel.trailingAnchor.constraint(greaterThanOrEqualTo: trailingAnchor, constant: -20.0).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20.0).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20.0).isActive = true
         
-        cancelButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.0).isActive = true
-        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
+        cancelButton.centerXAnchor.constraint(equalTo: titleLabel.centerXAnchor).isActive = true
+        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20.0).isActive = true
+        
+        
         
     }
 }

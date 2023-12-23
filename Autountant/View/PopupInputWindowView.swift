@@ -49,8 +49,7 @@ class PopupInputWindowView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.translatesAutoresizingMaskIntoConstraints = false
-        applyAppearance()
-        applyBoundsConstraints()
+        setup()
     }
     
     required init?(coder: NSCoder) {
@@ -59,7 +58,9 @@ class PopupInputWindowView: UIView {
     
     private func setup() {
         
-        
+        applyAppearance()
+        applyBoundsConstraints()
+        addSubview(cancelButton)
         
     }
     
@@ -72,6 +73,8 @@ class PopupInputWindowView: UIView {
     
     private func applyBoundsConstraints() {
         setContentHuggingPriority(.required, for: .horizontal)
+        self.widthAnchor.constraint(greaterThanOrEqualToConstant: cancelButton.intrinsicContentSize.width).isActive = true
+        
     }
     
     @objc func saveButtonPressed(_ button: UIButton) {}
