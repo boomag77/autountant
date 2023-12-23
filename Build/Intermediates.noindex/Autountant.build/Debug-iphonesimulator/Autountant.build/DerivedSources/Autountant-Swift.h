@@ -302,11 +302,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSCoder;
+@class UIButton;
 
 SWIFT_CLASS("_TtC10Autountant20PopupInputWindowView")
 @interface PopupInputWindowView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)saveButtonPressed:(UIButton * _Nonnull)button;
+- (void)cancelButtonPressed:(UIButton * _Nonnull)button;
 @end
 
 
@@ -322,6 +325,7 @@ SWIFT_CLASS("_TtC10Autountant14AddVehicleView")
 @interface AddVehicleView : PopupInputWindowView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)saveButtonPressed:(UIButton * _Nonnull)button;
 @end
 
 

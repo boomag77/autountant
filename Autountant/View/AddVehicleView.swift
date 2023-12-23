@@ -38,31 +38,29 @@ class AddVehicleView: PopupInputWindowView {
         return label
     }()
     
-    private lazy var saveButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Save", for: .normal)
-        
-        var config = UIButton.Configuration.filled()
-        config.baseForegroundColor = .white
-        config.baseBackgroundColor = .systemBlue
-        config.cornerStyle = .capsule
-        button.configuration = config
-        
-        //button.sizeToFit()
-        
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
-        return button
-    }()
-    
-    private lazy var cancelButton: UIButton = {
-        let button = UIButton(type: .roundedRect)
-        button.setTitle("Close", for: .normal)
-        button.sizeToFit()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(cancelButtonPressed), for: .touchUpInside)
-        return button
-    }()
+//    private lazy var saveButton: UIButton = {
+//        let button = UIButton(type: .system)
+//        button.setTitle("Save", for: .normal)
+//        
+//        var config = UIButton.Configuration.filled()
+//        config.baseForegroundColor = .white
+//        config.baseBackgroundColor = .systemBlue
+//        config.cornerStyle = .capsule
+//        button.configuration = config
+//        
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.addTarget(self, action: #selector(saveButtonPressed), for: .touchUpInside)
+//        return button
+//    }()
+//    
+//    private lazy var cancelButton: UIButton = {
+//        let button = UIButton(type: .roundedRect)
+//        button.setTitle("Close", for: .normal)
+//        button.sizeToFit()
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.addTarget(self, action: #selector(cancelButtonPressed), for: .touchUpInside)
+//        return button
+//    }()
     
     private lazy var currentVehicleCheckBox: UISwitch = {
         let checkBox = UISwitch()
@@ -89,6 +87,38 @@ class AddVehicleView: PopupInputWindowView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func saveButtonPressed(_ button: UIButton) {
+        
+        var success: Bool = true
+        
+        guard let name = vehicleNameTextField.text,
+              let mileage = vehicleMileageTextField.text,
+              let intMileage = Int64(mileage)
+        else { return }
+        
+        let newVehicleUnits = Units(rawValue: unitsSelector.titleForSegment(at: unitsSelector.selectedSegmentIndex)!)!
+        
+        dataManager?.registerNewVehicle(name: name,
+                                        mileage: intMileage,
+                                        type: .gasoline,
+                                        units: newVehicleUnits,
+                                        currency: .usd,
+                                        active: active) {
+            error in
+            if let error = error {
+                print(error.rawValue)
+                success  = false
+            }
+        }
+        if success {
+            self.vehicleNameTextField.text = ""
+            self.vehicleMileageTextField.text = ""
+            self.unitsSelector.selectedSegmentIndex = 0
+            self.remove()
+        }
+        
+    }
+    
 }
 
 extension AddVehicleView {
@@ -98,7 +128,6 @@ extension AddVehicleView {
 //        layer.borderWidth = 1
 //        layer.borderColor = UIColor.lightGray.cgColor
 //        layer.cornerRadius = 20
-        
         
         addSubview(vehicleNameTextField)
         addSubview(vehicleMileageTextField)
@@ -140,42 +169,6 @@ extension AddVehicleView {
 }
 
 extension AddVehicleView {
-    
-    @objc private func saveButtonPressed(_ button: UIButton) {
-        
-        var success: Bool = true
-        
-        guard let name = vehicleNameTextField.text,
-              let mileage = vehicleMileageTextField.text,
-              let intMileage = Int64(mileage)
-        else { return }
-        
-        let newVehicleUnits = Units(rawValue: unitsSelector.titleForSegment(at: unitsSelector.selectedSegmentIndex)!)!
-        
-        dataManager?.registerNewVehicle(name: name,
-                                        mileage: intMileage,
-                                        type: .gasoline,
-                                        units: newVehicleUnits,
-                                        currency: .usd,
-                                        active: active) {
-            error in
-            if let error = error {
-                print(error.rawValue)
-                success  = false
-            }
-        }
-        if success {
-            self.vehicleNameTextField.text = ""
-            self.vehicleMileageTextField.text = ""
-            self.unitsSelector.selectedSegmentIndex = 0
-            self.remove()
-        }
-        
-    }
-    
-    @objc private func cancelButtonPressed(_ button: UIButton) {
-        self.remove()
-    }
     
     @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
         if self.active {

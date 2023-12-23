@@ -180,7 +180,6 @@ extension VehiclesViewController: TabBarDelegate {
         }
         
         
-        
         tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")
         tableView.register(UITableViewHeaderFooterView.self, forHeaderFooterViewReuseIdentifier: "gap")
         

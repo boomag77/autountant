@@ -26,15 +26,6 @@ class AddExpenseView: PopupInputWindowView {
         return label
     }()
     
-    private lazy var closeButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.backgroundColor = .blue
-        button.tintColor = .white
-        button.setTitle("Close", for: .normal)
-        button.addTarget(self, action: #selector(closeButtonPressed), for: .touchUpInside)
-        return button
-    }()
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -54,17 +45,17 @@ extension AddExpenseView {
     private func setup() {
         
         addSubview(titleLabel)
-        addSubview(closeButton)
+        addSubview(cancelButton)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        closeButton.translatesAutoresizingMaskIntoConstraints = false
+        cancelButton.translatesAutoresizingMaskIntoConstraints = false
 
         titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
         titleLabel.trailingAnchor.constraint(greaterThanOrEqualTo: trailingAnchor, constant: -20.0).isActive = true
         titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
         
-        closeButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.0).isActive = true
-        closeButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        closeButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
+        cancelButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.0).isActive = true
+        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
         
     }
 }
