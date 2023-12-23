@@ -15,6 +15,12 @@ class AddExpenseView: PopupInputWindowView {
         }
     }
     
+    private lazy var vehicleLabelView: UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "New expense for \(self.vehicle.name)"
