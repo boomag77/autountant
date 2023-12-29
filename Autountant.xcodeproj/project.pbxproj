@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A546B6972B3E6715002C0805 /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546B6962B3E6715002C0805 /* ControlButton.swift */; };
 		A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971822B0B106C00C5B193 /* MainViewController.swift */; };
 		A56971852B0B109E00C5B193 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971842B0B109E00C5B193 /* ExpensesViewController.swift */; };
 		A569718C2B11A21900C5B193 /* VehicleViewAtMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A569718B2B11A21900C5B193 /* VehicleViewAtMainView.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A546B6962B3E6715002C0805 /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
 		A56971822B0B106C00C5B193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A56971842B0B109E00C5B193 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		A569718B2B11A21900C5B193 /* VehicleViewAtMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewAtMainView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
 				A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */,
 				A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */,
+				A546B6962B3E6715002C0805 /* ControlButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				A59DAD762B363C2800B3C51B /* Expense+CoreDataClass.swift in Sources */,
 				A59DAD752B363C2800B3C51B /* Vehicle+CoreDataProperties.swift in Sources */,
 				A56971912B11A6B700C5B193 /* DataModels.swift in Sources */,
+				A546B6972B3E6715002C0805 /* ControlButton.swift in Sources */,
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
 				A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */,
 				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,

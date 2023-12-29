@@ -87,7 +87,7 @@ class AddVehicleView: PopupInputWindowView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func saveButtonPressed(_ button: UIButton) {
+    override func saveButtonPressed() {
         
         var success: Bool = true
         
@@ -137,32 +137,28 @@ extension AddVehicleView {
         addSubview(saveButton)
         addSubview(cancelButton)
         
-        vehicleNameTextField.topAnchor.constraint(equalTo: topAnchor, constant: 30.0).isActive = true
-        vehicleNameTextField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.0).isActive = true
-        vehicleNameTextField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0).isActive = true
+        vehicleNameTextField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30.0).isActive = true
+        vehicleNameTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         
         vehicleMileageTextField.topAnchor.constraint(equalTo: vehicleNameTextField.bottomAnchor, constant: 10.0).isActive = true
-        vehicleMileageTextField.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
-        vehicleMileageTextField.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
+        vehicleMileageTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         
         currentVehicleCheckBox.topAnchor.constraint(equalTo: vehicleMileageTextField.bottomAnchor, constant: 10).isActive = true
-        currentVehicleCheckBox.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
-        //currentVehicleCheckBox.widthAnchor.constraint(equalTo: currentVehicleCheckBox.heightAnchor).isActive = true
+        currentVehicleCheckBox.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         
         setCurrentLabel.leadingAnchor.constraint(equalTo: currentVehicleCheckBox.trailingAnchor, constant: 20.0).isActive = true
-        setCurrentLabel.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
+        setCurrentLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         setCurrentLabel.centerYAnchor.constraint(equalTo: currentVehicleCheckBox.centerYAnchor).isActive = true
         
-        unitsSelector.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
+        unitsSelector.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         unitsSelector.topAnchor.constraint(equalTo: setCurrentLabel.bottomAnchor, constant: 20.0).isActive = true
-        unitsSelector.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
+        unitsSelector.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         
         saveButton.topAnchor.constraint(equalTo: unitsSelector.bottomAnchor, constant: 30.0).isActive = true
         saveButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         
         cancelButton.topAnchor.constraint(equalTo: saveButton.bottomAnchor, constant: 10.0).isActive = true
-        cancelButton.leadingAnchor.constraint(equalTo: vehicleNameTextField.leadingAnchor).isActive = true
-        cancelButton.trailingAnchor.constraint(equalTo: vehicleNameTextField.trailingAnchor).isActive = true
+        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30.0).isActive = true
         
     }

@@ -300,14 +300,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 @class NSCoder;
-@class UIButton;
 
 SWIFT_CLASS("_TtC10Autountant20PopupInputWindowView")
 @interface PopupInputWindowView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)saveButtonPressed:(UIButton * _Nonnull)button;
-- (void)cancelButtonPressed:(UIButton * _Nonnull)button;
+- (void)saveButtonPressed;
+- (void)cancelButtonPressed;
 @end
 
 
@@ -323,7 +322,7 @@ SWIFT_CLASS("_TtC10Autountant14AddVehicleView")
 @interface AddVehicleView : PopupInputWindowView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-- (void)saveButtonPressed:(UIButton * _Nonnull)button;
+- (void)saveButtonPressed;
 @end
 
 
@@ -339,6 +338,13 @@ SWIFT_CLASS("_TtC10Autountant11AppDelegate")
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant13ControlButton")
+@interface ControlButton : UIControl
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSEntityDescription;
