@@ -17,25 +17,28 @@ class PopupInputWindowView: UIView {
     
     internal var contentView: UIView = {
         let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
-    
-    private lazy var controlsView: UIView = {
-        let view = UIView()
+        view.layer.borderWidth = 1.0
         view.layer.borderColor = UIColor.black.cgColor
-        view.layer.borderWidth = 1
-        //view.addSubview(saveButton)
-        view.addSubview(cancelButton)
-        cancelButton.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        cancelButton.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        cancelButton.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        cancelButton.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        view.setContentHuggingPriority(.required, for: .horizontal)
+        view.setContentHuggingPriority(.required, for: .vertical)
+        view.contentMode = .scaleAspectFit
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
-    internal var saveButton: ControlButton = {
+    private lazy var controlsView: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.alignment = .fill
+        stack.distribution = .fillEqually
+        stack.spacing = 20.0
+        stack.addArrangedSubview(saveButton)
+        stack.addArrangedSubview(cancelButton)
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+    
+    private lazy var saveButton: ControlButton = {
         let button = ControlButton()
         button.type = .save
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -43,7 +46,7 @@ class PopupInputWindowView: UIView {
         return button
     }()
     
-    internal var cancelButton: ControlButton = {
+    private lazy var cancelButton: ControlButton = {
         let button = ControlButton()
         button.type = .cancel
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -54,8 +57,6 @@ class PopupInputWindowView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.translatesAutoresizingMaskIntoConstraints = false
-        applyAppearance()
-        applyBoundsConstraints()
         setup()
     }
     
@@ -63,24 +64,31 @@ class PopupInputWindowView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setup() {
+    
+    internal func setup() {
         
+        addSubview(controlsView)
+        
+        controlsView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.0).isActive = true
+        controlsView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0).isActive = true
+        controlsView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
+        
+        applyAppearance()
+        applyBoundsConstraints()
+        
+    }
+    
+    internal func insertContentView() {
         addSubview(contentView)
-        
-        
+        contentView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.0).isActive = true
         contentView.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
-        contentView.leadingAnchor.constraint(equalTo: leadingAnchor,constant: 10.0).isActive = true
         contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0).isActive = true
-        
-        
-        
-        
-        
-        
+        contentView.bottomAnchor.constraint(equalTo: controlsView.topAnchor, constant: -10.0).isActive = true
     }
     
     private func applyAppearance() {
         backgroundColor = Settings.shared.popupWindowBackgroundColor
+        //backgroundColor = .blue
         layer.borderColor = Settings.shared.popupWindowBorderColor
         layer.borderWidth = Settings.shared.popupWindowBorderWidth
         layer.cornerRadius = Settings.shared.popupWindowCornerRadius
@@ -88,6 +96,7 @@ class PopupInputWindowView: UIView {
     
     private func applyBoundsConstraints() {
         setContentHuggingPriority(.required, for: .horizontal)
+        setContentHuggingPriority(.required, for: .vertical)
     }
     
     @objc func saveButtonPressed() {}
@@ -95,26 +104,24 @@ class PopupInputWindowView: UIView {
         self.remove()
     }
     
-    func show(on controler: UIViewController) {
+    internal func show(on controler: UIViewController) {
+        
         let controller = controler
         controller.view.addSubview(self)
         centerYAnchor.constraint(equalTo: controller.view.centerYAnchor).isActive = true
         centerXAnchor.constraint(equalTo: controller.view.centerXAnchor).isActive = true
+        leadingAnchor.constraint(greaterThanOrEqualTo: controller.view.leadingAnchor, constant: 10.0).isActive = true
+        topAnchor.constraint(greaterThanOrEqualTo: controller.view.safeAreaLayoutGuide.topAnchor, constant: 10.0).isActive = true
         backgroundOverlay.frame = controller.view.bounds
         controller.view.insertSubview(self.backgroundOverlay, belowSubview: self)
         
     }
     
-    func remove() {
+    internal func remove() {
         self.removeFromSuperview()
         self.backgroundOverlay.removeFromSuperview()
     }
     
-    func showControls() {
-        addSubview(controlsView)
-        controlsView.topAnchor.constraint(equalTo: bottomAnchor, constant: 20.0).isActive =  true
-        controlsView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
-        controlsView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-    }
     
 }
+

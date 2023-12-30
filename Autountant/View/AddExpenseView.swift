@@ -11,7 +11,7 @@ class AddExpenseView: PopupInputWindowView {
     
     var vehicle: Vehicle! {
         didSet {
-            setup()
+            configure()
         }
     }
     
@@ -23,6 +23,9 @@ class AddExpenseView: PopupInputWindowView {
         label.textColor = .black.withAlphaComponent(0.8)
         label.contentMode = .center
         label.setContentHuggingPriority(.required, for: .horizontal)
+        
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
         return label
     }()
     
@@ -34,28 +37,30 @@ class AddExpenseView: PopupInputWindowView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    @objc private func closeButtonPressed(_ sender: UIButton) {
-        self.remove()
-    }
+//    @objc private func closeButtonPressed(_ sender: UIButton) {
+//        self.remove()
+//    }
     
 }
 
 extension AddExpenseView {
     
-    private func setup() {
+    private func configure() {
         
-        addSubview(titleLabel)
-        addSubview(cancelButton)
+        contentView.addSubview(titleLabel)
+        //addSubview(cancelButton)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        cancelButton.translatesAutoresizingMaskIntoConstraints = false
+        //cancelButton.translatesAutoresizingMaskIntoConstraints = false
 
-        titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
-        titleLabel.trailingAnchor.constraint(greaterThanOrEqualTo: trailingAnchor, constant: -20.0).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
-        
-        cancelButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.0).isActive = true
-        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
+        titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0).isActive = true
+        titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10.0).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10.0).isActive = true
+        insertContentView()
+//
+//        cancelButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.0).isActive = true
+//        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+//        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
         
     }
 }

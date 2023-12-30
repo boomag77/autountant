@@ -80,7 +80,7 @@ class AddVehicleView: PopupInputWindowView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setup()
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -123,7 +123,7 @@ class AddVehicleView: PopupInputWindowView {
 
 extension AddVehicleView {
     
-    private func setup() {
+    private func configure() {
         
 //        layer.borderWidth = 1
 //        layer.borderColor = UIColor.lightGray.cgColor
@@ -134,8 +134,8 @@ extension AddVehicleView {
         addSubview(currentVehicleCheckBox)
         addSubview(setCurrentLabel)
         addSubview(unitsSelector)
-        addSubview(saveButton)
-        addSubview(cancelButton)
+//        addSubview(saveButton)
+//        addSubview(cancelButton)
         
         vehicleNameTextField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30.0).isActive = true
         vehicleNameTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
@@ -154,12 +154,12 @@ extension AddVehicleView {
         unitsSelector.topAnchor.constraint(equalTo: setCurrentLabel.bottomAnchor, constant: 20.0).isActive = true
         unitsSelector.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         
-        saveButton.topAnchor.constraint(equalTo: unitsSelector.bottomAnchor, constant: 30.0).isActive = true
-        saveButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        
-        cancelButton.topAnchor.constraint(equalTo: saveButton.bottomAnchor, constant: 10.0).isActive = true
-        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30.0).isActive = true
+//        saveButton.topAnchor.constraint(equalTo: unitsSelector.bottomAnchor, constant: 30.0).isActive = true
+//        saveButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+//        
+//        cancelButton.topAnchor.constraint(equalTo: saveButton.bottomAnchor, constant: 10.0).isActive = true
+//        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+//        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30.0).isActive = true
         
     }
 }

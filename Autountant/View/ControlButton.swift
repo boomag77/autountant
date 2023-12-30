@@ -23,7 +23,8 @@ class ControlButton: UIControl {
     
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView(image: UIImage(systemName: self.type.rawValue))
-        imageView.contentMode = .scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFit
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -38,13 +39,17 @@ class ControlButton: UIControl {
     
     private func setup() {
         layer.borderWidth = 1
-        layer.borderColor = UIColor.black.cgColor
-        layer.cornerRadius = 10
+        layer.borderColor = UIColor.black.withAlphaComponent(0.8).cgColor
+        backgroundColor = .systemBackground
+        tintColor = (type == .save ? .systemGreen:.label)
         addSubview(imageView)
-        imageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
-        imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+        //imageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        //imageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
+        imageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        
+        layer.cornerRadius = imageView.frame.height
     }
     
 }

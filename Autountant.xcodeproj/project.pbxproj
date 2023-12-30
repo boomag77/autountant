@@ -166,10 +166,10 @@
 			children = (
 				A56D71AD2B338DFC00CEEBBD /* Table Cells View */,
 				A5F78CC92B183E48009A1227 /* InputTextField.swift */,
+				A546B6962B3E6715002C0805 /* ControlButton.swift */,
 				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
 				A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */,
 				A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */,
-				A546B6962B3E6715002C0805 /* ControlButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
