@@ -15,10 +15,16 @@ class PopupInputWindowView: UIView {
         return overlay
     }()
     
+    private lazy var titleView: UIView = {
+        let view = UIView()
+        
+        return view
+    }()
+    
     internal var contentView: UIView = {
         let view = UIView()
-        view.layer.borderWidth = 1.0
-        view.layer.borderColor = UIColor.black.cgColor
+//        view.layer.borderWidth = 1.0
+//        view.layer.borderColor = UIColor.black.cgColor
         view.setContentHuggingPriority(.required, for: .horizontal)
         view.setContentHuggingPriority(.required, for: .vertical)
         view.contentMode = .scaleAspectFit
@@ -83,7 +89,7 @@ class PopupInputWindowView: UIView {
         contentView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.0).isActive = true
         contentView.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
         contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: controlsView.topAnchor, constant: -10.0).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: controlsView.topAnchor, constant: -30.0).isActive = true
     }
     
     private func applyAppearance() {

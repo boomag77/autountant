@@ -129,11 +129,11 @@ extension AddVehicleView {
 //        layer.borderColor = UIColor.lightGray.cgColor
 //        layer.cornerRadius = 20
         
-        addSubview(vehicleNameTextField)
-        addSubview(vehicleMileageTextField)
-        addSubview(currentVehicleCheckBox)
-        addSubview(setCurrentLabel)
-        addSubview(unitsSelector)
+        contentView.addSubview(vehicleNameTextField)
+        contentView.addSubview(vehicleMileageTextField)
+        contentView.addSubview(currentVehicleCheckBox)
+        contentView.addSubview(setCurrentLabel)
+        contentView.addSubview(unitsSelector)
 //        addSubview(saveButton)
 //        addSubview(cancelButton)
         
@@ -153,6 +153,9 @@ extension AddVehicleView {
         unitsSelector.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         unitsSelector.topAnchor.constraint(equalTo: setCurrentLabel.bottomAnchor, constant: 20.0).isActive = true
         unitsSelector.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        unitsSelector.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        
+        insertContentView()
         
 //        saveButton.topAnchor.constraint(equalTo: unitsSelector.bottomAnchor, constant: 30.0).isActive = true
 //        saveButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
