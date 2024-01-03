@@ -4578,6 +4578,42 @@
 			<key>uniqueIdentifier</key>
 			<string>346FCB88-C629-4291-B6ED-FD07A4CD6D35</string>
 		</dict>
+		<key>347492FB-F194-438F-9367-9F31E4731058</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>347492FB-F194-438F-9367-9F31E4731058.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJidWlsZFN5c3RlbVRhc2tfYnVpbGRUYXNrIjoiUHJlcGFyZSBidWlsZCIsInR5cGUiOnsiYnVpbGRTeXN0ZW1UYXNrIjp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>725937186.45129895</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>347492FB-F194-438F-9367-9F31E4731058</string>
+		</dict>
 		<key>34D94B00-A5D0-47F5-832B-D5F06C0E4D93</key>
 		<dict>
 			<key>className</key>
@@ -6881,6 +6917,42 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>4DD74E0C-34F2-4D06-A0CE-B6DF40952A9D</string>
+		</dict>
+		<key>4DE6DD31-4E3D-48DB-AF01-AB84BC6AD607</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4DE6DD31-4E3D-48DB-AF01-AB84BC6AD607.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRfYmx1ZXByaW50SWRlbnRpZmllciI6IkE1QTJCQTc3MkIwQUJGODAwMENBMTMyOCIsImJsdWVwcmludF9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvc2VyZ2V5XC9jb2RlXC9BdXRvdW50YW50XC9BdXRvdW50YW50Lnhjb2RlcHJvaiIsInR5cGUiOnsiYmx1ZXByaW50Ijp7fX19</string>
+			<key>timeStartedRecording</key>
+			<real>725937186.45129895</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>4DE6DD31-4E3D-48DB-AF01-AB84BC6AD607</string>
 		</dict>
 		<key>4EDEC8E5-C2B1-46AF-A64F-1EE2195F037D</key>
 		<dict>
@@ -13685,6 +13757,42 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>9D85A7F0-7B1C-425C-9E80-EA9560AE5E0B</string>
+		</dict>
+		<key>9DFD402A-FFB2-4F49-B0E8-83A67BC2167E</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9DFD402A-FFB2-4F49-B0E8-83A67BC2167E.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>signature</key>
+			<string>eyJibHVlcHJpbnRQcm92aWRlcl9wcm92aWRlckZpbGVQYXRoU3RyaW5nIjoiXC9Vc2Vyc1wvc2VyZ2V5XC9jb2RlXC9BdXRvdW50YW50XC9BdXRvdW50YW50Lnhjb2RlcHJvaiIsInR5cGUiOnsiYmx1ZXByaW50UHJvdmlkZXIiOnt9fX0=</string>
+			<key>timeStartedRecording</key>
+			<real>725937186.45129895</real>
+			<key>timeStoppedRecording</key>
+			<real>63113904000</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>9DFD402A-FFB2-4F49-B0E8-83A67BC2167E</string>
 		</dict>
 		<key>9E6DCA5D-10B3-49DD-A359-955BE037EDA7</key>
 		<dict>

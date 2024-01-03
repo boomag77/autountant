@@ -9,16 +9,12 @@ import UIKit
 
 class PopupInputWindowView: UIView {
     
+    private var titleText: String?
+    
     private lazy var backgroundOverlay: UIView = {
         let overlay = UIView()
         overlay.backgroundColor = UIColor.systemGray6.withAlphaComponent(0.95)
         return overlay
-    }()
-    
-    private lazy var titleView: UIView = {
-        let view = UIView()
-        
-        return view
     }()
     
     internal var contentView: UIView = {
@@ -87,14 +83,19 @@ class PopupInputWindowView: UIView {
     internal func insertContentView() {
         addSubview(contentView)
         contentView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.0).isActive = true
-        contentView.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
+        
+        contentView.topAnchor.constraint(equalTo: topAnchor, constant: 20.0).isActive = true
+        
         contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0).isActive = true
         contentView.bottomAnchor.constraint(equalTo: controlsView.topAnchor, constant: -30.0).isActive = true
     }
     
+    internal func setTitle(titleText: String) {
+        self.titleText = titleText
+    }
+    
     private func applyAppearance() {
         backgroundColor = Settings.shared.popupWindowBackgroundColor
-        //backgroundColor = .blue
         layer.borderColor = Settings.shared.popupWindowBorderColor
         layer.borderWidth = Settings.shared.popupWindowBorderWidth
         layer.cornerRadius = Settings.shared.popupWindowCornerRadius
