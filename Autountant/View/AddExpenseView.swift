@@ -37,10 +37,6 @@ class AddExpenseView: PopupInputWindowView {
         fatalError("init(coder:) has not been implemented")
     }
     
-//    @objc private func closeButtonPressed(_ sender: UIButton) {
-//        self.remove()
-//    }
-    
 }
 
 extension AddExpenseView {
@@ -48,19 +44,13 @@ extension AddExpenseView {
     private func configure() {
         
         contentView.addSubview(titleLabel)
-        //addSubview(cancelButton)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        //cancelButton.translatesAutoresizingMaskIntoConstraints = false
 
         titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0).isActive = true
         titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20.0).isActive = true
         titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10.0).isActive = true
         titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10.0).isActive = true
         insertContentView()
-//
-//        cancelButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.0).isActive = true
-//        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-//        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
         
     }
 }

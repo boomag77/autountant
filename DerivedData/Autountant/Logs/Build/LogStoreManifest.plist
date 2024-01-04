@@ -1098,6 +1098,48 @@
 			<key>uniqueIdentifier</key>
 			<string>1B359648-170B-4BE2-8FB6-F729A2BBDFEE</string>
 		</dict>
+		<key>1B35E801-86E3-468D-B97C-61E27F6D4C30</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>1B35E801-86E3-468D-B97C-61E27F6D4C30.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940460.01304495</real>
+			<key>timeStoppedRecording</key>
+			<real>725940462.15996504</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>1B35E801-86E3-468D-B97C-61E27F6D4C30</string>
+		</dict>
 		<key>1E201C5D-EECD-4C4D-95DD-795B9A54027F</key>
 		<dict>
 			<key>className</key>
@@ -1686,6 +1728,48 @@
 			<key>uniqueIdentifier</key>
 			<string>2AD39F29-5BA9-4192-9F72-1D91BF585F4E</string>
 		</dict>
+		<key>2BC26235-F2C1-49D3-A18A-B2E4D7B7C10C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2BC26235-F2C1-49D3-A18A-B2E4D7B7C10C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940158.625278</real>
+			<key>timeStoppedRecording</key>
+			<real>725940161.83997703</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>2BC26235-F2C1-49D3-A18A-B2E4D7B7C10C</string>
+		</dict>
 		<key>2DE56A34-A41E-4F0E-BDBC-3011B360873A</key>
 		<dict>
 			<key>className</key>
@@ -1769,6 +1853,48 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>2E4328E3-F2CA-4A6A-8FD2-1C356C4EED53</string>
+		</dict>
+		<key>2F936E48-D69B-493F-93B8-CEF9F24C799D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>2F936E48-D69B-493F-93B8-CEF9F24C799D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>726024960.10169995</real>
+			<key>timeStoppedRecording</key>
+			<real>726024963.81450701</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>2F936E48-D69B-493F-93B8-CEF9F24C799D</string>
 		</dict>
 		<key>3021E826-3345-4341-BE43-B89715BEA569</key>
 		<dict>
@@ -2400,6 +2526,48 @@
 			<key>uniqueIdentifier</key>
 			<string>418DEF64-3407-4E99-BC8B-B7930A2EE527</string>
 		</dict>
+		<key>446A112A-C83E-4FED-9347-6D9CE0072FDE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>446A112A-C83E-4FED-9347-6D9CE0072FDE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938371.095801</real>
+			<key>timeStoppedRecording</key>
+			<real>725938373.61223996</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>446A112A-C83E-4FED-9347-6D9CE0072FDE</string>
+		</dict>
 		<key>48F37220-4971-4AB4-83E0-B167DFDD4341</key>
 		<dict>
 			<key>className</key>
@@ -2988,6 +3156,48 @@
 			<key>uniqueIdentifier</key>
 			<string>54C5C9B2-D4BC-4955-B0D0-67287080B693</string>
 		</dict>
+		<key>54ED4BCE-1E59-4B15-8D58-C763DE90E6E5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>54ED4BCE-1E59-4B15-8D58-C763DE90E6E5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938719.33433104</real>
+			<key>timeStoppedRecording</key>
+			<real>725938721.30456495</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>54ED4BCE-1E59-4B15-8D58-C763DE90E6E5</string>
+		</dict>
 		<key>555B2C79-D493-4A56-AD98-69B06874931D</key>
 		<dict>
 			<key>className</key>
@@ -3029,6 +3239,48 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>555B2C79-D493-4A56-AD98-69B06874931D</string>
+		</dict>
+		<key>569651CF-0B56-4441-98C0-28AB7C4570B6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>569651CF-0B56-4441-98C0-28AB7C4570B6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938521.847193</real>
+			<key>timeStoppedRecording</key>
+			<real>725938524.25236201</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>569651CF-0B56-4441-98C0-28AB7C4570B6</string>
 		</dict>
 		<key>594979A9-C851-4FBA-9CBC-3DDE07A9E996</key>
 		<dict>
@@ -4080,6 +4332,48 @@
 			<key>uniqueIdentifier</key>
 			<string>708DF3C2-8C10-46D2-B6FD-362B151C3334</string>
 		</dict>
+		<key>71CD096A-A98E-4086-A060-67206CE30E46</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>71CD096A-A98E-4086-A060-67206CE30E46.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940273.80967295</real>
+			<key>timeStoppedRecording</key>
+			<real>725940276.53046405</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>71CD096A-A98E-4086-A060-67206CE30E46</string>
+		</dict>
 		<key>721EFA91-8691-4035-B807-0B6F1F6199E7</key>
 		<dict>
 			<key>className</key>
@@ -4878,6 +5172,48 @@
 			<key>uniqueIdentifier</key>
 			<string>891C2961-BE13-4467-866B-0E65D041FD58</string>
 		</dict>
+		<key>891E15DF-D8CC-485F-917E-09249A470D17</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>891E15DF-D8CC-485F-917E-09249A470D17.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940483.60525095</real>
+			<key>timeStoppedRecording</key>
+			<real>725940485.87906504</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>891E15DF-D8CC-485F-917E-09249A470D17</string>
+		</dict>
 		<key>892AE121-9B7A-48D6-9AD3-A49D57CD2704</key>
 		<dict>
 			<key>className</key>
@@ -4962,6 +5298,48 @@
 			<key>uniqueIdentifier</key>
 			<string>895F1C6A-059C-4C3E-A6D5-87D8374534B1</string>
 		</dict>
+		<key>8991AC01-F621-4A19-BE59-259F12BB986D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8991AC01-F621-4A19-BE59-259F12BB986D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938052.84912896</real>
+			<key>timeStoppedRecording</key>
+			<real>725938056.67692006</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>8991AC01-F621-4A19-BE59-259F12BB986D</string>
+		</dict>
 		<key>89A40182-EBC5-4118-B2F6-0E2F581A7610</key>
 		<dict>
 			<key>className</key>
@@ -5003,6 +5381,48 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>89A40182-EBC5-4118-B2F6-0E2F581A7610</string>
+		</dict>
+		<key>8C0E4783-CD74-4888-BC85-E17D78B2FB22</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>8C0E4783-CD74-4888-BC85-E17D78B2FB22.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725939678.13244402</real>
+			<key>timeStoppedRecording</key>
+			<real>725939680.97965503</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>8C0E4783-CD74-4888-BC85-E17D78B2FB22</string>
 		</dict>
 		<key>8EA9E676-C89F-425E-ACEE-D1EB3E670439</key>
 		<dict>
@@ -6095,6 +6515,48 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>A0BD4308-4C56-479D-8965-1B57B2F1F802</string>
+		</dict>
+		<key>A2371FE7-432A-4D3D-8415-3EDF96A73FAF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A2371FE7-432A-4D3D-8415-3EDF96A73FAF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940205.92568696</real>
+			<key>timeStoppedRecording</key>
+			<real>725940208.12848902</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>A2371FE7-432A-4D3D-8415-3EDF96A73FAF</string>
 		</dict>
 		<key>A310F745-79F0-474E-870D-A6E0CDD22CCC</key>
 		<dict>
@@ -7314,6 +7776,48 @@
 			<key>uniqueIdentifier</key>
 			<string>BDEA80B6-71A2-4B15-B7B3-A6F2BF57992E</string>
 		</dict>
+		<key>BEE90B07-7707-4FEF-A0DC-DDA92743BF32</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>BEE90B07-7707-4FEF-A0DC-DDA92743BF32.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725939730.32685995</real>
+			<key>timeStoppedRecording</key>
+			<real>725939732.51033294</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>BEE90B07-7707-4FEF-A0DC-DDA92743BF32</string>
+		</dict>
 		<key>C244769B-00D5-4628-A055-B36282437874</key>
 		<dict>
 			<key>className</key>
@@ -8280,6 +8784,48 @@
 			<key>uniqueIdentifier</key>
 			<string>E18E4D55-AE42-40A5-9B1D-FD7EF432B728</string>
 		</dict>
+		<key>E229B505-E232-4DB0-AC8B-8785A62AB82D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E229B505-E232-4DB0-AC8B-8785A62AB82D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938793.981058</real>
+			<key>timeStoppedRecording</key>
+			<real>725938796.52397799</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>E229B505-E232-4DB0-AC8B-8785A62AB82D</string>
+		</dict>
 		<key>E35055CD-8E61-4596-BB29-9944BADF5E61</key>
 		<dict>
 			<key>className</key>
@@ -8447,6 +8993,48 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>E8DD2095-2E15-4BA7-911A-D1647F96503F</string>
+		</dict>
+		<key>EA229E33-8CCF-4F59-BFCE-EAA231BF3B73</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>EA229E33-8CCF-4F59-BFCE-EAA231BF3B73.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938021.78077197</real>
+			<key>timeStoppedRecording</key>
+			<real>725938026.51775503</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>EA229E33-8CCF-4F59-BFCE-EAA231BF3B73</string>
 		</dict>
 		<key>EC1A6939-3C8E-4961-A9F5-993B3BB3AAFA</key>
 		<dict>
@@ -8993,6 +9581,48 @@
 			<string>Build Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>FD1A25B1-656D-4332-A6D4-705173103F1F</string>
+		</dict>
+		<key>FDB872C3-5199-40E4-829A-FBCB630F4D1A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FDB872C3-5199-40E4-829A-FBCB630F4D1A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940435.59579301</real>
+			<key>timeStoppedRecording</key>
+			<real>725940439.60154998</real>
+			<key>title</key>
+			<string>Build Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>FDB872C3-5199-40E4-829A-FBCB630F4D1A</string>
 		</dict>
 		<key>FFA792F9-1D64-458A-9874-8142711760F4</key>
 		<dict>

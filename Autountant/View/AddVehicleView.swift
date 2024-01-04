@@ -134,8 +134,6 @@ extension AddVehicleView {
         contentView.addSubview(currentVehicleCheckBox)
         contentView.addSubview(setCurrentLabel)
         contentView.addSubview(unitsSelector)
-//        addSubview(saveButton)
-//        addSubview(cancelButton)
         
         vehicleNameTextField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30.0).isActive = true
         vehicleNameTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
@@ -156,13 +154,6 @@ extension AddVehicleView {
         unitsSelector.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         
         insertContentView()
-        
-//        saveButton.topAnchor.constraint(equalTo: unitsSelector.bottomAnchor, constant: 30.0).isActive = true
-//        saveButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-//        
-//        cancelButton.topAnchor.constraint(equalTo: saveButton.bottomAnchor, constant: 10.0).isActive = true
-//        cancelButton.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-//        cancelButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -30.0).isActive = true
         
     }
 }

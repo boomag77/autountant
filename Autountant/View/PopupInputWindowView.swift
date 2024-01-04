@@ -90,10 +90,6 @@ class PopupInputWindowView: UIView {
         contentView.bottomAnchor.constraint(equalTo: controlsView.topAnchor, constant: -30.0).isActive = true
     }
     
-    internal func setTitle(titleText: String) {
-        self.titleText = titleText
-    }
-    
     private func applyAppearance() {
         backgroundColor = Settings.shared.popupWindowBackgroundColor
         layer.borderColor = Settings.shared.popupWindowBorderColor

@@ -921,6 +921,67 @@
 			<key>uniqueIdentifier</key>
 			<string>05DAD598-FF53-4344-BE37-2165EA2CD0B9</string>
 		</dict>
+		<key>061F1435-6385-41F3-87EF-5DDFB787DB5D</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>54ED4BCE-1E59-4B15-8D58-C763DE90E6E5</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-38-39--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938719.33414602</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>061F1435-6385-41F3-87EF-5DDFB787DB5D</string>
+		</dict>
 		<key>073B69BE-D48F-434B-91B1-960A51F76FCE</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -2751,6 +2812,67 @@
 			<key>uniqueIdentifier</key>
 			<string>22AD0FB7-DA3C-4EB2-AE80-40801152302B</string>
 		</dict>
+		<key>23D33E9A-49E9-418E-8C54-C934F34C8205</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>2F936E48-D69B-493F-93B8-CEF9F24C799D</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.03_20-36-00--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>726024960.10149395</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>23D33E9A-49E9-418E-8C54-C934F34C8205</string>
+		</dict>
 		<key>23E613FB-5B4A-4AD9-8701-09B4FC156127</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -3117,6 +3239,67 @@
 			<key>uniqueIdentifier</key>
 			<string>286BBB0C-28BB-4275-85E2-5D249BA3461A</string>
 		</dict>
+		<key>29B55353-8AC3-4FAE-ADE1-F65C6ACF2CBD</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>446A112A-C83E-4FED-9347-6D9CE0072FDE</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-32-51--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938371.09561706</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>29B55353-8AC3-4FAE-ADE1-F65C6ACF2CBD</string>
+		</dict>
 		<key>29D25DB0-9C40-43AC-8381-BAB5EA0D0876</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -3421,6 +3604,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>2DD3E1FD-E749-47DC-B622-0BEA979EB53F</string>
+		</dict>
+		<key>2E51EE20-6209-43AF-8221-58E386E27E18</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>8C0E4783-CD74-4888-BC85-E17D78B2FB22</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-54-38--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725939678.13224995</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>2E51EE20-6209-43AF-8221-58E386E27E18</string>
 		</dict>
 		<key>2E87BFE1-CA6C-497E-9514-BBD8B0F4DF8C</key>
 		<dict>
@@ -4093,6 +4337,67 @@
 			<key>uniqueIdentifier</key>
 			<string>35BFBBF7-7DE7-43CD-BE29-FD768DD4AA36</string>
 		</dict>
+		<key>35FE2BF4-9D5A-4B69-AC66-474FC5B1A34F</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>8991AC01-F621-4A19-BE59-259F12BB986D</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-27-32--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938052.84894395</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>35FE2BF4-9D5A-4B69-AC66-474FC5B1A34F</string>
+		</dict>
 		<key>3629EEAF-C093-477C-833C-4D00AC607CCC</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -4153,6 +4458,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>3629EEAF-C093-477C-833C-4D00AC607CCC</string>
+		</dict>
+		<key>372E2046-5354-4AFE-A91A-844D97380A63</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>FDB872C3-5199-40E4-829A-FBCB630F4D1A</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_21-07-15--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940435.595595</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>372E2046-5354-4AFE-A91A-844D97380A63</string>
 		</dict>
 		<key>379F927F-24DF-4DEE-926A-2AFA66D21B68</key>
 		<dict>
@@ -4763,6 +5129,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>46C65418-9F7F-4481-B64D-F5BDCC75CBCB</string>
+		</dict>
+		<key>48482DEF-7868-434B-B470-3148086B75B3</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>BEE90B07-7707-4FEF-A0DC-DDA92743BF32</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-55-30--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725939730.32666898</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>48482DEF-7868-434B-B470-3148086B75B3</string>
 		</dict>
 		<key>484BC044-E474-4704-82E0-5FB522C36C69</key>
 		<dict>
@@ -9034,6 +9461,67 @@
 			<key>uniqueIdentifier</key>
 			<string>A645BDB6-D9B7-4EBD-BA68-808298A61FFD</string>
 		</dict>
+		<key>A673647F-E337-4CD7-AD21-2545BDF05871</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>569651CF-0B56-4441-98C0-28AB7C4570B6</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-35-21--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938521.846995</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>A673647F-E337-4CD7-AD21-2545BDF05871</string>
+		</dict>
 		<key>A89C9C2B-0406-4BB7-A1D0-13E0FF1D900E</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -9338,6 +9826,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>AD8A72D0-6A13-443B-B063-15843BE9333E</string>
+		</dict>
+		<key>AD9E706C-CE65-4DB2-B319-5E014DE5B199</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>A2371FE7-432A-4D3D-8415-3EDF96A73FAF</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_21-03-25--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940205.92550194</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>AD9E706C-CE65-4DB2-B319-5E014DE5B199</string>
 		</dict>
 		<key>ADA22B87-A3CC-4729-A658-291228B7C393</key>
 		<dict>
@@ -9704,6 +10253,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>B32B106E-3527-4CC2-A2E3-59EC30AF714A</string>
+		</dict>
+		<key>B4E776E8-3C41-47D4-9822-7183E009C08E</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>E229B505-E232-4DB0-AC8B-8785A62AB82D</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-39-53--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938793.98087299</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>B4E776E8-3C41-47D4-9822-7183E009C08E</string>
 		</dict>
 		<key>B53CF087-6A7C-4C0C-8122-A387766F6E78</key>
 		<dict>
@@ -11596,6 +12206,67 @@
 			<key>uniqueIdentifier</key>
 			<string>D2B56B44-BCA6-4095-924A-7A2B018ACADB</string>
 		</dict>
+		<key>D4586A61-2327-45FE-A152-648B86FA47D9</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>891E15DF-D8CC-485F-917E-09249A470D17</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_21-08-03--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940483.60506499</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>D4586A61-2327-45FE-A152-648B86FA47D9</string>
+		</dict>
 		<key>D4C610A8-F972-4879-AC90-D58563E410A4</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -11656,6 +12327,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>D4C610A8-F972-4879-AC90-D58563E410A4</string>
+		</dict>
+		<key>D560514D-8A8D-4E1A-B700-123AA9728CD3</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>EA229E33-8CCF-4F59-BFCE-EAA231BF3B73</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_20-27-01--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725938021.780586</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>D560514D-8A8D-4E1A-B700-123AA9728CD3</string>
 		</dict>
 		<key>DAE5EF93-08AC-4C6C-B76B-CEDAE24D6D7A</key>
 		<dict>
@@ -11839,6 +12571,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>DC3288CB-2FAA-4090-B7D3-D20BDB41177E</string>
+		</dict>
+		<key>DC8EC0B7-25EC-405B-8F63-F07E33E63F65</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>1B35E801-86E3-468D-B97C-61E27F6D4C30</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_21-07-40--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940460.01285601</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>DC8EC0B7-25EC-405B-8F63-F07E33E63F65</string>
 		</dict>
 		<key>DDF2A5AC-A5FE-4430-8342-9179A7A02733</key>
 		<dict>
@@ -12327,6 +13120,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>EAA82F53-4C11-41DB-82D6-E03B612EF7CA</string>
+		</dict>
+		<key>EBEC1453-CE8B-43CA-9348-E2C299C5D735</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>71CD096A-A98E-4086-A060-67206CE30E46</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_21-04-33--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940273.80947697</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>EBEC1453-CE8B-43CA-9348-E2C299C5D735</string>
 		</dict>
 		<key>EC7BFED5-A2CA-40CA-B26A-E37BEC6B6ABE</key>
 		<dict>
@@ -12876,6 +13730,67 @@
 			<string>Run Autountant</string>
 			<key>uniqueIdentifier</key>
 			<string>F4F7B056-8686-4D48-8F97-841044D71C50</string>
+		</dict>
+		<key>F51619C3-C6A2-423F-9384-29CC88C73322</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>2BC26235-F2C1-49D3-A18A-B2E4D7B7C10C</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-Autountant-2024.01.02_21-02-38--0500.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Autountant project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Autountant</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Autountant</string>
+			<key>timeStartedRecording</key>
+			<real>725940158.62509096</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run Autountant</string>
+			<key>uniqueIdentifier</key>
+			<string>F51619C3-C6A2-423F-9384-29CC88C73322</string>
 		</dict>
 		<key>FB8CFAC3-DC22-406C-9EC9-8595213AD923</key>
 		<dict>
