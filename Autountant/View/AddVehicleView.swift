@@ -137,6 +137,8 @@ extension AddVehicleView {
         
         vehicleNameTextField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30.0).isActive = true
         vehicleNameTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        vehicleNameTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        vehicleNameTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
         
         vehicleMileageTextField.topAnchor.constraint(equalTo: vehicleNameTextField.bottomAnchor, constant: 10.0).isActive = true
         vehicleMileageTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true

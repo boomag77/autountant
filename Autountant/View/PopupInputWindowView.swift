@@ -17,6 +17,17 @@ class PopupInputWindowView: UIView {
         return overlay
     }()
     
+    internal lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.layer.borderColor = UIColor.black.cgColor
+        label.layer.borderWidth = 1.0
+        label.text = "Title label"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.setContentHuggingPriority(.required, for: .vertical)
+        label.setContentHuggingPriority(.required, for: .horizontal)
+        return label
+    }()
+    
     internal var contentView: UIView = {
         let view = UIView()
 //        view.layer.borderWidth = 1.0
@@ -44,6 +55,9 @@ class PopupInputWindowView: UIView {
         let button = ControlButton()
         button.type = .save
         button.translatesAutoresizingMaskIntoConstraints = false
+        
+        //button.widthAnchor.constraint(greaterThanOrEqualTo: button.heightAnchor).isActive = true
+        button.sizeToFit()
         button.addTarget(AnyObject.self, action: #selector(saveButtonPressed), for: .touchUpInside)
         return button
     }()
@@ -69,15 +83,27 @@ class PopupInputWindowView: UIView {
     
     internal func setup() {
         
+        addSubview(titleLabel)
         addSubview(controlsView)
         
-        controlsView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10.0).isActive = true
-        controlsView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0).isActive = true
+//        controlsView.leadingAnchor.constraint(greaterThanOrEqualTo: leadingAnchor, constant: 10.0).isActive = true
+//        controlsView.trailingAnchor.constraint(greaterThanOrEqualTo: trailingAnchor, constant: -10.0).isActive = true
+        
+        controlsView.leadingAnchor.constraint(lessThanOrEqualTo: centerXAnchor, constant: -100.0).isActive = true
+        controlsView.trailingAnchor.constraint(lessThanOrEqualTo: centerXAnchor, constant: 100.0).isActive = true
+        controlsView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         controlsView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
+        
+        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
+        titleLabel.centerXAnchor.constraint(equalTo: controlsView.centerXAnchor).isActive = true
         
         applyAppearance()
         applyBoundsConstraints()
         
+    }
+    
+    internal func setTitle(title: String) {
+        titleText = title
     }
     
     internal func insertContentView() {
@@ -88,6 +114,8 @@ class PopupInputWindowView: UIView {
         
         contentView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10.0).isActive = true
         contentView.bottomAnchor.constraint(equalTo: controlsView.topAnchor, constant: -30.0).isActive = true
+        
+        //controller.view.updateConstraints()
     }
     
     private func applyAppearance() {
@@ -108,7 +136,6 @@ class PopupInputWindowView: UIView {
     }
     
     internal func show(on controler: UIViewController) {
-        
         let controller = controler
         controller.view.addSubview(self)
         centerYAnchor.constraint(equalTo: controller.view.centerYAnchor).isActive = true

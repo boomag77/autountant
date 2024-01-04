@@ -48,6 +48,8 @@ class ControlButton: UIControl {
         imageView.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
         imageView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
         imageView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+        imageView.leadingAnchor.constraint(lessThanOrEqualTo: leadingAnchor, constant: 10.0).isActive = true
+        imageView.trailingAnchor.constraint(lessThanOrEqualTo: trailingAnchor, constant: -10.0).isActive = true
         
         layer.cornerRadius = imageView.frame.height
     }
