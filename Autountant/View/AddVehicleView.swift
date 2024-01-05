@@ -129,13 +129,15 @@ extension AddVehicleView {
 //        layer.borderColor = UIColor.lightGray.cgColor
 //        layer.cornerRadius = 20
         
+        setTitle(title: "Register new vehicle")
+        
         contentView.addSubview(vehicleNameTextField)
         contentView.addSubview(vehicleMileageTextField)
         contentView.addSubview(currentVehicleCheckBox)
         contentView.addSubview(setCurrentLabel)
         contentView.addSubview(unitsSelector)
         
-        vehicleNameTextField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 30.0).isActive = true
+        vehicleNameTextField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10.0).isActive = true
         vehicleNameTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         vehicleNameTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         vehicleNameTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
