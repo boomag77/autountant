@@ -53,6 +53,7 @@ class ExpensesViewController: UIViewController {
         let newExpenseView = AddExpenseView()
         newExpenseView.vehicle = activeVehicle
         newExpenseView.show(on: self)
+        
     }
     
     private func setup() {

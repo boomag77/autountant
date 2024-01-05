@@ -37,9 +37,10 @@ final class VehiclesViewController: UIViewController {
     }
     
     @objc private func addButtonPressed(_ button: UIButton) {
-        let newVehicleView = AddVehicleView()
-        newVehicleView.dataManager = dataManager
-        newVehicleView.show(on: self)
+        let addVehicleView = AddVehicleView()
+        addVehicleView.dataManager = dataManager
+        addVehicleView.show(on: self)
+        
 //        view.addSubview(addVehicleView)
 //        
 //        addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
@@ -49,7 +50,7 @@ final class VehiclesViewController: UIViewController {
 //        let overlay = UIView(frame: view.bounds)
 //        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.95)
 //        view.insertSubview(overlay, belowSubview: addVehicleView)
-        //addVehicleView.backgroundOverlay = overlay
+//        addVehicleView.backgroundOverlay = overlay
         
         
     }
@@ -178,7 +179,6 @@ extension VehiclesViewController: TabBarDelegate {
             
             dataManager.vehicleResultsController.delegate = self
         }
-        
         
         
         tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")

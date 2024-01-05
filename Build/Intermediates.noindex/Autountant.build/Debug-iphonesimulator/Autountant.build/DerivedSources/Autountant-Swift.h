@@ -307,6 +307,8 @@ SWIFT_CLASS("_TtC10Autountant20PopupInputWindowView")
 @interface PopupInputWindowView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)saveButtonPressed;
+- (void)cancelButtonPressed;
 @end
 
 
@@ -322,6 +324,7 @@ SWIFT_CLASS("_TtC10Autountant14AddVehicleView")
 @interface AddVehicleView : PopupInputWindowView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)saveButtonPressed;
 @end
 
 
@@ -337,6 +340,13 @@ SWIFT_CLASS("_TtC10Autountant11AppDelegate")
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10Autountant13ControlButton")
+@interface ControlButton : UIControl
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSEntityDescription;
@@ -355,10 +365,10 @@ SWIFT_CLASS_NAMED("Expense")
 @property (nonatomic) double amount;
 @property (nonatomic, copy) NSString * _Nonnull category;
 @property (nonatomic, copy) NSDate * _Nonnull date;
+@property (nonatomic) double kWatt;
 @property (nonatomic) int64_t mileage;
 @property (nonatomic, copy) NSString * _Nonnull vehicleName;
 @property (nonatomic) double volume;
-@property (nonatomic) double kWatt;
 @end
 
 
@@ -462,12 +472,12 @@ SWIFT_CLASS_NAMED("Vehicle")
 
 
 @interface Vehicle (SWIFT_EXTENSION(Autountant))
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic) int64_t mileage;
 @property (nonatomic) BOOL active;
-@property (nonatomic, copy) NSString * _Nonnull units;
-@property (nonatomic, copy) NSString * _Nonnull type;
 @property (nonatomic, copy) NSString * _Nonnull currency;
+@property (nonatomic) int64_t mileage;
+@property (nonatomic, copy) NSString * _Nonnull name;
+@property (nonatomic, copy) NSString * _Nonnull type;
+@property (nonatomic, copy) NSString * _Nonnull units;
 @end
 
 
