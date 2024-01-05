@@ -38,20 +38,21 @@ final class VehiclesViewController: UIViewController {
     
     @objc private func addButtonPressed(_ button: UIButton) {
         let addVehicleView = AddVehicleView()
-        view.addSubview(addVehicleView)
-        
-        addVehicleView.translatesAutoresizingMaskIntoConstraints = false
-        
-        //addVehicleView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50.0).isActive = true
-        addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
-        addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
-        addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
-        let overlay = UIView(frame: view.bounds)
-        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.95)
-        view.insertSubview(overlay, belowSubview: addVehicleView)
-        addVehicleView.backgroundOverlay = overlay
-        
         addVehicleView.dataManager = dataManager
+        addVehicleView.show(on: self)
+        
+//        view.addSubview(addVehicleView)
+//        
+//        addVehicleView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor).isActive = true
+//        addVehicleView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30.0).isActive = true
+//        addVehicleView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30.0).isActive = true
+//        
+//        let overlay = UIView(frame: view.bounds)
+//        overlay.backgroundColor = UIColor.white.withAlphaComponent(0.95)
+//        view.insertSubview(overlay, belowSubview: addVehicleView)
+//        addVehicleView.backgroundOverlay = overlay
+        
+        
     }
     
     @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
@@ -178,7 +179,6 @@ extension VehiclesViewController: TabBarDelegate {
             
             dataManager.vehicleResultsController.delegate = self
         }
-        
         
         
         tableView.register(VehicleTableViewCell.self, forCellReuseIdentifier: "vehicle")

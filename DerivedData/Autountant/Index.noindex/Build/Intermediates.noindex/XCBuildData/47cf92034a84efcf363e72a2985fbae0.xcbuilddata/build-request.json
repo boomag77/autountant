@@ -1,0 +1,58 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "fe6419a660ab07a54f21b960c1caa9dc9f8ada9dc6679c7f1a471d399f15b468"
+    }
+  ],
+  "containerPath" : "/Users/sergey/code/Autountant/Autountant.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/sergey/code/Autountant/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/sergey/code/Autountant/Build/Products",
+      "pchPath" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
