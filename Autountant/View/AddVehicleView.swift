@@ -72,7 +72,7 @@ class AddVehicleView: PopupInputWindowView {
     }()
     
     private lazy var unitsSelector: UISegmentedControl = {
-        let selector = UISegmentedControl(items: Units.allValues)
+        let selector = UISegmentedControl(items: UnitsSystem.allValues)
         selector.selectedSegmentIndex = 0
         selector.translatesAutoresizingMaskIntoConstraints = false
         return selector
@@ -96,7 +96,7 @@ class AddVehicleView: PopupInputWindowView {
               let intMileage = Int64(mileage)
         else { return }
         
-        let newVehicleUnits = Units(rawValue: unitsSelector.titleForSegment(at: unitsSelector.selectedSegmentIndex)!)!
+        let newVehicleUnits = UnitsSystem(rawValue: unitsSelector.titleForSegment(at: unitsSelector.selectedSegmentIndex)!)!
         
         dataManager?.registerNewVehicle(name: name,
                                         mileage: intMileage,

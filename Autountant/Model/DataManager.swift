@@ -87,7 +87,7 @@ extension DataManager {
     func registerNewVehicle(name: String,
                             mileage: Int64,
                             type: VehicleType,
-                            units: Units,
+                            units: UnitsSystem,
                             currency: Currency,
                             active: Bool,
                             completion: ((DataManagerError?) -> Void)? = nil) {

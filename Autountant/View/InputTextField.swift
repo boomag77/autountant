@@ -8,20 +8,15 @@
 import UIKit
 
 class InputTextField: UITextField {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         layer.cornerRadius = 10
         layer.borderWidth = 1
         layer.borderColor = UIColor.lightGray.cgColor
+        
+        font = UIFont.preferredFont(forTextStyle: .subheadline)
+        
     }
     
     required init?(coder: NSCoder) {

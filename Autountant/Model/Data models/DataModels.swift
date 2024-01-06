@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Units: String, CaseIterable {
+enum UnitsSystem: String, CaseIterable {
     static var allValues: [String] {
         return allCases.map { $0.rawValue }
     }
@@ -15,7 +15,7 @@ enum Units: String, CaseIterable {
     case imperial = "imperial"
 }
 
-enum Category: String {
+enum Category: String, CaseIterable {
     case gas = "Gas"
     case electricity = "Electricity"
     case insuranse = "Insuranse"
