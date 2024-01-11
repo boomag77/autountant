@@ -100,7 +100,7 @@ class AddVehicleView: PopupInputWindowView {
         
         dataManager?.registerNewVehicle(name: name,
                                         mileage: intMileage,
-                                        type: .gasoline,
+                                        type: .electric,
                                         units: newVehicleUnits,
                                         currency: .usd,
                                         active: active) {

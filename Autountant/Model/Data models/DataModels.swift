@@ -16,13 +16,29 @@ enum UnitsSystem: String, CaseIterable {
 }
 
 enum Category: String, CaseIterable {
-    case gas = "Gas"
+    
+    case fuel = "Fuel"
     case electricity = "Electricity"
     case insuranse = "Insuranse"
     case inspection = "State inspection"
     case parts = "Parts"
     case service = "Service"
     case other = "Other"
+    
+    static func getList(for vehicleType: String) -> [Category] {
+        
+        if let type = VehicleType(rawValue: vehicleType) {
+            switch type {
+                case .electric:
+                    return Category.allCases.filter { $0 != .fuel }
+                case .diesel, .gasoline:
+                    return Category.allCases.filter { $0 != .electricity }
+                default:
+                    return Category.allCases
+            }
+        }
+        return []
+    }
 }
 
 enum VehicleType: String {

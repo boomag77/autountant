@@ -16,10 +16,7 @@ class AddExpenseView: PopupInputWindowView {
     }
     
     private lazy var categoryList: [Category] = {
-        var list: [Category] = []
-        switch self.vehicle.type {
-        case 
-        }
+        var list: [Category] = Category.getList(for: self.vehicle.type)
         return list
     }()
     
