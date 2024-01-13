@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A540B0E32B518D06009AD4F5 /* TappableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A540B0E22B518D06009AD4F5 /* TappableLabel.swift */; };
 		A546B6972B3E6715002C0805 /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A546B6962B3E6715002C0805 /* ControlButton.swift */; };
 		A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971822B0B106C00C5B193 /* MainViewController.swift */; };
 		A56971852B0B109E00C5B193 /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56971842B0B109E00C5B193 /* ExpensesViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A540B0E22B518D06009AD4F5 /* TappableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableLabel.swift; sourceTree = "<group>"; };
 		A546B6962B3E6715002C0805 /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
 		A56971822B0B106C00C5B193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A56971842B0B109E00C5B193 /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A540B0E12B50D4B9009AD4F5 /* AddExpenseView */ = {
+			isa = PBXGroup;
+			children = (
+				A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */,
+				A540B0E22B518D06009AD4F5 /* TappableLabel.swift */,
+			);
+			path = AddExpenseView;
+			sourceTree = "<group>";
+		};
 		A56971862B0D205E00C5B193 /* Model View */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,11 +175,11 @@
 		A5A2BAAE2B0AEAD200CA1328 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A540B0E12B50D4B9009AD4F5 /* AddExpenseView */,
 				A56D71AD2B338DFC00CEEBBD /* Table Cells View */,
 				A5F78CC92B183E48009A1227 /* InputTextField.swift */,
 				A546B6962B3E6715002C0805 /* ControlButton.swift */,
 				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
-				A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */,
 				A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */,
 			);
 			path = View;
@@ -275,6 +286,7 @@
 				A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */,
 				A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */,
 				A59DAD742B363C2800B3C51B /* Vehicle+CoreDataClass.swift in Sources */,
+				A540B0E32B518D06009AD4F5 /* TappableLabel.swift in Sources */,
 				A5F78DEE2B2A3BED009A1227 /* Settings.swift in Sources */,
 				A56D71A42B32926B00CEEBBD /* ExpenseTableViewCell.swift in Sources */,
 				A59DAD772B363C2800B3C51B /* Expense+CoreDataProperties.swift in Sources */,

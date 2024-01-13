@@ -460,6 +460,13 @@ SWIFT_CLASS("_TtC10Autountant17TabViewController")
 @end
 
 
+SWIFT_CLASS("_TtC10Autountant13TappableLabel")
+@interface TappableLabel : UIControl
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 

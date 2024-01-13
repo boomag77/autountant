@@ -31,7 +31,7 @@ enum Category: String, CaseIterable {
             switch type {
                 case .electric:
                     return Category.allCases.filter { $0 != .fuel }
-                case .diesel, .gasoline:
+            case .diesel, .gasoline, .hybrid:
                     return Category.allCases.filter { $0 != .electricity }
                 default:
                     return Category.allCases
