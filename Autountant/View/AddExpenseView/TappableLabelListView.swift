@@ -30,6 +30,7 @@ class TappableLabelListView: UIView {
     }
     
     private func setup() {
+        
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "category")
         addSubview(tableView)
