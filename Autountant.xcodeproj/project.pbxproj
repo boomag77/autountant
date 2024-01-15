@@ -18,6 +18,7 @@
 		A56D71A42B32926B00CEEBBD /* ExpenseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A32B32926B00CEEBBD /* ExpenseTableViewCell.swift */; };
 		A56D71A62B32933E00CEEBBD /* ExpenseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */; };
 		A56D71AF2B338F8000CEEBBD /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */; };
+		A57FED8D2B55791800BE6BC3 /* TappableLabelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FED8C2B55791800BE6BC3 /* TappableLabelListView.swift */; };
 		A59DAD672B34E43200B3C51B /* PopupInputWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */; };
 		A59DAD742B363C2800B3C51B /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD702B363C2800B3C51B /* Vehicle+CoreDataClass.swift */; };
 		A59DAD752B363C2800B3C51B /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD712B363C2800B3C51B /* Vehicle+CoreDataProperties.swift */; };
@@ -49,6 +50,7 @@
 		A56D71A32B32926B00CEEBBD /* ExpenseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTableViewCell.swift; sourceTree = "<group>"; };
 		A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCellView.swift; sourceTree = "<group>"; };
 		A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		A57FED8C2B55791800BE6BC3 /* TappableLabelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableLabelListView.swift; sourceTree = "<group>"; };
 		A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInputWindowView.swift; sourceTree = "<group>"; };
 		A59DAD702B363C2800B3C51B /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A59DAD712B363C2800B3C51B /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */,
 				A540B0E22B518D06009AD4F5 /* TappableLabel.swift */,
+				A57FED8C2B55791800BE6BC3 /* TappableLabelListView.swift */,
 			);
 			path = AddExpenseView;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				A56971A12B158D4200C5B193 /* VehicleCellView.swift in Sources */,
 				A5F78CCA2B183E48009A1227 /* InputTextField.swift in Sources */,
 				A5A2BAB22B0AEB3400CA1328 /* DataManager.swift in Sources */,
+				A57FED8D2B55791800BE6BC3 /* TappableLabelListView.swift in Sources */,
 				A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */,
 				A5F78DDC2B266F29009A1227 /* Storage.xcdatamodeld in Sources */,
 				A569718C2B11A21900C5B193 /* VehicleViewAtMainView.swift in Sources */,

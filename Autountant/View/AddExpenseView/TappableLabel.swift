@@ -9,7 +9,11 @@ import UIKit
 
 class TappableLabel: UIControl {
     
-    var text: String?
+    var text: String? {
+        didSet {
+            setup()
+        }
+    }
     
     private var arrowsImage: UIImage = UIImage(systemName: "chevron.up.chevron.down")!
     
@@ -41,7 +45,7 @@ class TappableLabel: UIControl {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setup() {
+    private func setup() {
         
         layer.cornerRadius = 10.0
         layer.backgroundColor = UIColor.lightGray.cgColor

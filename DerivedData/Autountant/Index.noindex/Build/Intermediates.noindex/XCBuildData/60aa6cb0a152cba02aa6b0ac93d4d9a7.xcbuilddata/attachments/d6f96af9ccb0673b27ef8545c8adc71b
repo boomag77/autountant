@@ -1,0 +1,87 @@
+{
+  "" : {
+    "dependencies" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Autountant-master.d",
+    "diagnostics" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Autountant-master.dia",
+    "emit-module-dependencies" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Autountant-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Autountant-master-emit-module.dia",
+    "swift-dependencies" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/Objects-normal/x86_64/Autountant-master.swiftdeps"
+  },
+  "/Users/sergey/code/Autountant/Autountant/AppDelegate.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Controller/ExpensesViewController.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Controller/MainViewController.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Controller/SettingsViewController.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Controller/TabViewController.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Controller/VehiclesViewController.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Data Classes/Expense+CoreDataClass.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Data Classes/Expense+CoreDataProperties.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Data Classes/Vehicle+CoreDataClass.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Data Classes/Vehicle+CoreDataProperties.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Model View/VehicleViewAtMainView.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Model/Data models/DataModels.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Model/DataManager.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/Model/Settings.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/SceneDelegate.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/AddExpenseView/AddExpenseView.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/AddExpenseView/TappableLabel.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/AddVehicleView.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/ControlButton.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/InputTextField.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/PopupInputWindowView.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/Table Cells View/ExpenseCellView.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/Table Cells View/ExpenseTableViewCell.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/Table Cells View/VehicleCellView.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/Autountant/View/Table Cells View/VehicleTableViewCell.swift" : {
+
+  },
+  "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/Build/Intermediates.noindex/Autountant.build/Debug-iphonesimulator/Autountant.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+
+  }
+}

@@ -25,9 +25,15 @@ final class AddExpenseView: PopupInputWindowView {
         }
     }()
     
-    private lazy var categoryList: [Category] = {
-        var list: [Category] = Category.getList(for: self.vehicle.type)
+    private lazy var categoryList: [String] = {
+        var list: [String] = Category.getList(for: self.vehicle.type).map { $0.rawValue }
         return list
+    }()
+    
+    private lazy var categoryLabel: TappableLabel = {
+        let label = TappableLabel()
+        label.text = self.defaultCategory.rawValue
+        return label
     }()
     
     override init(frame: CGRect) {
@@ -40,6 +46,15 @@ final class AddExpenseView: PopupInputWindowView {
     
     @objc private func showCategoriesList() {
         print("Showing categories list")
+        let categoriesList = TappableLabelListView()
+        categoriesList.itemsList = self.categoryList
+        addSubview(categoriesList)
+        categoriesList.translatesAutoresizingMaskIntoConstraints = false
+        categoriesList.leadingAnchor.constraint(equalTo: categoryLabel.leadingAnchor).isActive = true
+        categoriesList.topAnchor.constraint(equalTo: categoryLabel.topAnchor).isActive = true
+        categoriesList.trailingAnchor.constraint(equalTo: categoryLabel.trailingAnchor).isActive = true
+        categoriesList.bottomAnchor.constraint(greaterThanOrEqualTo: categoryLabel.bottomAnchor, constant: 50.0).isActive = true
+        //categoriesList.setContentHuggingPriority(.required, for: .vertical)
     }
     
 }
@@ -65,20 +80,12 @@ extension AddExpenseView {
         mileageTextField.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
         mileageTextField.trailingAnchor.constraint(equalTo: mileageUnitsLabel.leadingAnchor, constant: -10.0).isActive = true
         
-        let categoryLabel = TappableLabel()
-        categoryLabel.text = self.defaultCategory.rawValue
-        categoryLabel.setup()
         contentView.addSubview(categoryLabel)
-        
         categoryLabel.translatesAutoresizingMaskIntoConstraints = false
-        
         categoryLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
         categoryLabel.topAnchor.constraint(equalTo: mileageTextField.bottomAnchor, constant: 10.0).isActive = true
         categoryLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        
         categoryLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        
-        
         
         //mileageTextField.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
         
