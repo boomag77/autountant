@@ -132,6 +132,7 @@ extension VehiclesViewController: UITableViewDelegate {
             dataManager.setCurrent(vehicleName: selectedVehicle.name)
             
         }
+        //tableView.reloadData()
     }
     
 }

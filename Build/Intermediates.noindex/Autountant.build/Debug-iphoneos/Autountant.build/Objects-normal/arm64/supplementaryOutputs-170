@@ -1,0 +1,42 @@
+"/Users/sergey/code/Autountant/Autountant/View/ControlButton.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ControlButton.o"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ControlButton.swiftconstvalues"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ControlButton.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ControlButton.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ControlButton.d"
+"/Users/sergey/code/Autountant/Autountant/Data Classes/Expense+CoreDataClass.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataClass.o"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataClass.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataClass.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataClass.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataClass.dia"
+"/Users/sergey/code/Autountant/Autountant/View/Table Cells View/VehicleCellView.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleCellView.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleCellView.d"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleCellView.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleCellView.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleCellView.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/Model/DataManager.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataManager.d"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataManager.dia"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataManager.swiftdeps"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataManager.o"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataManager.swiftconstvalues"
+"/Users/sergey/code/Autountant/Autountant/Model/Data models/DataModels.swift":
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataModels.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataModels.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataModels.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataModels.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/DataModels.o"
+"/Users/sergey/code/Autountant/Autountant/Data Classes/Vehicle+CoreDataProperties.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataProperties.o"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataProperties.d"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataProperties.dia"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataProperties.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataProperties.swiftconstvalues"
+"/Users/sergey/code/Autountant/Autountant/View/InputTextField.swift":
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/InputTextField.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/InputTextField.d"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/InputTextField.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/InputTextField.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/InputTextField.swiftdeps"

@@ -1,0 +1,42 @@
+"/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/DerivedSources/GeneratedAssetSymbols.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/GeneratedAssetSymbols.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/GeneratedAssetSymbols.d"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues"
+"/Users/sergey/code/Autountant/Autountant/Model/Settings.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Settings.o"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Settings.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Settings.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Settings.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Settings.dia"
+"/Users/sergey/code/Autountant/Autountant/Controller/TabViewController.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TabViewController.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TabViewController.d"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TabViewController.swiftconstvalues"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TabViewController.swiftdeps"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TabViewController.o"
+"/Users/sergey/code/Autountant/Autountant/Controller/SettingsViewController.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SettingsViewController.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SettingsViewController.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SettingsViewController.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SettingsViewController.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SettingsViewController.o"
+"/Users/sergey/code/Autountant/Autountant/View/PopupInputWindowView.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/PopupInputWindowView.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/PopupInputWindowView.o"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/PopupInputWindowView.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/PopupInputWindowView.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/PopupInputWindowView.swiftconstvalues"
+"/Users/sergey/code/Autountant/Autountant/View/Table Cells View/ExpenseTableViewCell.swift":
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseTableViewCell.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseTableViewCell.d"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseTableViewCell.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseTableViewCell.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseTableViewCell.dia"
+"/Users/sergey/code/Autountant/Autountant/Data Classes/Expense+CoreDataProperties.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataProperties.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataProperties.o"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataProperties.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataProperties.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Expense+CoreDataProperties.swiftdeps"

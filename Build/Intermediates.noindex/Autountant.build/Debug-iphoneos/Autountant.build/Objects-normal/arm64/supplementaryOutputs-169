@@ -1,0 +1,42 @@
+"/Users/sergey/code/Autountant/Autountant/View/Table Cells View/ExpenseCellView.swift":
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseCellView.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseCellView.o"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseCellView.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseCellView.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpenseCellView.dia"
+"/Users/sergey/code/Autountant/Autountant/View/AddExpenseView/AddExpenseView.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddExpenseView.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddExpenseView.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddExpenseView.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddExpenseView.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddExpenseView.d"
+"/Users/sergey/code/Autountant/Autountant/Controller/ExpensesViewController.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpensesViewController.o"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpensesViewController.d"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpensesViewController.swiftconstvalues"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpensesViewController.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/ExpensesViewController.dia"
+"/Users/sergey/code/Autountant/Autountant/AppDelegate.swift":
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AppDelegate.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AppDelegate.o"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AppDelegate.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AppDelegate.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AppDelegate.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/Controller/MainViewController.swift":
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/MainViewController.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/MainViewController.dia"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/MainViewController.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/MainViewController.o"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/MainViewController.d"
+"/Users/sergey/code/Autountant/Autountant/Controller/NewExpenseViewController.swift":
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/NewExpenseViewController.o"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/NewExpenseViewController.dia"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/NewExpenseViewController.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/NewExpenseViewController.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/NewExpenseViewController.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/Controller/VehiclesViewController.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehiclesViewController.d"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehiclesViewController.dia"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehiclesViewController.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehiclesViewController.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehiclesViewController.o"

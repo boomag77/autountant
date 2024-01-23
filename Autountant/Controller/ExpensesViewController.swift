@@ -48,16 +48,21 @@ class ExpensesViewController: UIViewController {
 
     }
     
+    
     @objc private func addButtonPressed(_ button: UIButton) {
         
-        let newExpenseView = AddExpenseView()
-        newExpenseView.vehicle = activeVehicle
-        newExpenseView.show(on: self)
+//        let newExpenseView = AddExpenseView()
+//        newExpenseView.vehicle = activeVehicle
+//        newExpenseView.show(on: self)
+        
+        let addExpenseVC = NewExpenseViewController()
+        addExpenseVC.modalPresentationStyle = .popover
+        addExpenseVC.activeVehicle = activeVehicle
+        present(addExpenseVC, animated: true)
         
     }
     
     private func setup() {
-        
         view.addSubview(activeVehicleNameLabel)
         view.addSubview(amountOfFilteredExpensesLabel)
         view.addSubview(tableView)

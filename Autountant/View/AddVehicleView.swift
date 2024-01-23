@@ -11,7 +11,7 @@ class AddVehicleView: PopupInputWindowView {
     
     var active: Bool = false {
         didSet {
-            currentVehicleCheckBox.isOn = active
+            currentVehicleCheckBox.isChecked = active
         }
     }
     weak var dataManager: DataManager?
@@ -62,12 +62,19 @@ class AddVehicleView: PopupInputWindowView {
 //        return button
 //    }()
     
-    private lazy var currentVehicleCheckBox: UISwitch = {
-        let checkBox = UISwitch()
-        checkBox.preferredStyle = .automatic
+//    private lazy var currentVehicleCheckBox: UISwitch = {
+//        let checkBox = UISwitch()
+//        checkBox.preferredStyle = .automatic
+//        checkBox.translatesAutoresizingMaskIntoConstraints = false
+//        checkBox.isOn = false
+//        checkBox.addTarget(self, action: #selector(toggleCurrentVehicleCheckBox), for: .touchUpInside)
+//        return checkBox
+//    }()
+    
+    private lazy var currentVehicleCheckBox: Checkbox = {
+        let checkBox = Checkbox()
         checkBox.translatesAutoresizingMaskIntoConstraints = false
-        checkBox.isOn = false
-        checkBox.addTarget(self, action: #selector(toggleCurrentVehicleCheckBox), for: .touchUpInside)
+        //checkBox.addTarget(self, action: #selector(toggleCurrentVehicleCheckBox), for: .touchUpInside)
         return checkBox
     }()
     
@@ -103,7 +110,7 @@ class AddVehicleView: PopupInputWindowView {
                                         type: .electric,
                                         units: newVehicleUnits,
                                         currency: .usd,
-                                        active: active) {
+                                        active: currentVehicleCheckBox.isChecked) {
             error in
             if let error = error {
                 print(error.rawValue)
@@ -147,6 +154,8 @@ extension AddVehicleView {
         
         currentVehicleCheckBox.topAnchor.constraint(equalTo: vehicleMileageTextField.bottomAnchor, constant: 10).isActive = true
         currentVehicleCheckBox.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        currentVehicleCheckBox.widthAnchor.constraint(equalToConstant: 20.0).isActive = true
+        currentVehicleCheckBox.heightAnchor.constraint(equalTo: currentVehicleCheckBox.widthAnchor).isActive = true
         
         setCurrentLabel.leadingAnchor.constraint(equalTo: currentVehicleCheckBox.trailingAnchor, constant: 20.0).isActive = true
         setCurrentLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
@@ -165,11 +174,6 @@ extension AddVehicleView {
 extension AddVehicleView {
     
     @objc private func toggleCurrentVehicleCheckBox(_ checkBox: UISwitch) {
-        if self.active {
-            self.active = false
-        } else {
-            self.active = true
-        }
-        
+        self.active.toggle()
     }
 }

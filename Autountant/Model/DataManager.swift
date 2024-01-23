@@ -14,11 +14,11 @@ enum DataManagerError: String, Error  {
     case invalidInputFormat
 }
 
-final class DataManager {
+class DataManager {
     
     
     private var container: NSPersistentContainer = AppDelegate.shared.container
-    
+    //private var container: NSPersistentContainer!
     var vehicleResultsController: NSFetchedResultsController<Vehicle>!
     var expensesResultController: NSFetchedResultsController<Expense>!
     

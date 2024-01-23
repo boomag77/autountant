@@ -1,0 +1,65 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "fe6419a660ab07a54f21b960c1caa9dc9f8ada9dc6679c7f1a471d399f15b468"
+    }
+  ],
+  "containerPath" : "/Users/sergey/code/Autountant/Autountant.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos17.2",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "arm64e",
+        "arm64v8",
+        "arm64",
+        "armv8"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/sergey/code/Autountant/Build/Products",
+      "derivedDataPath" : "/Users/sergey/code/Autountant/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/sergey/code/Autountant/DerivedData/Autountant/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/sergey/code/Autountant/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone11,2",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.2.1",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone11,2",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "00008020-000C651E2689002E",
+          "TARGET_DEVICE_MODEL" : "iPhone11,2",
+          "TARGET_DEVICE_OS_VERSION" : "17.2.1",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphoneos"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

@@ -19,6 +19,8 @@
 		A56D71A62B32933E00CEEBBD /* ExpenseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */; };
 		A56D71AF2B338F8000CEEBBD /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */; };
 		A57FED8D2B55791800BE6BC3 /* TappableLabelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FED8C2B55791800BE6BC3 /* TappableLabelListView.swift */; };
+		A57FED8F2B56D0A100BE6BC3 /* NewExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FED8E2B56D0A100BE6BC3 /* NewExpenseViewController.swift */; };
+		A57FED912B5A28AE00BE6BC3 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57FED902B5A28AE00BE6BC3 /* Checkbox.swift */; };
 		A59DAD672B34E43200B3C51B /* PopupInputWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */; };
 		A59DAD742B363C2800B3C51B /* Vehicle+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD702B363C2800B3C51B /* Vehicle+CoreDataClass.swift */; };
 		A59DAD752B363C2800B3C51B /* Vehicle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59DAD712B363C2800B3C51B /* Vehicle+CoreDataProperties.swift */; };
@@ -51,6 +53,8 @@
 		A56D71A52B32933E00CEEBBD /* ExpenseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCellView.swift; sourceTree = "<group>"; };
 		A56D71AE2B338F8000CEEBBD /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		A57FED8C2B55791800BE6BC3 /* TappableLabelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableLabelListView.swift; sourceTree = "<group>"; };
+		A57FED8E2B56D0A100BE6BC3 /* NewExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewExpenseViewController.swift; sourceTree = "<group>"; };
+		A57FED902B5A28AE00BE6BC3 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
 		A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupInputWindowView.swift; sourceTree = "<group>"; };
 		A59DAD702B363C2800B3C51B /* Vehicle+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A59DAD712B363C2800B3C51B /* Vehicle+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -184,6 +188,7 @@
 				A546B6962B3E6715002C0805 /* ControlButton.swift */,
 				A5F78CCB2B1911D9009A1227 /* AddVehicleView.swift */,
 				A59DAD662B34E43200B3C51B /* PopupInputWindowView.swift */,
+				A57FED902B5A28AE00BE6BC3 /* Checkbox.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				A56971842B0B109E00C5B193 /* ExpensesViewController.swift */,
 				A5A2BA7F2B0ABF8000CA1328 /* VehiclesViewController.swift */,
 				A569719E2B15334E00C5B193 /* TabViewController.swift */,
+				A57FED8E2B56D0A100BE6BC3 /* NewExpenseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			files = (
 				A56971832B0B106C00C5B193 /* MainViewController.swift in Sources */,
 				A56D71A62B32933E00CEEBBD /* ExpenseCellView.swift in Sources */,
+				A57FED8F2B56D0A100BE6BC3 /* NewExpenseViewController.swift in Sources */,
 				A5A2BA802B0ABF8000CA1328 /* VehiclesViewController.swift in Sources */,
 				A56D71AF2B338F8000CEEBBD /* AddExpenseView.swift in Sources */,
 				A56971852B0B109E00C5B193 /* ExpensesViewController.swift in Sources */,
@@ -287,6 +294,7 @@
 				A5F78CC82B15937C009A1227 /* VehicleTableViewCell.swift in Sources */,
 				A5F78DDC2B266F29009A1227 /* Storage.xcdatamodeld in Sources */,
 				A569718C2B11A21900C5B193 /* VehicleViewAtMainView.swift in Sources */,
+				A57FED912B5A28AE00BE6BC3 /* Checkbox.swift in Sources */,
 				A5F78CCC2B1911D9009A1227 /* AddVehicleView.swift in Sources */,
 				A5A2BA7E2B0ABF8000CA1328 /* SceneDelegate.swift in Sources */,
 				A59DAD742B363C2800B3C51B /* Vehicle+CoreDataClass.swift in Sources */,

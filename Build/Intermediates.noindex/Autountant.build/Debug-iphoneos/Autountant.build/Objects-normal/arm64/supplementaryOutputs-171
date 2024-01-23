@@ -1,0 +1,42 @@
+"/Users/sergey/code/Autountant/Autountant/Data Classes/Vehicle+CoreDataClass.swift":
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataClass.swiftconstvalues"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataClass.swiftdeps"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataClass.d"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataClass.dia"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/Vehicle+CoreDataClass.o"
+"/Users/sergey/code/Autountant/Autountant/Model View/VehicleViewAtMainView.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleViewAtMainView.d"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleViewAtMainView.swiftdeps"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleViewAtMainView.dia"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleViewAtMainView.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleViewAtMainView.o"
+"/Users/sergey/code/Autountant/Autountant/View/AddExpenseView/TappableLabelListView.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabelListView.dia"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabelListView.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabelListView.d"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabelListView.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabelListView.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/View/AddVehicleView.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddVehicleView.d"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddVehicleView.o"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddVehicleView.dia"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddVehicleView.swiftconstvalues"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/AddVehicleView.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/View/Table Cells View/VehicleTableViewCell.swift":
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleTableViewCell.d"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleTableViewCell.dia"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleTableViewCell.swiftconstvalues"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleTableViewCell.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/VehicleTableViewCell.swiftdeps"
+"/Users/sergey/code/Autountant/Autountant/SceneDelegate.swift":
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SceneDelegate.dia"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SceneDelegate.d"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SceneDelegate.o"
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SceneDelegate.swiftdeps"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues"
+"/Users/sergey/code/Autountant/Autountant/View/AddExpenseView/TappableLabel.swift":
+  swift-dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabel.swiftdeps"
+  object: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabel.o"
+  const-values: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabel.swiftconstvalues"
+  dependencies: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabel.d"
+  diagnostics: "/Users/sergey/code/Autountant/Build/Intermediates.noindex/Autountant.build/Debug-iphoneos/Autountant.build/Objects-normal/arm64/TappableLabel.dia"

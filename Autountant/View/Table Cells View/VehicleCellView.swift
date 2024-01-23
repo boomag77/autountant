@@ -85,13 +85,13 @@ class VehicleCellView: UIView {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
         nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 10.0).isActive = true
-        nameLabel.trailingAnchor.constraint(equalTo: currentMark.leadingAnchor, constant: -10.0).isActive = true
+        //nameLabel.trailingAnchor.constraint(equalTo: currentMark.leadingAnchor, constant: -10.0).isActive = true
         
         // mileageLabel constraints
         mileageLabel.translatesAutoresizingMaskIntoConstraints = false
         mileageLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor).isActive = true
         mileageLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20.0).isActive = true
-        mileageLabel.trailingAnchor.constraint(equalTo: currentMark.leadingAnchor, constant: -10.0).isActive = true
+        //mileageLabel.trailingAnchor.constraint(equalTo: currentMark.leadingAnchor, constant: -10.0).isActive = true
         mileageLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10.0).isActive = true
         
     }
